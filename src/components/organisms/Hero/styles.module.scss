@@ -17,49 +17,20 @@
 
   .backgroundImage {
     object-fit: cover;
-    object-position: left;
-    opacity: 0.5;
-  }
-
-  .breadcrumbWrapper {
-    position: absolute;
-    top: map.get(variables.$headerHeight, "xs");
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    padding: 16px 0;
-
-    @include mediaQueries.media("md") {
-      top: map.get(variables.$headerHeight, "md");
-      padding: 20px 0;
-    }
-
-    :global(nav) {
-      padding: 0 !important;
-      color: white !important;
-    }
-
-    :global(a) {
-      color: white !important;
-
-      &:hover {
-        opacity: 0.7 !important;
-      }
-    }
-
-    :global(span) {
-      color: rgba(255, 255, 255, 0.9) !important;
-    }
+    object-position: center;
+    opacity: 0.8;
   }
 
   .textWrapper {
     width: 100%;
     display: flex;
     margin-top: 50vh;
-    color: var(--neutral-background);
+    color: var(--neutral-text);
 
     h1 {
-      @include mediaQueries.media("sm", "max") {
+      font-size: 6rem;
+
+      @include mediaQueries.media("md", "max") {
         font-size: 4rem;
       }
     }

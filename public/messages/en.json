@@ -1,0 +1,13 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About me",
+    "calendar": "Calendar",
+    "contact": "Contact",
+    "locations": "Locations"
+  },
+  "hero": {
+    "title": "Lorenzo Panzera",
+    "subtitle": "Snowboard & Telemaking Instructor"
+  }
+}

@@ -36,21 +36,8 @@ const Header = ({ className }: HeaderProps) => {
       url: "",
     },
     {
-      label: t("classes"),
-      children: [
-        { label: t("anukalana"), url: "" },
-        { label: t("yin"), url: "" },
-        { label: t("kids"), url: "" },
-        { label: t("outdoor"), url: "" },
-        { label: t("private"), url: "" },
-      ],
-    },
-    {
       label: t("locations"),
-      children: [
-        { label: t("belluno"), url: "" },
-        { label: t("cortina"), url: "" },
-      ],
+      children: [],
     },
   ];
 

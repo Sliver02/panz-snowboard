@@ -10,7 +10,14 @@ const Home = () => {
   return (
     <main>
       <Header />
-      <Hero title={t("title")} subtitle={t("subtitle")} />
+      <Hero
+        title={t("title")}
+        subtitle={t("subtitle")}
+        backgroundImage={{
+          src: "/images/DDF04065.jpg",
+          alt: "Snowboard teacher | Cortina, Faloria, Tofana, Dolomites, Belluno",
+        }}
+      />
       <Footer />
     </main>
   );

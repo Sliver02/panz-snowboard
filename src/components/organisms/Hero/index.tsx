@@ -9,8 +9,12 @@ import styles from "./styles.module.scss";
 export interface HeroProps extends BaseProps {
   title: string;
   subtitle: string;
+  backgroundImage: {
+    src: string;
+    alt: string;
+    position?: "top" | "center" | "bottom" | "left" | "right";
+  };
   compact?: boolean;
-  backgroundImage?: string;
   breadcrumbItems?: BreadcrumbItem[];
 }
 
@@ -19,10 +23,10 @@ const Hero = ({
   title,
   subtitle,
   compact = false,
-  backgroundImage = "/images/IMG_2617.png",
+  backgroundImage,
   breadcrumbItems,
 }: HeroProps) => {
-  const placeholderImage = backgroundImage.replace(
+  const placeholderImage = backgroundImage.src.replace(
     /\.(jpg|png|jpeg)$/,
     "_placeholder.$1"
   );
@@ -36,8 +40,8 @@ const Hero = ({
     >
       <Image
         className={classNames(className, styles.backgroundImage)}
-        alt="Yoga nature alps Dolomites"
-        src={backgroundImage}
+        alt={backgroundImage.alt}
+        src={backgroundImage.src}
         placeholder="blur"
         blurDataURL={placeholderImage}
         priority
