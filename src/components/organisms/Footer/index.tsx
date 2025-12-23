@@ -1,5 +1,4 @@
 import { Col, Container, Row } from "@/components/atoms/Grid";
-import { RouteEnum } from "@/common/routeEnum";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import classNames from "classnames";
@@ -18,19 +17,19 @@ const Footer = () => {
             <h3 className={styles.footerTitle}>{t("classes")}</h3>
             <ul className={styles.footerList}>
               <li>
-                <Link href={RouteEnum.ANUKALANA}>{t("anukalana")}</Link>
+                <Link href={""}>{t("anukalana")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.YIN}>{t("yin")}</Link>
+                <Link href={""}>{t("yin")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.KID}>{t("kids")}</Link>
+                <Link href={""}>{t("kids")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.OUTDOOR}>{t("outdoor")}</Link>
+                <Link href={""}>{t("outdoor")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.PRIVATE_LESSONS}>{t("private")}</Link>
+                <Link href={""}>{t("private")}</Link>
               </li>
             </ul>
           </Col>
@@ -38,10 +37,10 @@ const Footer = () => {
             <h3 className={styles.footerTitle}>{t("locations")}</h3>
             <ul className={styles.footerList}>
               <li>
-                <Link href={RouteEnum.BELLUNO}>{t("belluno")}</Link>
+                <Link href={""}>{t("belluno")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.CORTINA}>{t("cortina")}</Link>
+                <Link href={""}>{t("cortina")}</Link>
               </li>
             </ul>
           </Col>
@@ -49,16 +48,16 @@ const Footer = () => {
             <h3 className={styles.footerTitle}>SMUP Yoga</h3>
             <ul className={styles.footerList}>
               <li>
-                <Link href={RouteEnum.HOME}>{t("home")}</Link>
+                <Link href={""}>{t("home")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.ABOUT}>{t("about")}</Link>
+                <Link href={""}>{t("about")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.CALENDAR}>Calendar</Link>
+                <Link href={""}>Calendar</Link>
               </li>
               <li>
-                <Link href={RouteEnum.CONTACT}>Contact</Link>
+                <Link href={""}>Contact</Link>
               </li>
             </ul>
           </Col>
@@ -93,7 +92,7 @@ const Footer = () => {
             <div className={styles.copyright}>
               <p>
                 © 2024 SMUP Yoga - All rights reserved |{" "}
-                <Link href={RouteEnum.PRIVACY}>Privacy Policy</Link>
+                <Link href={""}>Privacy Policy</Link>
               </p>
               <p>
                 Website by{" "}

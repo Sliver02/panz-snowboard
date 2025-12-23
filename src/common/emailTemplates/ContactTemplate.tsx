@@ -1,10 +1,6 @@
-import { ContactFormProps } from "@/components/sections/Contact";
-
-const ContactTemplate: React.FC<Readonly<ContactFormProps>> = ({
-  name,
-  email,
-  message,
-}) => (
+const ContactTemplate: React.FC<
+  Readonly<{ name: string; email: string; message: string }>
+> = ({ name, email, message }) => (
   <div>
     <h1>RSVP ricevuto da {name}</h1>
     <p>

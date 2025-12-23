@@ -33,23 +33,23 @@ const Header = ({ className }: HeaderProps) => {
     },
     {
       label: t("about"),
-      url: RouteEnum.ABOUT,
+      url: "",
     },
     {
       label: t("classes"),
       children: [
-        { label: t("anukalana"), url: RouteEnum.ANUKALANA },
-        { label: t("yin"), url: RouteEnum.YIN },
-        { label: t("kids"), url: RouteEnum.KID },
-        { label: t("outdoor"), url: RouteEnum.OUTDOOR },
-        { label: t("private"), url: RouteEnum.PRIVATE_LESSONS },
+        { label: t("anukalana"), url: "" },
+        { label: t("yin"), url: "" },
+        { label: t("kids"), url: "" },
+        { label: t("outdoor"), url: "" },
+        { label: t("private"), url: "" },
       ],
     },
     {
       label: t("locations"),
       children: [
-        { label: t("belluno"), url: RouteEnum.BELLUNO },
-        { label: t("cortina"), url: RouteEnum.CORTINA },
+        { label: t("belluno"), url: "" },
+        { label: t("cortina"), url: "" },
       ],
     },
   ];
