@@ -1,6 +1,10 @@
-const ContactTemplate: React.FC<
-  Readonly<{ name: string; email: string; message: string }>
-> = ({ name, email, message }) => (
+import { ContactFormProps } from "@/components/organisms/Contact";
+
+const ContactTemplate: React.FC<Readonly<ContactFormProps>> = ({
+  name,
+  email,
+  message,
+}) => (
   <div>
     <h1>Richiesta inviata da lorenzopanzera.com</h1>
     <p>
