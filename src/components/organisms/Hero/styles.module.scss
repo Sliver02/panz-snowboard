@@ -17,8 +17,27 @@
 
   .backgroundImage {
     object-fit: cover;
-    object-position: center;
     opacity: 0.8;
+
+    &--position-top {
+      object-position: top;
+    }
+
+    &--position-bottom {
+      object-position: bottom;
+    }
+
+    &--position-center {
+      object-position: center;
+    }
+
+    &--position-left {
+      object-position: left;
+    }
+
+    &--position-right {
+      object-position: right;
+    }
   }
 
   .textWrapper {

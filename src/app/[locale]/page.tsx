@@ -16,6 +16,7 @@ const Home = () => {
         backgroundImage={{
           src: "/images/DDF04065.jpg",
           alt: "Snowboard teacher | Cortina, Faloria, Tofana, Dolomites, Belluno",
+          position: "top",
         }}
       />
       <Footer />

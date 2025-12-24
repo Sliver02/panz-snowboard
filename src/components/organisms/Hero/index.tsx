@@ -39,7 +39,13 @@ const Hero = ({
       id={compact ? undefined : "home"}
     >
       <Image
-        className={classNames(className, styles.backgroundImage)}
+        className={classNames(
+          className,
+          styles.backgroundImage,
+          `${styles.backgroundImage}--position-${
+            backgroundImage.position || "center"
+          }`
+        )}
         alt={backgroundImage.alt}
         src={backgroundImage.src}
         placeholder="blur"
