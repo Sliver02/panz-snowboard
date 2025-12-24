@@ -6,23 +6,23 @@
   // color palette
   --neutral-background: #f4f6ff;
   --neutral-light: #f4f6ff;
-  --neutral-border: #bdbfca;
-  --neutral-text: #1c1d23;
+  --neutral-main: #bdbfca;
+  --neutral-dark: #231c1c;
 
-  --primary-hover: #eabdb6;
-  --primary-main: #fee9dd;
-  --primary-active: #fcdad2;
-  --primary-contrast-text: #1c1d23;
+  --primary-background: #e9ceb0;
+  --primary-light: #f4a66c;
+  --primary-main: #f48847;
+  --primary-dark: #f26549;
+  --primary-text: #231c1c;
 
-  --accent-background: #a0314b;
-  --accent-hover: #e05d7c;
-  --accent-main: #e97f95;
-  --accent-active: #f59eb3;
-  --accent-contrast-text: #1c1d23;
+  --accent-light: #5eaacc;
+  --accent-main: #296f96;
+  --accent-dark: #1d546d;
+  --accent-contrast-text: #231c1c;
 
-  --secondary-light: #edbfe4;
-  --secondary-main: #c886ba;
-  --secondary-dark: #a4528f;
+  --secondary-light: #49aa83;
+  --secondary-main: #339665;
+  --secondary-dark: #317a60;
 
   --thertiary-light: #ffdeb3;
   --thertiary-main: #f3c98b;
@@ -94,12 +94,12 @@ main {
 
 a {
   font-weight: 500;
-  color: var(--primary-active);
+  color: var(--primary-light);
   text-decoration: none;
 
   &:hover,
   &:focus {
-    color: var(--primary-active);
+    color: var(--primary-light);
   }
 }
 
