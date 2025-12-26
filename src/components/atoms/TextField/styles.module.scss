@@ -12,15 +12,15 @@
   padding: 1rem;
   padding-top: 1.5rem;
   font-size: 1rem;
-  border: 1px solid var(--neutral-border);
+  border: 1px solid var(--accent-main);
   border-radius: 0.5rem;
   background-color: transparent;
-  color: var(--neutral-text);
+  color: var(--neutral-dark);
   transition: outline-width 0.2s ease;
   font-family: inherit;
 
   &:focus {
-    outline: 2px solid var(--accent-main);
+    outline: 2px solid var(--accent-light);
     outline-offset: -2px;
   }
 

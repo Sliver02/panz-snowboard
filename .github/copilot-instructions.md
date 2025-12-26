@@ -248,7 +248,7 @@ export default MyComponent;
 .wrapper {
   // Use CSS custom properties from globals.scss
   background: var(--neutral-background);
-  color: var(--neutral-text);
+  color: var(--neutral-dark);
 
   // Use media mixin with namespace (NOT @include mediaQuery)
   @include mediaQueries.media("md") {
@@ -275,7 +275,7 @@ export default MyComponent;
 
 **Available CSS variables** (`src/designSystem/globals.scss`):
 
-- Colors: `--neutral-background`, `--neutral-text`, `--primary-main`, `--accent-main`, etc.
+- Colors: `--neutral-background`, `--neutral-dark`, `--primary-main`, `--accent-main`, etc.
 - NO spacing/radius variables — use SCSS vars like `variables.$font-md: 16` (in px, no unit)
 
 **When to use SCSS imports**:
@@ -416,7 +416,8 @@ await emailjs.send(
 ```tsx
 export const metadata: Metadata = {
   title: {
-    default: "Lorenzo Panzera Sport & Adventure | Snowboard, Telemark & Mountain Bike",
+    default:
+      "Lorenzo Panzera Sport & Adventure | Snowboard, Telemark & Mountain Bike",
   },
   alternates: {
     canonical: "https://www.lorenzopanzera.com/",
