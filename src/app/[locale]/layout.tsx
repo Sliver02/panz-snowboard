@@ -22,23 +22,25 @@ const rightGrotesk = localFont({
 
 export const metadata: Metadata = {
   title: {
-    default: "SMUP — Sarah Pompanin | Yoga Cortina, Belluno, Cadore",
-    template: "%s | SMUP Yoga",
+    default:
+      "Lorenzo Panzera | Snowboard, Telemark, Mountain bike, Hiking, Dolomites, Cortina",
+    template: "%s | Lorenzo Panzera",
   },
   description:
-    "Yoga with Sarah Pompanin (SMUP) in Cortina d'Ampezzo, Belluno, and Cadore. Anukalana, Yin, Kids Yoga. Group classes, private lessons, outdoor sessions in the Dolomites. Online and in-person.",
+    "Outdoor adventures with Lorenzo Panzera in Cortina d'Ampezzo, Belluno, and Cadore. Snowboard, Telemark, Mountain bike, Hiking in the Dolomites.",
   openGraph: {
-    title: "SMUP — Yoga Cortina, Belluno, Cadore Dolomites",
+    title:
+      "Lorenzo Panzera | Snowboard, Telemark, Mountain bike, Hiking, Dolomites, Cortina",
     description:
-      "Yoga classes with Sarah Pompanin in Cortina, Belluno, Cadore. Anukalana, Yin, Kids Yoga. Group & private lessons in the Dolomites.",
-    url: "https://smupyoga.com",
-    siteName: "SMUP Yoga",
+      "Lorenzo Panzera's outdoor adventures in Cortina d'Ampezzo, Belluno, Cadore. Snowboard, Telemark, Mountain bike, Hiking in the Dolomites.",
+    url: "https://lorenzopanzera.com",
+    siteName: "Lorenzo Panzera",
     images: [
       {
-        url: "https://smupyoga.com/images/IMG_2646.jpg",
+        url: "https://lorenzopanzera.com/images/20241121_100155.jpg",
         width: 1200,
         height: 630,
-        alt: "SMUP Yoga in the Dolomites",
+        alt: "Lorenzo Panzera in the Dolomites",
       },
     ],
     locale: "en_US",
@@ -46,14 +48,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "SMUP — Yoga in the Dolomites",
-    description: "Outdoor and studio yoga by Sarah Pompanin (SMUP).",
+    title:
+      "Lorenzo Panzera | Snowboard, Telemark, Mountain bike, Hiking, Dolomites, Cortina",
+    description:
+      "Outdoor adventures with Lorenzo Panzera in Cortina d'Ampezzo, Belluno, and Cadore. Snowboard, Telemark, Mountain bike, Hiking in the Dolomites.",
   },
   alternates: {
-    canonical: "https://smupyoga.com/",
+    canonical: "https://lorenzopanzera.com/",
     languages: {
-      en: "https://smupyoga.com/en/",
-      it: "https://smupyoga.com/it/",
+      en: "https://lorenzopanzera.com/en/",
+      it: "https://lorenzopanzera.com/it/",
     },
   },
 };
