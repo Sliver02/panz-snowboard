@@ -7,19 +7,19 @@
   --neutral-background: #f4f6ff;
   --neutral-light: #f4f6ff;
   --neutral-main: #bdbfca;
-  --neutral-dark: #140c0c;
+  --neutral-dark: #0f232c;
 
   --primary-background: #e9ceb0;
   --primary-light: #f4a66c;
   --primary-main: #f48847;
   --primary-dark: #f26549;
-  --primary-text: #140c0c;
+  --primary-text: #0f232c;
 
   --accent-background: #acdaef;
   --accent-light: #5eaacc;
   --accent-main: #296f96;
   --accent-dark: #1d546d;
-  --accent-contrast-text: #140c0c;
+  --accent-contrast-text: #0f232c;
 
   --secondary-light: #49aa83;
   --secondary-main: #339665;
@@ -35,7 +35,7 @@
 //     // color palette
 //     --neutral-background: #1c1d23;
 //     --neutral-border: #bdbfca;
-//     --neutral-text: #f4f6ff;
+//     --neutral-dark: #f4f6ff;
 //   }
 // }
 
@@ -58,7 +58,7 @@ body {
   height: -webkit-fill-available;
 
   background-color: var(--primary-background);
-  color: var(--neutral-text);
+  color: var(--neutral-dark);
 
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;

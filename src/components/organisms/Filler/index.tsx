@@ -12,7 +12,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -26,7 +26,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -40,7 +40,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -54,7 +54,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -70,7 +70,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -84,7 +84,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -102,7 +102,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -116,7 +116,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -132,7 +132,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
@@ -146,7 +146,7 @@ const Filler = () => {
               <div
                 style={{
                   padding: "0.5rem",
-                  border: "1px solid var(--neutral-border)",
+                  border: "1px solid var(--neutral-main)",
                 }}
               >
                 <h4>Lorem ipsum dolor sit amet consectetur.</h4>
