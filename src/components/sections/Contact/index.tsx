@@ -7,7 +7,7 @@ import SectionTitle from "@/components/atoms/SectionTitle";
 import TextField from "@/components/atoms/TextField";
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
-import SendRoundedIcon from "@mui/icons-material/SendRounded";
+import { IoSend } from "react-icons/io5";
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
@@ -142,7 +142,7 @@ const Contact = () => {
                 type="submit"
                 variant="contained"
                 disabled={loading}
-                startIcon={<SendRoundedIcon />}
+                startIcon={<IoSend />}
               >
                 {loading ? "Loading..." : t("send")}
               </Button>

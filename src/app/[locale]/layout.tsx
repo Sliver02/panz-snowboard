@@ -3,9 +3,7 @@ import classNames from "classnames";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { Inter } from "next/font/google";
-import localFont from "next/font/local";
-import ThemeProviderWrapper from "./ThemeProviderWrapper";
+import { Inter, Anton } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -13,11 +11,11 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const rightGrotesk = localFont({
-  src: "../../../public/fonts/RightGrotesk.woff2",
-  weight: "400",
+const anton = Anton({
+  subsets: ["latin"],
+  weight: ["400"],
   display: "swap",
-  variable: "--font-grotesk",
+  variable: "--font-anton",
 });
 
 export const metadata: Metadata = {
@@ -178,10 +176,6 @@ export default async function RootLayout({
   return (
     <html lang={locale} data-theme="light">
       <head>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/icon?family=Material+Icons"
-        />
         <link rel="alternate" href="https://smupyoga.com/en/" hrefLang="en" />
         <link rel="alternate" href="https://smupyoga.com/it/" hrefLang="it" />
         <link
@@ -196,11 +190,9 @@ export default async function RootLayout({
           }}
         />
       </head>
-      <body className={classNames(inter.variable, rightGrotesk.variable)}>
+      <body className={classNames(inter.variable, anton.variable)}>
         <NextIntlClientProvider messages={messages}>
-          <ThemeProviderWrapper>
-            <div className={classNames("root")}>{children}</div>
-          </ThemeProviderWrapper>
+          <div className={classNames("root")}>{children}</div>
         </NextIntlClientProvider>
       </body>
     </html>

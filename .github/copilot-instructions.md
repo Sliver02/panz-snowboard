@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Next.js 15 sports instruction website using TypeScript, SCSS modules, custom Grid system, and next-intl (en/it). Built for Lorenzo Panzera's multi-sport instruction business in the Dolomites, featuring snowboard, telemark skiing, and mountain bike guiding services with Material-UI components and EmailJS contact forms.
+Next.js 15 sports instruction website using TypeScript, SCSS modules, custom Grid system, and next-intl (en/it). Built for Lorenzo Panzera's multi-sport instruction business in the Dolomites, featuring snowboard, telemark skiing, and mountain bike guiding services with react-icons for iconography and EmailJS contact forms.
 
 ## Project Setup & Installation
 
@@ -34,8 +34,7 @@ npm install
 - `next@15.1.3` — Next.js framework (app router)
 - `react@19.0.0` & `react-dom@19.0.0` — React 19
 - `next-intl@4.3.9` — Internationalization (en/it)
-- `@mui/icons-material@7.3.2` & `@mui/material@7.3.2` — Material-UI (icons only)
-- `@emotion/react@11.14.0` & `@emotion/styled@11.14.1` — MUI peer dependencies
+- `react-icons@5.4.0` — Icon library (Material Design, FontAwesome, Ionicons)
 - `react-hook-form@7.66.1` — Form state management
 - `@hookform/resolvers@5.2.2` — Form validation resolvers
 - `zod@4.1.13` — Schema validation
@@ -135,7 +134,7 @@ Development server runs at `http://localhost:3000`
 - **Next.js 15** (app router, async params) + TypeScript (strict mode)
 - **Styling**: SCSS modules + custom design system (`src/designSystem/`)
 - **i18n**: next-intl with middleware locale detection (Italian default, English alt)
-- **UI**: Material-UI (@mui/icons-material) for icons ONLY
+- **Icons**: react-icons (Material Design, FontAwesome, Ionicons collections)
 - **Forms**: react-hook-form + zod + EmailJS (@emailjs/browser)
 - **Images**: Next.js Image with blur placeholders (manual `_placeholder.jpg` files)
 - **Fonts**: Inter (Google) + RightGrotesk (local woff2)
@@ -505,7 +504,7 @@ NEXT_PUBLIC_EMAILJS_KEY=user_xxxxx
 ### Forms
 
 - react-hook-form + zod for validation (custom TextField/Button/Alert components)
-- Material-UI icons ONLY (no form components)
+- react-icons for icon components (imported from specific icon families)
 - EmailJS integration with `renderToStaticMarkup()` for email templates
 
 ## Critical Don'ts

@@ -1,8 +1,7 @@
 "use client";
 import { BaseProps } from "@/common/globalInterfaces";
 import { RouteEnum } from "@/common/routeEnum";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import MenuRoundedIcon from "@mui/icons-material/MenuRounded";
+import { MdKeyboardArrowDown, MdMenu } from "react-icons/md";
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
@@ -69,7 +68,7 @@ const Header = ({ className }: HeaderProps) => {
                   )}
                 >
                   {item.label}
-                  <KeyboardArrowDownIcon fontSize="small" />
+                  <MdKeyboardArrowDown size={20} />
                 </button>
                 <div
                   className={classNames(styles.dropdownMenu, {
@@ -107,7 +106,7 @@ const Header = ({ className }: HeaderProps) => {
         className={classNames(styles.hamburger)}
         onClick={() => setOpenMenu((openMenu) => !openMenu)}
       >
-        <MenuRoundedIcon fontSize="large" />
+        <MdMenu size={32} />
       </div>
 
       <div

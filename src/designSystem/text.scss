@@ -5,7 +5,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: var(--font-grotesk);
+  font-family: var(--font-anton);
   font-weight: bold;
   line-height: 90%;
 
@@ -110,8 +110,8 @@ p {
     }
   }
 
-  &--grotesk {
-    font-family: var(--font-grotesk);
+  &--anton {
+    font-family: var(--font-anton);
   }
 
   &--regular {

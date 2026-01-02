@@ -1,6 +1,5 @@
 import { Col, Container, Row } from "@/components/atoms/Grid";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -71,7 +70,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                 >
-                  <InstagramIcon fontSize="small" /> Instagram
+                  <FaInstagram size={16} /> Instagram
                 </Link>
               </li>
               <li>
@@ -81,7 +80,7 @@ const Footer = () => {
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                 >
-                  <LinkedInIcon fontSize="small" /> LinkedIn
+                  <FaLinkedin size={16} /> LinkedIn
                 </Link>
               </li>
             </ul>
