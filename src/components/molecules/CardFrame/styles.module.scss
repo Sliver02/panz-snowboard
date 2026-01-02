@@ -2,15 +2,12 @@
 @use "../../../designSystem/mediaQueries";
 
 .cardFrame {
-  --width: 30rem;
   --height: 30rem;
-  --radius1: 30rem;
-  --radius2: 30rem;
 
-  margin: 3rem 1rem;
+  margin: 1rem;
 
   @include mediaQueries.media("lg") {
-    max-width: var(--width);
+    --height: 40rem;
   }
 
   .imageContainer {
@@ -20,21 +17,24 @@
 
     .backgroundImage {
       object-fit: cover;
-      border-radius: var(--radius1) var(--radius2) var(--radius1) var(--radius2);
       overflow: hidden;
+
+      -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+      clip-path: polygon(10% 10%, 98% 2%, 100% 100%, 10% 98%);
     }
 
     .frame {
       position: absolute;
-      top: 1rem;
-      left: 1rem;
+      top: 55%;
+      left: 58%;
 
-      width: 100%;
-      height: 100%;
+      width: 80%;
+      height: 80%;
 
-      border-radius: var(--radius1) var(--radius2) var(--radius1) var(--radius2);
       border: 0.5rem solid var(--primary-main);
       border-style: solid solid double double;
+
+      transform: skew(2deg) translate(-50%, -50%);
     }
   }
 }
