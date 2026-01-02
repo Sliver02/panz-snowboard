@@ -1,4 +1,4 @@
-import { ContactFormProps } from "@/components/organisms/Contact";
+import { ContactFormProps } from "@/components/sections/Contact";
 
 const ContactTemplate: React.FC<Readonly<ContactFormProps>> = ({
   name,

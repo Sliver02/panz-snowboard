@@ -10,17 +10,21 @@
     margin: 3rem auto;
   }
 
-  .iconContainer {
-    z-index: -1;
-    position: absolute;
-    width: $width;
-    height: $width;
-    top: 50%;
-    left: 0;
-    transform: translate(-50%, -50%);
+  &--highlight {
+    .highlight {
+      width: fit-content;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 10px;
+        left: -10px;
+        z-index: -1;
+        transform: rotate(-2deg);
 
-    .icon {
-      fill: var(--accent-main);
+        background-color: var(--primary-main);
+      }
     }
   }
 }

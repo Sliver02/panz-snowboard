@@ -1,0 +1,41 @@
+import { Col, Container, Row } from "@/components/atoms/Grid";
+import { Align, Justify } from "@/components/atoms/Grid/interfaces";
+import SectionTitle from "@/components/atoms/SectionTitle";
+import CardFrame from "@/components/molecules/CardFrame";
+import Section from "@/components/organisms/Section";
+import classNames from "classnames";
+import { useTranslations } from "next-intl";
+
+const About = () => {
+  const t = useTranslations("About");
+
+  return (
+    <Section>
+      <Container>
+        <Row>
+          <Col xs={12} md={5}>
+            <CardFrame
+              image="20241121_100155"
+              alt="Lorenzo Panzera - Snowboard teacher"
+            />
+          </Col>
+          <Col xs={12} md={6}>
+            <Row xsJustify={Justify.center} mdAlign={Align.center}>
+              <Col>
+                <SectionTitle highlight text={"Lorenzo Panzera"} />
+                <p className={classNames("text--p-lg")}>
+                  Benvenuti! Mi chiamo Lorenzo Panzera, sono maestro di
+                  snowboard, telemark e guida mountain bike, in poche parole il
+                  mio lavoro è quello di trasmettervi il mio amore per lo sport
+                  e la montagna!
+                </p>
+              </Col>
+            </Row>
+          </Col>
+        </Row>
+      </Container>
+    </Section>
+  );
+};
+
+export default About;

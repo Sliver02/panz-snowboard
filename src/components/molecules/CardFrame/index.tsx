@@ -27,22 +27,7 @@ const CardFrame = ({
           fill
         />
 
-        <div className={classNames(styles.frame)}>
-          <Image
-            className={classNames(styles.icon, styles.icon_top)}
-            width={60}
-            height={60}
-            src="/icons/star_01_pink.svg"
-            alt=""
-          />
-          <Image
-            className={classNames(styles.icon, styles.icon_bottom)}
-            width={60}
-            height={60}
-            src="/icons/star_02_black.svg"
-            alt=""
-          />
-        </div>
+        <div className={classNames(styles.frame)} />
       </div>
     </div>
   );

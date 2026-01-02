@@ -100,45 +100,6 @@ const Contact = () => {
             <Col>
               <SectionTitle text={t("title")} />
               <p className={classNames("text--p-lg")}>{t("description")}</p>
-
-              {/* <div className={classNames(styles.socialContainer)}>
-                <Link
-                  href={"https://www.instagram.com/smup_yoga/"}
-                  target="_blank"
-                  aria-description="Instagram Profile"
-                >
-                  <button
-                    className={classNames(styles.socialButton)}
-                    aria-label="Sarah Pompanin Instagram"
-                    type="button"
-                  >
-                    <InstagramIcon
-                      fontSize="large"
-                      className={classNames(styles.icon)}
-                    />
-                    {t("instagram")}
-                  </button>
-                </Link>
-                <Link
-                  href={
-                    "https://www.linkedin.com/in/sarah-maria-ursula-pompanin-4492a1100/"
-                  }
-                  target="_blank"
-                  aria-description="LinkedIn Profile"
-                >
-                  <button
-                    className={classNames(styles.socialButton)}
-                    aria-label="Sarah Pompanin Linkedin"
-                    type="button"
-                  >
-                    <LinkedInIcon
-                      fontSize="large"
-                      className={classNames(styles.icon)}
-                    />
-                    {t("linkedin")}
-                  </button>
-                </Link>
-              </div> */}
             </Col>
           </Row>
 
