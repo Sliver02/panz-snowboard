@@ -148,5 +148,13 @@ p {
     &-light {
       color: var(--neutral-light);
     }
+
+    &-primary {
+      color: var(--primary-dark);
+    }
+
+    &-accent {
+      color: var(--accent-main);
+    }
   }
 }

@@ -48,13 +48,13 @@
     margin-top: 50vh;
     color: var(--neutral-dark);
 
-    h1 {
-      font-size: 6rem;
+    // h1 {
+    //   font-size: 6rem;
 
-      @include mediaQueries.media("md", "max") {
-        font-size: 4rem;
-      }
-    }
+    //   @include mediaQueries.media("md", "max") {
+    //     font-size: 4rem;
+    //   }
+    // }
   }
 
   &.compact {

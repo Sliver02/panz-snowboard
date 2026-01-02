@@ -12,7 +12,15 @@ const Home = () => {
     <main>
       <Header />
       <Hero
-        title={t("title")}
+        title={
+          <>
+            <p className="text--h-lg text--color-accent">
+              Lorenzo Panzera <br />
+            </p>
+
+            {t("title")}
+          </>
+        }
         subtitle={t("subtitle")}
         backgroundImage={{
           src: "/images/DDF04065.jpg",

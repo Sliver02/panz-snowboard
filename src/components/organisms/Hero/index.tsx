@@ -5,10 +5,11 @@ import { Justify } from "@/components/atoms/Grid/interfaces";
 import classNames from "classnames";
 import Image from "next/image";
 import styles from "./styles.module.scss";
+import { ReactNode } from "react";
 
 export interface HeroProps extends BaseProps {
-  title: string;
-  subtitle: string;
+  title: ReactNode;
+  subtitle: ReactNode;
   backgroundImage: {
     src: string;
     alt: string;
@@ -61,7 +62,7 @@ const Hero = ({
       >
         <Container>
           <Row xsJustify={compact ? Justify.start : Justify.center}>
-            <Col xs={12} lg={compact ? 10 : 8}>
+            <Col xs={12} lg={10}>
               <h1>{title}</h1>
               <p
                 className={classNames(
