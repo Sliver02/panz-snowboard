@@ -6,15 +6,22 @@ export interface SectionTitleProps extends BaseProps {
   text: string;
   center?: boolean;
   highlight?: boolean;
+  uppercase?: boolean;
 }
 
-const SectionTitle = ({ text, center, highlight }: SectionTitleProps) => {
+const SectionTitle = ({
+  text,
+  center,
+  highlight,
+  uppercase,
+}: SectionTitleProps) => {
   return (
     <span
       className={classNames(
         styles["sectionTitle"],
         center && styles["sectionTitle--center"],
-        highlight && styles["sectionTitle--highlight"]
+        highlight && styles["sectionTitle--highlight"],
+        uppercase && styles["sectionTitle--uppercase"]
       )}
     >
       <span className={classNames(styles.highlight)}>

@@ -5,6 +5,7 @@ import Header from "@/components/organisms/Header";
 import Hero from "@/components/organisms/Hero";
 import { useTranslations } from "next-intl";
 import About from "@/components/sections/About";
+import Disciplines from "@/components/sections/Disciplines";
 
 const Home = () => {
   const t = useTranslations("hero");
@@ -30,6 +31,7 @@ const Home = () => {
         }}
       />
       <About />
+      <Disciplines />
       <Contact />
       <Footer />
     </main>

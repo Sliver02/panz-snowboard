@@ -7,7 +7,7 @@ import classNames from "classnames";
 import { useTranslations } from "next-intl";
 
 const About = () => {
-  const t = useTranslations("About");
+  const t = useTranslations("about");
 
   return (
     <Section>
@@ -15,7 +15,7 @@ const About = () => {
         <Row>
           <Col xs={12} md={5}>
             <CardFrame
-              image="20241121_100155"
+              image="photo_2024-12-17_23-31-21"
               alt="Lorenzo Panzera - Snowboard teacher"
             />
           </Col>

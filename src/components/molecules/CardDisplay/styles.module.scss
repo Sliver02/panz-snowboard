@@ -4,35 +4,37 @@
 .cardDisplay {
   --width: 300px;
   --height: 500px;
+  --skew: -10deg;
 
+  padding-bottom: 2rem;
   position: relative;
-  padding: 1rem;
   margin: auto;
 
   @include mediaQueries.media("lg") {
     --width: 400px;
-    --height: 460px;
-
-    padding: 0 2.5rem;
+    --height: 600px;
   }
 
   .imageContainer {
     width: 100%;
     height: var(--height);
+
     position: relative;
 
     .backgroundImage {
       object-fit: cover;
-      border-radius: var(--width) var(--width) 0 0;
       overflow: hidden;
+
+      -webkit-clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
+      clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
     }
 
     .titleContainer {
       position: absolute;
       bottom: -1rem;
-      left: -1rem;
+      right: 1rem;
       padding: 0.5rem 1rem;
-      background-color: var(--accent-main);
+      background-color: var(--primary-main);
       color: var(--neutral-background);
 
       z-index: 1;
@@ -41,5 +43,9 @@
 
   .descriptionContainer {
     margin-top: 2rem;
+  }
+
+  .button {
+    margin-top: 1rem;
   }
 }

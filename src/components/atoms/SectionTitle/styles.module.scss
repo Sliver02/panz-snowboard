@@ -6,7 +6,7 @@
   z-index: 1;
   margin: 3rem 0;
 
-  &--center {
+  font-ca &--center {
     margin: 3rem auto;
   }
 
@@ -26,5 +26,9 @@
         background-color: var(--primary-main);
       }
     }
+  }
+
+  .uppercase {
+    text-transform: uppercase;
   }
 }
