@@ -16,23 +16,15 @@ const About = () => {
       <Container>
         <Row>
           <Col xs={12} md={6}>
-            <CardFrame
-              image="photo_2024-12-17_23-31-21"
-              alt="Lorenzo Panzera - Snowboard teacher"
-            />
+            <CardFrame image="photo_2024-12-17_23-31-21" alt={t("photoAlt")} />
           </Col>
           <Col xs={12} md={6}>
-            <Row xsJustify={Justify.center} mdAlign={Align.center}>
+            <Row mdAlign={Align.center}>
               <Col>
-                <SectionTitle highlight text={"Lorenzo Panzera"} />
-                <p className={classNames("text--p-lg")}>
-                  Benvenuti! Mi chiamo Lorenzo Panzera, sono maestro di
-                  snowboard, telemark e guida mountain bike, in poche parole il
-                  mio lavoro è quello di trasmettervi il mio amore per lo sport
-                  e la montagna!
-                </p>
+                <SectionTitle highlight text={t("title")} />
+                <p className={classNames("text--p-lg")}>{t("description")}</p>
                 <Link href="/about">
-                  <Button style={{ marginTop: "1rem" }}>About me</Button>
+                  <Button style={{ marginTop: "1rem" }}>{t("button")}</Button>
                 </Link>
               </Col>
             </Row>

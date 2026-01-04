@@ -9,5 +9,47 @@
   "hero": {
     "title": "SPORTS & ADVENTURE",
     "subtitle": "Snowboard - Telemark - Mountain Bike"
+  },
+  "maps": {
+    "title": "Main Locations",
+    "mapAlt": "Map of teaching locations in the Dolomites",
+    "description": "Welcome! My name is Lorenzo Panzera, I'm a snowboard instructor, telemark instructor, and mountain bike guide. In a few words, my job is to share my love for sports and the mountains with you!"
+  },
+  "about": {
+    "photoAlt": "Lorenzo Panzera - Snowboard teacher",
+    "title": "Lorenzo Panzera",
+    "description": "Welcome! My name is Lorenzo Panzera, I'm a snowboard instructor, telemark instructor, and mountain bike guide. In a few words, my job is to share my love for sports and the mountains with you!",
+    "button": "About me"
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Get in touch for lessons, tours, or any questions about snowboard, telemark, or mountain bike activities.",
+    "email": "Email",
+    "name": "Name",
+    "message": "Message",
+    "send": "Send",
+    "loading": "Loading...",
+    "successTitle": "RSVP sent by",
+    "successMessage": "Email sent!",
+    "errorMessage": "Error sending email",
+    "errorPrefix": "Error:"
+  },
+  "disciplines": {
+    "title": "Disciplines",
+    "snowboard": {
+      "title": "Snowboard",
+      "description": "Let's learn together the basics of snowboarding, carving, freestyle, freeride and snow tours, all this and much more.",
+      "button": "more info"
+    },
+    "telemark": {
+      "title": "Telemark",
+      "description": "Discover one of the oldest and most original skiing disciplines, fun is guaranteed.",
+      "button": "more info"
+    },
+    "mountainBike": {
+      "title": "Mountain Bike",
+      "description": "Organized tours in the most spectacular locations in the Dolomites, basic techniques, enduro and bike park approach.",
+      "button": "more info"
+    }
   }
 }

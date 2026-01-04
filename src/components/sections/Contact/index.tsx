@@ -61,31 +61,31 @@ const Contact = () => {
         {
           name: data.name,
           email: data.email,
-          title: "RSVP inviato da " + data.name,
+          title: t("successTitle") + " " + data.name,
           message_html: htmlContent,
         },
         publicKey
       );
 
       if (res.text === "OK") {
-        console.log("Email inviata!");
+        console.log(t("successMessage"));
         setAlert({
           severity: "success",
-          text: "Email inviata!",
+          text: t("successMessage"),
         });
         reset();
       } else {
-        console.error("Errore nell'invio");
+        console.error(t("errorMessage"));
         setAlert({
           severity: "error",
-          text: "Errore nell'invio",
+          text: t("errorMessage"),
         });
       }
     } catch (error) {
-      console.error("Errore:", error);
+      console.error(t("errorPrefix"), error);
       setAlert({
         severity: "error",
-        text: "Errore: " + error,
+        text: t("errorPrefix") + " " + error,
       });
     } finally {
       setLoading(false);
@@ -144,7 +144,7 @@ const Contact = () => {
                 disabled={loading}
                 startIcon={<IoSend />}
               >
-                {loading ? "Loading..." : t("send")}
+                {loading ? t("loading") : t("send")}
               </Button>
             </Col>
           </Row>

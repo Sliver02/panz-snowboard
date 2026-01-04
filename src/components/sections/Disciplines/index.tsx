@@ -22,11 +22,10 @@ const Disciplines = () => {
           <Col xs={12} md={6} lg={4}>
             <CardDisplay
               image="DDF02641"
-              title="Snowboard"
-              description="Impariamo insieme le basi dello snowboard, carving, freestyle, freeride e snow tour, 
-tutto questo e molto altro."
+              title={t("snowboard.title")}
+              description={t("snowboard.description")}
               button={{
-                children: "more info",
+                children: t("snowboard.button"),
                 onClick: () => router.push("/snowboard"),
               }}
             />
@@ -34,10 +33,10 @@ tutto questo e molto altro."
           <Col xs={12} md={6} lg={4}>
             <CardDisplay
               image="IMG_20241211_124142"
-              title="Telemark"
-              description="Alla scoperta di una delle discipline più antiche ed originali dello sci, il divertimento è assicurato."
+              title={t("telemark.title")}
+              description={t("telemark.description")}
               button={{
-                children: "more info",
+                children: t("telemark.button"),
                 onClick: () => router.push("/telemark"),
               }}
             />
@@ -45,10 +44,10 @@ tutto questo e molto altro."
           <Col xs={12} md={6} lg={4}>
             <CardDisplay
               image="20241030_121452"
-              title="Mountain Bike"
-              description="Tour organizzati nelle località più spettacolari delle Dolomiti, tecniche di base, enduro e approccio al bike park."
+              title={t("mountainBike.title")}
+              description={t("mountainBike.description")}
               button={{
-                children: "more info",
+                children: t("mountainBike.button"),
                 onClick: () => router.push("/mountain-bike"),
               }}
             />

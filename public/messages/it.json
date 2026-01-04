@@ -9,5 +9,47 @@
   "hero": {
     "title": "SPORTS & ADVENTURE",
     "subtitle": "Snowboard - Telemark - Mountain Bike"
+  },
+  "maps": {
+    "title": "Dove insegno",
+    "mapAlt": "Mappa delle zone di insegnamento nelle Dolomiti",
+    "description": "Benvenuti! Mi chiamo Lorenzo Panzera, sono maestro di snowboard, telemark e guida mountain bike, in poche parole il mio lavoro è quello di trasmettervi il mio amore per lo sport e la montagna!"
+  },
+  "about": {
+    "photoAlt": "Lorenzo Panzera - Maestro di snowboard",
+    "title": "Lorenzo Panzera",
+    "description": "Benvenuti! Mi chiamo Lorenzo Panzera, sono maestro di snowboard, telemark e guida mountain bike, in poche parole il mio lavoro è quello di trasmettervi il mio amore per lo sport e la montagna!",
+    "button": "Chi sono"
+  },
+  "contact": {
+    "title": "Contatti",
+    "description": "Contattami per lezioni, tour o qualsiasi domanda su snowboard, telemark o mountain bike.",
+    "email": "Email",
+    "name": "Nome",
+    "message": "Messaggio",
+    "send": "Invia",
+    "loading": "Caricamento...",
+    "successTitle": "RSVP inviato da",
+    "successMessage": "Email inviata!",
+    "errorMessage": "Errore nell'invio",
+    "errorPrefix": "Errore:"
+  },
+  "disciplines": {
+    "title": "Discipline",
+    "snowboard": {
+      "title": "Snowboard",
+      "description": "Impariamo insieme le basi dello snowboard, carving, freestyle, freeride e snow tour, tutto questo e molto altro.",
+      "button": "più info"
+    },
+    "telemark": {
+      "title": "Telemark",
+      "description": "Alla scoperta di una delle discipline più antiche ed originali dello sci, il divertimento è assicurato.",
+      "button": "più info"
+    },
+    "mountainBike": {
+      "title": "Mountain Bike",
+      "description": "Tour organizzati nelle località più spettacolari delle Dolomiti, tecniche di base, enduro e approccio al bike park.",
+      "button": "più info"
+    }
   }
 }
