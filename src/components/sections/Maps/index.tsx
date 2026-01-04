@@ -9,9 +9,10 @@ import { useTranslations } from "next-intl";
 
 const Maps = () => {
   const t = useTranslations("maps");
+  const general = useTranslations("general");
 
   return (
-    <Section>
+    <Section id="locations">
       <Container>
         <Row>
           <Col xs={12}>
@@ -37,7 +38,7 @@ const Maps = () => {
               />
             </div>
             <p className={classNames("text--p-lg")}>
-              {t("description")}
+              {general("intro")}
             </p>
           </Col>
           <Col></Col>

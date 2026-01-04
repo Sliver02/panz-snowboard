@@ -2,6 +2,10 @@
   "header": {
     "home": "Home",
     "about": "About me",
+    "activities": "Activities",
+    "snowboard": "Snowboard",
+    "telemark": "Telemark",
+    "mountainBike": "Mountain Bike",
     "calendar": "Calendar",
     "contact": "Contact",
     "locations": "Locations"
@@ -10,15 +14,16 @@
     "title": "SPORTS & ADVENTURE",
     "subtitle": "Snowboard - Telemark - Mountain Bike"
   },
+  "general": {
+    "intro": "Welcome! My name is Lorenzo Panzera, I'm a snowboard instructor, telemark instructor, and mountain bike guide. In a few words, my job is to share my love for sports and the mountains with you!"
+  },
   "maps": {
     "title": "Main Locations",
-    "mapAlt": "Map of teaching locations in the Dolomites",
-    "description": "Welcome! My name is Lorenzo Panzera, I'm a snowboard instructor, telemark instructor, and mountain bike guide. In a few words, my job is to share my love for sports and the mountains with you!"
+    "mapAlt": "Map of teaching locations in the Dolomites"
   },
   "about": {
     "photoAlt": "Lorenzo Panzera - Snowboard teacher",
     "title": "Lorenzo Panzera",
-    "description": "Welcome! My name is Lorenzo Panzera, I'm a snowboard instructor, telemark instructor, and mountain bike guide. In a few words, my job is to share my love for sports and the mountains with you!",
     "button": "About me"
   },
   "contact": {
@@ -34,22 +39,36 @@
     "errorMessage": "Error sending email",
     "errorPrefix": "Error:"
   },
-  "disciplines": {
-    "title": "Disciplines",
+  "activities": {
+    "title": "Activities",
     "snowboard": {
       "title": "Snowboard",
       "description": "Let's learn together the basics of snowboarding, carving, freestyle, freeride and snow tours, all this and much more.",
-      "button": "more info"
+      "extendedDescription": "Whether you're a beginner taking your first turns or an experienced rider looking to refine your technique, I offer personalized snowboard instruction tailored to your level and goals. From mastering the fundamentals to advanced carving techniques, freestyle tricks in the park, exploring backcountry freeride terrain, or embarking on scenic snow tours through the Dolomites, each lesson is designed to build your confidence and skills while sharing my passion for this incredible sport. The breathtaking landscapes of the Dolomites provide the perfect backdrop for an unforgettable snowboarding experience.",
+      "button": "more info",
+      "heroSubtitle": "Professional snowboard instruction in the Dolomites"
     },
     "telemark": {
       "title": "Telemark",
       "description": "Discover one of the oldest and most original skiing disciplines, fun is guaranteed.",
-      "button": "more info"
+      "extendedDescription": "Telemark skiing combines the grace of nordic skiing with the thrill of alpine descents, creating a unique and rewarding experience on the slopes. As one of the oldest and most elegant skiing disciplines, telemark offers a distinctive free-heel technique that provides exceptional control and fluidity. I guide you through the fundamentals of telemark skiing, from proper stance and weight distribution to mastering those signature telemark turns. Whether you're completely new to the sport or looking to refine your technique, the stunning terrain of the Dolomites offers endless opportunities for telemark adventures.",
+      "button": "more info",
+      "heroSubtitle": "Master the art of telemark skiing"
     },
     "mountainBike": {
       "title": "Mountain Bike",
       "description": "Organized tours in the most spectacular locations in the Dolomites, basic techniques, enduro and bike park approach.",
-      "button": "more info"
+      "extendedDescription": "Explore the Dolomites on two wheels with guided mountain bike tours and instruction tailored to your skill level. From scenic cross-country routes through alpine meadows to technical enduro trails and bike park sessions, I offer comprehensive guidance for mountain bikers of all abilities. Learn fundamental techniques including body positioning, braking, cornering, and climbing, or push your limits on challenging descents and jumps. The Dolomites provide some of the most spectacular and diverse mountain biking terrain in the world, with routes ranging from family-friendly paths to adrenaline-pumping downhill tracks.",
+      "button": "more info",
+      "heroSubtitle": "Mountain bike adventures in the Dolomites"
     }
+  },
+  "breadcrumb": {
+    "home": "Home"
+  },
+  "aboutPage": {
+    "title": "About Me",
+    "subtitle": "Passion for mountains and sports",
+    "extendedDescription": "My name is Lorenzo Panzera, and the mountains have been my home and passion for as long as I can remember. Growing up in the heart of the Dolomites, I developed a deep connection with these magnificent peaks and the sports that allow us to experience them in unique ways. As a certified snowboard instructor, telemark instructor, and mountain bike guide, I've dedicated my career to sharing the joy and excitement of mountain sports with others.\n\nMy journey began with snowboarding, where I fell in love with the freedom and creativity the sport offers. This passion led me to pursue professional instruction, earning my certifications and spending countless hours on the slopes perfecting techniques and discovering new ways to help students progress. The addition of telemark skiing opened up a whole new dimension of alpine exploration, combining traditional skiing heritage with modern mountain adventure.\n\nIn the warmer months, my focus shifts to mountain biking, where the same mountains that provide winter thrills transform into an incredible playground of trails, from gentle forest paths to challenging technical descents. Each season brings new opportunities to connect with nature and push personal boundaries.\n\nWhat drives me is not just the technical aspects of these sports, but the transformative experiences they create. Whether it's the confidence a beginner gains after their first successful turns, the thrill of a rider conquering a challenging trail, or simply the shared joy of being in these incredible mountains, these moments remind me why I love what I do. My goal is to create a safe, supportive, and fun environment where everyone can discover their own passion for mountain sports."
   }
 }

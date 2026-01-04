@@ -16,6 +16,7 @@ export interface HeroProps extends BaseProps {
     position?: "top" | "center" | "bottom" | "left" | "right";
   };
   compact?: boolean;
+  negative?: boolean;
   breadcrumbItems?: BreadcrumbItem[];
 }
 
@@ -24,6 +25,7 @@ const Hero = ({
   title,
   subtitle,
   compact = false,
+  negative = false,
   backgroundImage,
   breadcrumbItems,
 }: HeroProps) => {
@@ -36,6 +38,7 @@ const Hero = ({
     <div
       className={classNames(className, styles.hero, {
         [styles.compact]: compact,
+        [styles.negative]: negative,
       })}
       id={compact ? undefined : "home"}
     >

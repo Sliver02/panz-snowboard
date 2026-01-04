@@ -32,11 +32,28 @@ const Header = ({ className }: HeaderProps) => {
     },
     {
       label: t("about"),
-      url: "",
+      url: RouteEnum.ABOUT,
+    },
+    {
+      label: t("activities"),
+      children: [
+        {
+          label: t("snowboard"),
+          url: RouteEnum.SNOWBOARD,
+        },
+        {
+          label: t("telemark"),
+          url: RouteEnum.TELEMARK,
+        },
+        {
+          label: t("mountainBike"),
+          url: RouteEnum.MOUNTAIN_BIKE,
+        },
+      ],
     },
     {
       label: t("locations"),
-      children: [],
+      url: RouteEnum.HOME + "#locations",
     },
   ];
 

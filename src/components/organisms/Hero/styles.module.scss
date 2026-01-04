@@ -78,4 +78,10 @@
       }
     }
   }
+
+  &.negative {
+    .textWrapper {
+      color: var(--neutral-background);
+    }
+  }
 }

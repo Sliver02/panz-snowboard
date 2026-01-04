@@ -4,12 +4,14 @@ import { Align, Justify } from "@/components/atoms/Grid/interfaces";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import CardFrame from "@/components/molecules/CardFrame";
 import Section from "@/components/organisms/Section";
+import { RouteEnum } from "@/common/routeEnum";
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 const About = () => {
   const t = useTranslations("about");
+  const general = useTranslations("general");
 
   return (
     <Section>
@@ -22,8 +24,8 @@ const About = () => {
             <Row mdAlign={Align.center}>
               <Col>
                 <SectionTitle highlight text={t("title")} />
-                <p className={classNames("text--p-lg")}>{t("description")}</p>
-                <Link href="/about">
+                <p className={classNames("text--p-lg")}>{general("intro")}</p>
+                <Link href={RouteEnum.ABOUT}>
                   <Button style={{ marginTop: "1rem" }}>{t("button")}</Button>
                 </Link>
               </Col>

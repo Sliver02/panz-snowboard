@@ -3,11 +3,12 @@ import { Col, Container, Row } from "@/components/atoms/Grid";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import CardDisplay from "@/components/molecules/CardDisplay";
 import Section from "@/components/organisms/Section";
+import { RouteEnum } from "@/common/routeEnum";
 import { useTranslations } from "next-intl";
 import { useRouter } from "next/navigation";
 
 const Disciplines = () => {
-  const t = useTranslations("disciplines");
+  const t = useTranslations("activities");
   const router = useRouter();
 
   return (
@@ -26,7 +27,7 @@ const Disciplines = () => {
               description={t("snowboard.description")}
               button={{
                 children: t("snowboard.button"),
-                onClick: () => router.push("/snowboard"),
+                onClick: () => router.push(RouteEnum.SNOWBOARD),
               }}
             />
           </Col>
@@ -37,7 +38,7 @@ const Disciplines = () => {
               description={t("telemark.description")}
               button={{
                 children: t("telemark.button"),
-                onClick: () => router.push("/telemark"),
+                onClick: () => router.push(RouteEnum.TELEMARK),
               }}
             />
           </Col>
@@ -48,7 +49,7 @@ const Disciplines = () => {
               description={t("mountainBike.description")}
               button={{
                 children: t("mountainBike.button"),
-                onClick: () => router.push("/mountain-bike"),
+                onClick: () => router.push(RouteEnum.MOUNTAIN_BIKE),
               }}
             />
           </Col>

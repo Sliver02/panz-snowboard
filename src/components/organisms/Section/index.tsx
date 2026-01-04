@@ -14,6 +14,7 @@ export interface SectionProps extends BaseProps {
 }
 
 const Section = ({
+  id,
   className,
   children,
   backgroundColor,
@@ -24,7 +25,11 @@ const Section = ({
   } as CSSProperties;
 
   return (
-    <div className={classNames(className, styles.section)} style={cssVar}>
+    <div
+      id={id}
+      className={classNames(className, styles.section)}
+      style={cssVar}
+    >
       {backgroundImage && (
         <Image
           className={classNames(styles.backgroundImage)}
