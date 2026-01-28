@@ -1,5 +1,5 @@
 import { Col, Container, Row } from "@/components/atoms/Grid";
-import { FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaInstagram, FaLink } from "react-icons/fa";
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
@@ -13,7 +13,7 @@ const Footer = () => {
     <footer className={classNames(styles.footer)}>
       <Container fullWidth>
         <Row>
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={12} md={6} lg={2}>
             <h3 className={styles.footerTitle}>{t("activities")}</h3>
             <ul className={styles.footerList}>
               <li>
@@ -27,12 +27,9 @@ const Footer = () => {
               </li>
             </ul>
           </Col>
-          <Col xs={12} md={6} lg={3}>
-            <h3 className={styles.footerTitle}>{t("about")}</h3>
+          <Col xs={12} md={6} lg={2}>
+            <h3 className={styles.footerTitle}>{t("locations")}</h3>
             <ul className={styles.footerList}>
-              <li>
-                <Link href={RouteEnum.ABOUT}>{t("about")}</Link>
-              </li>
               <li>
                 <Link href={RouteEnum.CORTINA}>{t("cortina")}</Link>
               </li>
@@ -42,22 +39,14 @@ const Footer = () => {
               <li>
                 <Link href={RouteEnum.ZOLDO_CIVETTA}>{t("zoldoCivetta")}</Link>
               </li>
-              <li>
-                <Link href={RouteEnum.HOME + "#locations"}>
-                  {t("locations")}
-                </Link>
-              </li>
-              <li>
-                <Link href={RouteEnum.HOME + "#contact"}>{t("contact")}</Link>
-              </li>
             </ul>
           </Col>
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={12} md={6} lg={2}>
             <h3 className={styles.footerTitle}>Social</h3>
             <ul className={styles.footerList}>
               <li>
                 <Link
-                  href="https://www.instagram.com/lorenzo_panzera/"
+                  href="https://www.instagram.com/lorenz_panz/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
@@ -67,23 +56,27 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="https://www.linkedin.com/in/lorenzo-panzera/"
+                  href="https://linktr.ee/LorenzPanz"
                   target="_blank"
                   rel="noopener noreferrer"
                   className={styles.socialLink}
                 >
-                  <FaLinkedin size={16} /> LinkedIn
+                  <FaLink size={16} /> Linktree
                 </Link>
               </li>
             </ul>
           </Col>
-          <Col xs={12} md={6} lg={3}>
+          <Col xs={12} md={6} lg={4}>
             <h3 className={styles.footerTitle}>Info</h3>
             <ul className={styles.footerList}>
               <li>
-                <Link href="mailto:info@lorenzopanzera.com">
-                  info@lorenzopanzera.com
-                </Link>
+                <span>Tel: <a href="tel:+393388090798">(+39) 338 809 0798</a></span>
+              </li>
+              <li>
+                <span>Email: <a href="mailto:panzisco@gmail.com">panzisco@gmail.com</a></span>
+              </li>
+              <li>
+                <span>PEC: <a href="mailto:panzera.lorenzo@pec.maestrisci.com">panzera.lorenzo@pec.maestrisci.com</a></span>
               </li>
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>
@@ -94,7 +87,7 @@ const Footer = () => {
         <Row>
           <Col xs={12}>
             <div className={styles.copyright}>
-              <p>© 2026 Lorenzo Panzera - All rights reserved</p>
+              <p>© 2026 Lorenzo Panzera - All rights reserved | <Link href="/privacy-policy">Privacy Policy</Link></p>
               <p>
                 Website by{" "}
                 <Link
