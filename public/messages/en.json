@@ -238,6 +238,8 @@
     "email": "E-mail",
     "message": "Other requests / Notes",
     "send": "Send booking",
+    "loading": "Loading...",
+    "errorMessage": "Error sending booking",
     "submittedMessage": "Booking submitted (demo). I'll contact you soon.",
     "termsTitle": "Booking terms",
     "terms": {

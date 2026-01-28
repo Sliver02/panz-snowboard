@@ -251,6 +251,8 @@
     "email": "E-mail",
     "message": "Altre richieste / Note",
     "send": "Invia prenotazione",
+    "loading": "Caricamento...",
+    "errorMessage": "Errore nell'invio della prenotazione",
     "submittedMessage": "Prenotazione inviata (demo). Ti ricontatterò a breve.",
     "termsTitle": "Condizioni generali delle prenotazioni",
     "terms": {

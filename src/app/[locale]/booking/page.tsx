@@ -14,6 +14,12 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { useSearchParams } from "next/navigation";
 import stylesTF from "@/components/atoms/TextField/styles.module.scss";
+import { useState } from "react";
+import { renderToStaticMarkup } from "react-dom/server";
+import emailjs from "@emailjs/browser";
+import BookingTemplate from "@/common/emailTemplates/BookingTemplate";
+import Alert from "@/components/atoms/Alert";
+import { AlertResponse } from "@/common/globalInterfaces";
 
 const bookingSchema = z.object({
   firstName: z.string().min(2),
@@ -31,6 +37,10 @@ const bookingSchema = z.object({
 
 type BookingForm = z.infer<typeof bookingSchema>;
 
+const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE as string;
+const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE as string;
+const publicKey = process.env.NEXT_PUBLIC_EMAILJS_KEY as string;
+
 const BookingPage = () => {
   const t = useTranslations("bookingPage");
   const tHeader = useTranslations("header");
@@ -42,6 +52,9 @@ const BookingPage = () => {
     { value: "telemark", label: tHeader("telemark") },
     { value: "mountain-bike", label: tHeader("mountainBike") },
   ];
+
+  const [loading, setLoading] = useState(false);
+  const [alert, setAlert] = useState<AlertResponse | null>(null);
 
   const {
     register,
@@ -57,10 +70,41 @@ const BookingPage = () => {
   });
 
   const onSubmit = async (data: BookingForm) => {
-    console.log("booking submit", data);
-    // TODO: send via EmailJS or server endpoint
-    alert(t("submittedMessage"));
-    reset();
+    try {
+      setLoading(true);
+      setAlert(null);
+
+      const htmlContent = renderToStaticMarkup(<BookingTemplate {...data} />);
+
+      const res = await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: `${data.firstName} ${data.lastName}`,
+          email: data.email,
+          title: `Booking: ${data.activity} - ${data.firstName} ${data.lastName}`,
+          message_html: htmlContent,
+        },
+        publicKey,
+      );
+
+      if (res.text === "OK") {
+        setAlert({ severity: "success", text: t("submittedMessage") });
+        reset();
+      } else {
+        setAlert({
+          severity: "error",
+          text: t("errorMessage") || "Error sending booking",
+        });
+      }
+    } catch (error) {
+      setAlert({
+        severity: "error",
+        text: (t("errorMessage") || "Error") + " " + error,
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -226,15 +270,29 @@ const BookingPage = () => {
                       size="large"
                       type="submit"
                       variant="contained"
-                      disabled={isSubmitting}
+                      disabled={loading || isSubmitting}
                     >
-                      {t("send")}
+                      {loading ? t("loading") : t("send")}
                     </Button>
                   </Col>
                 </Row>
               </form>
             </Col>
           </Row>
+
+          {alert && (
+            <Row>
+              <Col>
+                <Alert
+                  variant="outlined"
+                  severity={alert.severity}
+                  onClose={() => setAlert(null)}
+                >
+                  {alert.text}
+                </Alert>
+              </Col>
+            </Row>
+          )}
 
           <Row>
             <Col>
