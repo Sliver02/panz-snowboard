@@ -7,4 +7,6 @@ export enum RouteEnum {
   CORTINA = "/cortina",
   SAPPADA = "/sappada",
   ZOLDO_CIVETTA = "/zoldo-civetta",
+  BOOKING = "/booking",
+  PRIVACY_POLICY = "/privacy-policy",
 }

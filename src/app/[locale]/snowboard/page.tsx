@@ -61,7 +61,7 @@ const SnowboardPage = () => {
                 title={t("packages.package1.title")}
                 subtitle={t("packages.package1.subtitle")}
                 price={t("packages.package1.price")}
-                onClick={() => router.push("/#contact")}
+                onClick={() => router.push("/booking?activity=snowboard")}
               />
             </Col>
             <Col xs={12} md={6} lg={4}>
@@ -70,7 +70,7 @@ const SnowboardPage = () => {
                 title={t("packages.package2.title")}
                 subtitle={t("packages.package2.subtitle")}
                 price={t("packages.package2.price")}
-                onClick={() => router.push("/#contact")}
+                onClick={() => router.push("/booking?activity=snowboard")}
               />
             </Col>
             <Col xs={12} md={6} lg={4}>
@@ -79,7 +79,7 @@ const SnowboardPage = () => {
                 title={t("packages.package3.title")}
                 subtitle={t("packages.package3.subtitle")}
                 price={t("packages.package3.price")}
-                onClick={() => router.push("/#contact")}
+                onClick={() => router.push("/booking?activity=snowboard")}
               />
             </Col>
           </Row>

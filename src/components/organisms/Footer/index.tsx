@@ -91,9 +91,6 @@ const Footer = () => {
                   </a>
                 </span>
               </li>
-              <li>
-                <Link href="/privacy-policy">Privacy Policy</Link>
-              </li>
             </ul>
           </Col>
         </Row>
@@ -102,7 +99,7 @@ const Footer = () => {
             <div className={styles.copyright}>
               <p>
                 © 2026 Lorenzo Panzera - All rights reserved |{" "}
-                <Link href="/privacy-policy">Privacy Policy</Link>
+                <Link href={RouteEnum.PRIVACY_POLICY}>Privacy Policy</Link>
               </p>
               <p>
                 Website by{" "}

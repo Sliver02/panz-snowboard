@@ -89,7 +89,7 @@
     top: 100%;
     left: 0;
     margin-top: 8px;
-    background: var(--neutral-dark);
+    background: var(--accent-contrast-text);
     border-radius: 8px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     min-width: 200px;
@@ -122,8 +122,7 @@
     }
 
     &:hover {
-      background: var(--primary-background);
-      color: white;
+      background: var(--accent-main);
     }
   }
 
@@ -170,10 +169,10 @@
     }
 
     &__button {
-      @include utils.toRem(font-size, variables.$font-h-lg);
-      margin: 0.5rem 0;
+      @include utils.toRem(font-size, variables.$font-lg);
       color: white;
       text-decoration: none;
+      margin: 0;
     }
 
     @include mediaQueries.media("lg") {
@@ -186,19 +185,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0.5rem 0;
+    margin: 1rem 0;
   }
 
   .mobileDropdownLabel {
-    @include utils.toRem(font-size, variables.$font-h-lg);
+    @include utils.toRem(font-size, variables.$font-lg);
     font-weight: 600;
     color: white;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
   }
 
   .mobileSubItem {
-    @include utils.toRem(font-size, variables.$font-xl);
-    margin: 0.3rem 0;
+    margin: 0.5rem 0;
     opacity: 0.9;
 
     &:hover {

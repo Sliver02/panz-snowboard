@@ -15,7 +15,9 @@
   overflow: hidden;
   position: relative;
 
-  border-radius: 0 0 5rem 5rem;
+  @include mediaQueries.media("md", "min") {
+    border-radius: 0 0 5rem 5rem;
+  }
 
   .backgroundImage {
     object-fit: cover;

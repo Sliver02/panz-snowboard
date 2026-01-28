@@ -214,5 +214,34 @@
       "title6": "Processing methods",
       "p6": "Data are processed using manual, IT and telematic tools with organizational and logical procedures strictly related to the purposes described and adopting appropriate security measures to ensure confidentiality and integrity."
     }
+  },
+  "bookingPage": {
+    "title": "Booking",
+    "intro": "To book an activity or request information, fill the form below or contact me directly:",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "startDate": "Start date",
+    "endDate": "End date",
+    "hours": "Hours",
+    "hourShort": "h",
+    "hoursShort": "h",
+    "fullDay": "Full day",
+    "tour": "Tour",
+    "activity": "Activity",
+    "level": "Level",
+    "levelSelect": "Select level",
+    "levelBeginner": "Beginner",
+    "levelIntermediate": "Intermediate",
+    "levelAdvanced": "Advanced",
+    "people": "Number of people (max 6)",
+    "phone": "Phone",
+    "email": "E-mail",
+    "message": "Other requests / Notes",
+    "send": "Send booking",
+    "submittedMessage": "Booking submitted (demo). I'll contact you soon.",
+    "termsTitle": "Booking terms",
+    "terms": {
+      "p1": "If the client does not show up, the instructor will wait 15 minutes and the reservation will not be refundable. Cancellations within 24 hours may be refunded at the instructor's discretion; same-day cancellations are not refundable. Changes to the booking date are possible up to 24 hours before the start, subject to agreement with the instructor."
+    }
   }
 }
