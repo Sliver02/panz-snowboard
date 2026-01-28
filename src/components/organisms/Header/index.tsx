@@ -62,8 +62,8 @@ const Header = ({ className }: HeaderProps) => {
       <div className={classNames(styles.logoContainer)}>
         <Link className={classNames(styles.navbar__button)} href="." replace>
           <Image
-            alt="SMUP Yoga - Dolomites"
-            src={"smup_logo_white.svg"}
+            alt="Lorenzo Panzera - Snowboard & mountain bike Instructor"
+            src={"lorenz_logo_white.svg"}
             priority
             fill
           />
@@ -81,7 +81,7 @@ const Header = ({ className }: HeaderProps) => {
                 <button
                   className={classNames(
                     styles.navbar__button,
-                    styles.dropdownButton
+                    styles.dropdownButton,
                   )}
                 >
                   {item.label}
@@ -140,7 +140,7 @@ const Header = ({ className }: HeaderProps) => {
                     href={child.url!}
                     className={classNames(
                       styles["menu__button"],
-                      styles.mobileSubItem
+                      styles.mobileSubItem,
                     )}
                     onClick={() => setOpenMenu(false)}
                   >

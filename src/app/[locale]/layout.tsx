@@ -72,17 +72,17 @@ export default async function RootLayout({
 
   const localBusinessJsonLd = {
     "@context": "https://schema.org",
-    "@type": ["YogaStudio", "SportsActivityLocation"],
-    name: "SMUP — Sarah Pompanin Yoga",
-    alternateName: "SMUP Yoga",
-    url: `https://smupyoga.com/${locale}/`,
-    email: "smup.yoga@gmail.com",
+    "@type": ["Snowboard", "SportsActivity"],
+    name: "Lorenzo Panzera - Snowboard & mountain bike Instructor",
+    alternateName: "Lorenzo Panzera - Snowboard & mountain bike Instructor",
+    url: `https://lorenzopanzera.com/${locale}/`,
+    email: "lorenzopanzera@gmail.com",
     telephone: "+39 366 145 0576",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Viale Dolomiti 9",
-      addressLocality: "Ponte nelle Alpi",
-      postalCode: "32014",
+      streetAddress: "Via Galghena 15",
+      addressLocality: "Pieve di Cadore",
+      postalCode: "32044",
       addressRegion: "Belluno",
       addressCountry: "IT",
     },
@@ -102,68 +102,69 @@ export default async function RootLayout({
       },
       {
         "@type": "City",
-        name: "Ponte nelle Alpi",
+        name: "Pieve di Cadore",
       },
       {
         "@type": "AdministrativeArea",
         name: "Cadore",
+      },
+      {
+        "@type": "AdministrativeArea",
+        name: "Ampezzo",
       },
     ],
     priceRange: "€€",
     openingHoursSpecification: [
       {
         "@type": "OpeningHoursSpecification",
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        dayOfWeek: [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday",
+        ],
         opens: "08:30",
-        closes: "20:00",
+        closes: "18:00",
       },
     ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Yoga Classes",
+      name: "Snowboard and Mountain Bike Lessons",
       itemListElement: [
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Anukalana Yoga",
+            name: "Snowboard Lessons",
             description:
               locale === "it"
-                ? "Pratica integrata che unisce asana, pranayama, meditazione e lavoro miofasciale"
-                : "Integrated practice combining asana, pranayama, meditation and fascia work",
+                ? "Lezioni di snowboard per esperti e principianti tra le Dolomiti"
+                : "Snowboard lessons for experts and beginners in the Dolomites",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: "Yin Yoga",
+            name: "Mountain Bike Lessons",
             description:
               locale === "it"
-                ? "Sequenze lente e passive con supporti"
-                : "Slow passive postures aided by props",
+                ? "Lezioni di mountain bike per esperti e principianti tra le Dolomiti"
+                : "Mountain bike lessons for experts and beginners in the Dolomites",
           },
         },
         {
           "@type": "Offer",
           itemOffered: {
             "@type": "Service",
-            name: locale === "it" ? "Yoga Bimbi" : "Kids Yoga",
+            name: "Telemark Lessons",
             description:
               locale === "it"
-                ? "Lezioni giocose per bambini"
-                : "Playful sessions for children",
-          },
-        },
-        {
-          "@type": "Offer",
-          itemOffered: {
-            "@type": "Service",
-            name: locale === "it" ? "Lezioni Private" : "Private Lessons",
-            description:
-              locale === "it"
-                ? "Lezioni private online e in presenza"
-                : "Private lessons online and in-person",
+                ? "Telemark per esperti e principianti tra le Dolomiti"
+                : "Telemark for experts and beginners in the Dolomites",
           },
         },
       ],
@@ -176,11 +177,19 @@ export default async function RootLayout({
   return (
     <html lang={locale} data-theme="light">
       <head>
-        <link rel="alternate" href="https://smupyoga.com/en/" hrefLang="en" />
-        <link rel="alternate" href="https://smupyoga.com/it/" hrefLang="it" />
         <link
           rel="alternate"
-          href="https://smupyoga.com/"
+          href="https://lorenzopanzera.com/en/"
+          hrefLang="en"
+        />
+        <link
+          rel="alternate"
+          href="https://lorenzopanzera.com/it/"
+          hrefLang="it"
+        />
+        <link
+          rel="alternate"
+          href="https://lorenzopanzera.com/"
           hrefLang="x-default"
         />
         <script
