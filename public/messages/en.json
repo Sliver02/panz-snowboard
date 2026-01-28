@@ -198,5 +198,21 @@
       "title3": "Where do I carry out these activities?",
       "p3": "Starting from my base, in Pieve di Cadore, I usually work in Cortina d’Ampezzo, a strategic location that, however, allows me to reach all the main locations of the Dolomites, depending on your needs.<br></br><br></br>Regardless of what you choose to do, my main goal will be to convey to you the same passion and love that I feel for these sports and for the mountains."
     }
+  },
+  "privacyPage": {
+    "title": "Privacy Policy",
+    "description": {
+      "p1": "Dear User/Visitor, pursuant to art. 13 of EU Regulation 2016/679 (GDPR), we provide the following information regarding the processing of personal data collected through this website.",
+      "title2": "Data Controller",
+      "p2": "The data controller is Lorenzo Panzera<br></br>Via Galghena 15, 32044 - Pieve di Cadore (BL) - Italy<br></br>VAT: 01287640252<br></br>Tel. (+39) 338 809 0798<br></br>Email: panzisco@gmail.com<br></br>Website: www.lorenzopanzera.com",
+      "title3": "Purposes and legal basis",
+      "p3": "Personal data voluntarily provided by users (e.g. name, email, contact details) will be processed to answer requests sent via the site form and to provide the requested services. Processing is based on execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) and, where applicable, on consent (art. 6(1)(a)) for marketing communications.",
+      "title4": "Types of data",
+      "p4": "Processed data may include identification and contact data (name, email, phone), contractual and accounting data, and navigation data (IP address, browser and device information) collected automatically for technical and anonymous statistical purposes.",
+      "title5": "Navigation data",
+      "p5": "Information systems and software procedures responsible for the site operation acquire, in normal operation, certain personal data which are implicitly transmitted by use of Internet communication protocols (e.g., IP address, domain names, access times). Such data are used only for technical and statistical purposes and are retained for the time strictly necessary.",
+      "title6": "Processing methods",
+      "p6": "Data are processed using manual, IT and telematic tools with organizational and logical procedures strictly related to the purposes described and adopting appropriate security measures to ensure confidentiality and integrity."
+    }
   }
 }

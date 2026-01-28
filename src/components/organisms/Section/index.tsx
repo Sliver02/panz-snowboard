@@ -23,6 +23,7 @@ export interface SectionProps extends BaseProps {
 
 const Section = ({
   id,
+  style,
   className,
   children,
   backgroundColor,
@@ -40,7 +41,7 @@ const Section = ({
     <div
       id={id}
       className={classNames(className, styles.section, spacingClass)}
-      style={cssVar}
+      style={{ ...cssVar, ...style }}
     >
       {backgroundImage && (
         <Image

@@ -41,6 +41,7 @@ export interface BaseProps {
   id?: string;
   children?: ReactNode;
   className?: string;
+  style?: React.CSSProperties;
 }
 
 export enum Surface {
