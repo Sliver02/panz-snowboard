@@ -7,37 +7,40 @@ import { RouteEnum } from "@/common/routeEnum";
 import styles from "./styles.module.scss";
 
 const Footer = () => {
-  const t = useTranslations("header");
+  const th = useTranslations("header");
+  const t = useTranslations();
 
   return (
     <footer className={classNames(styles.footer)}>
       <Container fullWidth>
         <Row>
           <Col xs={12} md={6} lg={2}>
-            <h3 className={styles.footerTitle}>{t("activities")}</h3>
+            <h3 className={styles.footerTitle}>{th("activities")}</h3>
             <ul className={styles.footerList}>
               <li>
-                <Link href={RouteEnum.SNOWBOARD}>{t("snowboard")}</Link>
+                <Link href={RouteEnum.SNOWBOARD}>{th("snowboard")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.TELEMARK}>{t("telemark")}</Link>
+                <Link href={RouteEnum.TELEMARK}>{th("telemark")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.MOUNTAIN_BIKE}>{t("mountainBike")}</Link>
+                <Link href={RouteEnum.MOUNTAIN_BIKE}>{th("mountainBike")}</Link>
               </li>
             </ul>
           </Col>
           <Col xs={12} md={6} lg={2}>
-            <h3 className={styles.footerTitle}>{t("locations")}</h3>
+            <h3 className={styles.footerTitle}>{th("locations")}</h3>
             <ul className={styles.footerList}>
               <li>
-                <Link href={RouteEnum.CORTINA}>{t("cortina")}</Link>
+                <Link href={RouteEnum.CORTINA}>{t("cortina.title")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.SAPPADA}>{t("sappada")}</Link>
+                <Link href={RouteEnum.SAPPADA}>{t("sappada.title")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.ZOLDO_CIVETTA}>{t("zoldoCivetta")}</Link>
+                <Link href={RouteEnum.ZOLDO_CIVETTA}>
+                  {t("zoldoCivetta.title")}
+                </Link>
               </li>
             </ul>
           </Col>
@@ -70,13 +73,23 @@ const Footer = () => {
             <h3 className={styles.footerTitle}>Info</h3>
             <ul className={styles.footerList}>
               <li>
-                <span>Tel: <a href="tel:+393388090798">(+39) 338 809 0798</a></span>
+                <span>
+                  Tel: <a href="tel:+393388090798">(+39) 338 809 0798</a>
+                </span>
               </li>
               <li>
-                <span>Email: <a href="mailto:panzisco@gmail.com">panzisco@gmail.com</a></span>
+                <span>
+                  Email:{" "}
+                  <a href="mailto:panzisco@gmail.com">panzisco@gmail.com</a>
+                </span>
               </li>
               <li>
-                <span>PEC: <a href="mailto:panzera.lorenzo@pec.maestrisci.com">panzera.lorenzo@pec.maestrisci.com</a></span>
+                <span>
+                  PEC:{" "}
+                  <a href="mailto:panzera.lorenzo@pec.maestrisci.com">
+                    panzera.lorenzo@pec.maestrisci.com
+                  </a>
+                </span>
               </li>
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>
@@ -87,7 +100,10 @@ const Footer = () => {
         <Row>
           <Col xs={12}>
             <div className={styles.copyright}>
-              <p>© 2026 Lorenzo Panzera - All rights reserved | <Link href="/privacy-policy">Privacy Policy</Link></p>
+              <p>
+                © 2026 Lorenzo Panzera - All rights reserved |{" "}
+                <Link href="/privacy-policy">Privacy Policy</Link>
+              </p>
               <p>
                 Website by{" "}
                 <Link

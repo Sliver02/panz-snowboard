@@ -20,43 +20,44 @@ export interface NavItem {
 }
 
 const Header = ({ className }: HeaderProps) => {
-  const t = useTranslations("header");
+  const th = useTranslations("header");
+  const t = useTranslations();
 
   const [openMenu, setOpenMenu] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const navItems: NavItem[] = [
     {
-      label: t("home"),
+      label: th("home"),
       url: RouteEnum.HOME,
     },
     {
-      label: t("about"),
+      label: th("about"),
       url: RouteEnum.ABOUT,
     },
     {
-      label: t("activities"),
+      label: th("activities"),
       children: [
         {
-          label: t("snowboard"),
+          label: th("snowboard"),
           url: RouteEnum.SNOWBOARD,
         },
         {
-          label: t("telemark"),
+          label: th("telemark"),
           url: RouteEnum.TELEMARK,
         },
         {
-          label: t("mountainBike"),
+          label: th("mountainBike"),
           url: RouteEnum.MOUNTAIN_BIKE,
         },
       ],
     },
     {
-      label: t("locations"),
+      label: th("locations"),
       children: [
-        { label: t("cortina"), url: RouteEnum.CORTINA },
-        { label: t("sappada"), url: RouteEnum.SAPPADA },
-        { label: t("zoldoCivetta"), url: RouteEnum.ZOLDO_CIVETTA },
+        { label: t("cortina.title"), url: RouteEnum.CORTINA },
+        { label: t("sappada.title"), url: RouteEnum.SAPPADA },
+        { label: t("zoldoCivetta.title"), url: RouteEnum.ZOLDO_CIVETTA },
       ],
     },
   ];

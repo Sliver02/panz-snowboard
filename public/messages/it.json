@@ -8,19 +8,20 @@
     "mountainBike": "Mountain Bike",
     "calendar": "Calendario",
     "contact": "Contatti",
-    "locations": "Dove insegno",
-    "cortina": {
-      "title": "Cortina d'Ampezzo",
-      "description": "Cortina è la regina delle Dolomiti, con sci e mountain bike di livello mondiale in uno scenario mozzafiato. Inverno: ampi comprensori sciistici, snowboard, telemark, freeride. Estate: tour in mountain bike, enduro e avventure outdoor."
-    },
-    "sappada": {
-      "title": "Sappada",
-      "description": "Sappada è un borgo alpino incantevole, noto per le piste adatte alle famiglie e i sentieri panoramici per la bici. Inverno: piste dolci, snowboard, telemark. Estate: mountain bike, trekking ed esplorazione della natura."
-    },
-    "zoldoCivetta": {
-      "title": "Zoldo / Civetta",
-      "description": "Zoldo e Civetta offrono esperienze autentiche nelle Dolomiti con piste poco affollate e sentieri selvaggi. Inverno: sci e snowboard a Civetta, telemark a Zoldo. Estate: mountain bike, enduro e avventura nella natura incontaminata."
-    }
+    "locations": "Dove insegno"
+  },
+
+  "cortina": {
+    "title": "Cortina d'Ampezzo",
+    "description": "Cortina è la regina delle Dolomiti, con sci e mountain bike di livello mondiale in uno scenario mozzafiato. Inverno: ampi comprensori sciistici, snowboard, telemark, freeride. Estate: tour in mountain bike, enduro e avventure outdoor."
+  },
+  "sappada": {
+    "title": "Sappada",
+    "description": "Sappada è un borgo alpino incantevole, noto per le piste adatte alle famiglie e i sentieri panoramici per la bici. Inverno: piste dolci, snowboard, telemark. Estate: mountain bike, trekking ed esplorazione della natura."
+  },
+  "zoldoCivetta": {
+    "title": "Zoldo / Civetta",
+    "description": "Zoldo e Civetta offrono esperienze autentiche nelle Dolomiti con piste poco affollate e sentieri selvaggi. Inverno: sci e snowboard a Civetta, telemark a Zoldo. Estate: mountain bike, enduro e avventura nella natura incontaminata."
   },
   "hero": {
     "title": "SPORTS & ADVENTURE",
