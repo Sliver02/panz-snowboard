@@ -27,3 +27,23 @@
     object-fit: cover;
   }
 }
+
+/* Spacing modifiers applied alongside .section */
+.spacing-default {
+  /* same as default */
+}
+
+.spacing-tight {
+  padding: 0.75rem 0 !important;
+  min-height: 30vh !important;
+}
+
+.spacing-none {
+  padding: 0 !important;
+  min-height: auto !important;
+}
+
+.spacing-large {
+  padding: 4rem 0 !important;
+  min-height: 100vh !important;
+}

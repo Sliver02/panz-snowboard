@@ -11,6 +11,14 @@ export interface SectionProps extends BaseProps {
     alt: string;
     format?: "png" | "jpg" | "jpeg" | "webp";
   };
+  /**
+   * Spacing presets for the section. Defaults to 'default'.
+   * - 'default': current spacing
+   * - 'tight': reduced vertical padding/min-height
+   * - 'none': no padding (useful for full-bleed content)
+   * - 'large': larger vertical padding
+   */
+  spacing?: "default" | "tight" | "none" | "large";
 }
 
 const Section = ({
@@ -19,15 +27,18 @@ const Section = ({
   children,
   backgroundColor,
   backgroundImage,
+  spacing = "default",
 }: SectionProps) => {
   const cssVar = {
     ["--background-color"]: backgroundColor,
   } as CSSProperties;
 
+  const spacingClass = styles[`spacing-${spacing}` as keyof typeof styles] || "";
+
   return (
     <div
       id={id}
-      className={classNames(className, styles.section)}
+      className={classNames(className, styles.section, spacingClass)}
       style={cssVar}
     >
       {backgroundImage && (

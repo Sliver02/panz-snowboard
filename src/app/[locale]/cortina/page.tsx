@@ -1,19 +1,31 @@
-import { Container, Row, Col } from "@/components/atoms/Grid";
+import Footer from "@/components/organisms/Footer";
+import Header from "@/components/organisms/Header";
+import Hero from "@/components/organisms/Hero";
 import { useTranslations } from "next-intl";
-import styles from "./styles.module.scss";
-import { Justify } from "@/components/atoms/Grid/interfaces";
 
 const CortinaPage = () => {
   const t = useTranslations("cortina");
+  const breadcrumb = useTranslations("breadcrumb");
+
   return (
-    <Container fullWidth>
-      <Row xsJustify={Justify.center}>
-        <Col xs={12} md={8}>
-          <h1 className={styles.title}>{t("title")}</h1>
-          <p className={styles.description}>{t("description")}</p>
-        </Col>
-      </Row>
-    </Container>
+    <main>
+      <Header />
+      <Hero
+        compact
+        negative
+        title={t("title")}
+        subtitle={t("description")}
+        backgroundImage={{
+          // using an online image for the location hero
+          src: "https://upload.wikimedia.org/wikipedia/commons/3/3e/Cortina_D%27Ampezzo_panorama.jpg",
+          alt: "Cortina d'Ampezzo panorama",
+          position: "center",
+        }}
+        breadcrumbItems={[{ label: breadcrumb("home"), href: "/" }, { label: t("title") }]}
+      />
+
+      <Footer />
+    </main>
   );
 };
 
