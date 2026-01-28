@@ -13,7 +13,7 @@
 
   "cortina": {
     "title": "Cortina d'Ampezzo",
-    "subtitle": "La regina delle Dolomiti — vette iconiche e discese alpine classiche",
+    "subtitle": "Il regno delle Dolomiti — discese leggendarie e panorami mozzafiato",
     "description": "Cortina d'Ampezzo si trova ai piedi di pareti calcaree spettacolari e offre attività di montagna tutto l'anno. In inverno la zona propone ampi comprensori con impianti, pendii tecnici sulle Tofane e la Faloria e angoli tranquilli per scialpinismo e telemark. In estate si apre una rete di sentieri e vie ferrate per escursioni, arrampicata e tour in E-bike lungo creste panoramiche. Il paese è anche un centro culturale di montagna, con rifugi, escursioni guidate e guide locali pronte a costruire esperienze su misura per ogni livello.",
     "winterTitle": "Inverno — Sci & Montagne",
     "winterP1": "Cortina d'Ampezzo è famosa per le Tofane e la Faloria — piste tecniche ripide, funivie panoramiche e lunghe discese classiche. Le Cinque Torri e le vette circostanti offrono sci eccellente e panorami iconici delle Dolomiti.",
@@ -24,11 +24,18 @@
   },
   "sappada": {
     "title": "Sappada",
-    "description": "Sappada è un borgo alpino incantevole, noto per le piste adatte alle famiglie e i sentieri panoramici per la bici. Inverno: piste dolci, snowboard, telemark. Estate: mountain bike, trekking ed esplorazione della natura."
+    "subtitle": "Borgo alpino accogliente con piste per famiglie e sentieri panoramici",
+    "description": "Sappada è un borgo alpino incantevole, noto per le piste adatte alle famiglie e i sentieri panoramici per la bici. Le valli limitrofe offrono singletrack tranquilli e opzioni per tour facili adatte a tutti i livelli. In inverno si trovano piste dolci, snowpark locali e discese da telemark tranquille; in estate l'area si apre con sentieri per mountain bike e camminate, perfetti per giornate in famiglia o uscite enduro tecniche.",
+    "winterTitle": "Inverno — Piste Familiari & Tour",
+    "winterP1": "Sappada offre pendii accessibili e terreni ideali per famiglie e principianti. Percorsi in fuoripista e rifugi nelle vicinanze permettono escursioni e scialpinismo facili.",
+    "winterP2": "Le serate a Sappada sono caratterizzate da rifugi accoglienti e cultura alpina locale — un'alternativa tranquilla ai grandi comprensori.",
+    "summerTitle": "Estate — Sentieri & Natura",
+    "summerP1": "In estate si aprono sentieri flow in bosco e piste alpine panoramiche attorno a Sappada per uscite rilassanti tutto il giorno.",
+    "summerP2": "Tour guidati in mountain bike, uscite in E-bike e camminate su creste rendono Sappada una base ideale per avventure di più giorni a bassa intensità."
   },
   "zoldoCivetta": {
     "title": "Zoldo / Civetta",
-    "subtitle": "Zoldo & Civetta — valli tranquille e terreno alpino autentico",
+    "subtitle": "Creste selvagge e valli appartate — perfette per freeride e avventure alpine",
     "description": "La valle di Zoldo e il massiccio del Civetta offrono un'esperienza dolomitica autentica, lontano dai comprensori più affollati. In inverno la zona combina il territorio servito da impianti a Civetta con linee più isolate e ripide a Zoldo, ideali per telemark, scialpinismo e freeride. Le condizioni della neve e la morfologia del territorio sono perfette per escursioni e discese tecniche. In estate si trovano singletrack ad alta quota, discese nel bosco e creste panoramiche che attirano mountain biker e escursionisti per giri lunghi e tour di più giorni. Rifugi locali, vie ferrate classiche e panorami mozzafiato completano l'offerta — perfetto per chi cerca solitudine e avventura in montagna.",
     "winterTitle": "Inverno — Civetta & Zoldo",
     "winterP1": "L'area sciistica del Civetta offre piste lunghe e ben curate, couloir ripidi e ottimo terreno per freeride. Zoldo completa la zona con valli più tranquille, linee classiche da telemark e una forte cultura di montagna.",

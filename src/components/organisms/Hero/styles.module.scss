@@ -62,8 +62,24 @@
     max-height: 600px;
     min-height: 400px;
 
+    // darker overlay for compact hero to improve contrast
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+      z-index: 1;
+      pointer-events: none;
+    }
+
+    .backgroundImage {
+      z-index: 0;
+    }
+
     .textWrapper {
       margin-top: 25vh;
+      position: relative;
+      z-index: 2;
 
       @include mediaQueries.media("md", "max") {
         margin-top: 20vh;

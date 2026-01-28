@@ -12,7 +12,7 @@
   },
   "cortina": {
     "title": "Cortina d'Ampezzo",
-    "subtitle": "The queen of the Dolomites — iconic Dolomite peaks and classic alpine runs",
+    "subtitle": "Legendary Dolomite playground — epic ski terrain and towering pinnacles",
     "description": "Cortina d'Ampezzo sits beneath dramatic limestone walls and hosts a diverse range of mountain activities year-round. In winter the area features large lift-linked ski zones, steep technical slopes on the Tofane and Faloria, and quieter corners for ski touring and telemark. In summer, a network of trails and via ferrata opens up alpine ridgelines for hiking, climbing and E-bike tours. The town itself is a cultural hub with mountain huts, guided excursions and local mountain guides available to craft tailor-made experiences for every level.",
     "winterTitle": "Winter — Ski & Mountains",
     "winterP1": "Cortina d'Ampezzo is famous for the Tofane and Faloria areas — steep technical pistes, scenic gondolas and classic long runs. The dramatic Cinque Torri and the surrounding peaks offer superb skiing and iconic Dolomite panoramas.",
@@ -23,11 +23,18 @@
   },
   "sappada": {
     "title": "Sappada",
-    "description": "Sappada is a charming alpine village known for its family-friendly slopes and scenic bike trails. Winter: gentle ski runs, snowboarding, telemark. Summer: mountain biking, hiking, and nature exploration."
+    "subtitle": "Charming alpine village with family-friendly slopes and scenic singletracks",
+    "description": "Sappada is a charming alpine village known for its family-friendly slopes and scenic bike trails. The nearby valleys offer quiet singletracks and easy touring options for all levels. In winter you find gentle ski runs, local snow parks and calm telemark lines; in summer the area becomes a network of trails for mountain biking and hiking, perfect for family days or technical enduro rides.",
+    "winterTitle": "Winter — Family Slopes & Tours",
+    "winterP1": "Sappada offers approachable slopes and gentle terrain, ideal for families and learners. Nearby backcountry routes and local huts provide easy touring and ski touring options.",
+    "winterP2": "Evenings in Sappada feature cozy lodges and local Alpine culture — a quiet alternative to larger resorts.",
+    "summerTitle": "Summer — Trails & Nature",
+    "summerP1": "Summer opens flowy forest trails and scenic alpine tracks around Sappada for relaxed all-day rides.",
+    "summerP2": "Guided mountain bike tours, e-bike outings and hilltop hikes make Sappada a great base for low-key multi-day adventures."
   },
   "zoldoCivetta": {
     "title": "Zoldo / Civetta",
-    "subtitle": "Zoldo & Civetta — quiet valleys and authentic alpine terrain",
+    "subtitle": "Wild ridgelines and secluded valleys — ideal for freeride and alpine adventures",
     "description": "The Zoldo valley and the Civetta massif provide an authentic Dolomite experience away from the busiest resorts. In winter the area combines technical lift-served terrain in Civetta with quieter, steep telemark lines and backcountry possibilities in Zoldo. Snow conditions and varied topography make the area great for freeride and mountain touring. In summer, high alpine singletracks, forested descents and panoramic ridge trails attract mountain bikers and hikers looking for long rides and multi-day tours. Local huts (rifugi), classic via ferrata and scenic ridgelines complete the offering — ideal for riders and trekkers seeking solitude and challenge.",
     "winterTitle": "Winter — Civetta & Zoldo",
     "winterP1": "The Civetta ski area features long, well-prepared runs, steep couloirs and excellent freeride terrain. Zoldo complements the area with quieter valleys, classic telemark lines and a strong mountain culture.",
