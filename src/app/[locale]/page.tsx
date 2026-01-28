@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import About from "@/components/sections/About";
 import Disciplines from "@/components/sections/Disciplines";
 import Maps from "@/components/sections/Maps";
+import InfiniteText from "@/components/molecules/InfiniteText";
 
 const Home = () => {
   const t = useTranslations("hero");
@@ -32,7 +33,20 @@ const Home = () => {
         }}
       />
       <About />
+      <InfiniteText
+        items={[
+          "SNOWBOARDING",
+          "SKIING",
+          "FREERIDE",
+          "CARVING",
+          "FREESTYLE",
+          "OFF-PISTE",
+          "BACKCOUNTRY",
+          "MOUNTAIN GUIDING",
+        ]}
+      />
       <Disciplines />
+
       <Maps />
       <Contact />
       <Footer />
