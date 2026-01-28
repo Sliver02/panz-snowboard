@@ -61,9 +61,6 @@ const SnowboardPage = () => {
                 title={t("packages.package1.title")}
                 subtitle={t("packages.package1.subtitle")}
                 price={t("packages.package1.price")}
-                features={tAny("packages.package1.features", {
-                  returnObjects: true,
-                })}
                 onClick={() => router.push("/#contact")}
               />
             </Col>
@@ -73,9 +70,6 @@ const SnowboardPage = () => {
                 title={t("packages.package2.title")}
                 subtitle={t("packages.package2.subtitle")}
                 price={t("packages.package2.price")}
-                features={tAny("packages.package2.features", {
-                  returnObjects: true,
-                })}
                 onClick={() => router.push("/#contact")}
               />
             </Col>
@@ -85,9 +79,6 @@ const SnowboardPage = () => {
                 title={t("packages.package3.title")}
                 subtitle={t("packages.package3.subtitle")}
                 price={t("packages.package3.price")}
-                features={tAny("packages.package3.features", {
-                  returnObjects: true,
-                })}
                 onClick={() => router.push("/#contact")}
               />
             </Col>
