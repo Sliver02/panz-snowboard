@@ -121,7 +121,25 @@
       "description": "Alla scoperta di una delle discipline più antiche ed originali dello sci, il divertimento è assicurato.",
       "extendedDescription": "Lo sci telemark combina la grazia dello sci nordico con il brivido delle discese alpine, creando un'esperienza unica e gratificante sulle piste. Come una delle discipline sciistiche più antiche ed eleganti, il telemark offre una tecnica distintiva a tallone libero che garantisce un controllo e una fluidità eccezionali. Ti guido attraverso i fondamentali dello sci telemark, dalla postura corretta e la distribuzione del peso fino a padroneggiare le caratteristiche curve telemark. Che tu sia completamente nuovo allo sport o voglia perfezionare la tua tecnica, il terreno stupendo delle Dolomiti offre infinite opportunità per avventure telemark.",
       "button": "più info",
-      "heroSubtitle": "Maestria nell'arte dello sci telemark"
+      "heroSubtitle": "Maestria nell'arte dello sci telemark",
+      "packages": {
+        "title": "Pacchetti",
+        "package1": {
+          "title": "LEZIONI PRIVATE",
+          "subtitle": "Lezioni 1 to 1 totalmente personalizzata in base alle tue capacità e ai tuoi obiettivi, ideale per chi vuole cominciare dalle basi. Contattami per maggiori informazioni.",
+          "price": "A PARTIRE DA 50€/ORA"
+        },
+        "package2": {
+          "title": "LEZIONI DI GRUPPO",
+          "subtitle": "Lezioni di gruppo a partire da 2 persone, ideale se volete condividere questi momenti con gli amici o la famiglia. Il costo Contattami per maggiori informazioni.",
+          "price": "A PARTIRE DA 60,00€/ORA"
+        },
+        "package3": {
+          "title": "TELE TOUR",
+          "subtitle": "Se volete visitare le piste più belle delle Dolomiti, mangiare nei migliori Chalet e ascoltare qualche simpatico aneddoto,     questo è il pacchetto per voi!   Contattami per maggiori informazioni.",
+          "price": "A PARTIRE DA 300,00€"
+        }
+      }
     },
     "mountainBike": {
       "title": "Mountain Bike",

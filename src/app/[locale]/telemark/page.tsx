@@ -4,12 +4,23 @@ import Header from "@/components/organisms/Header";
 import Hero from "@/components/organisms/Hero";
 import Section from "@/components/organisms/Section";
 import { Container, Row, Col } from "@/components/atoms/Grid";
+import { Justify } from "@/components/atoms/Grid/interfaces";
 import { useTranslations } from "next-intl";
 import classNames from "classnames";
+import SectionTitle from "@/components/atoms/SectionTitle";
+import PackageCard from "@/components/molecules/PackageCard";
+import { useRouter } from "next/navigation";
 
 const TelemarkPage = () => {
   const t = useTranslations("activities.telemark");
   const breadcrumb = useTranslations("breadcrumb");
+  const router = useRouter();
+  // helper to call `t` with non-standard options
+  type TFunc = <T = string | unknown>(
+    k: string,
+    opts?: Record<string, unknown>,
+  ) => T;
+  const tAny = t as unknown as TFunc;
 
   return (
     <main>
@@ -31,11 +42,45 @@ const TelemarkPage = () => {
       />
       <Section>
         <Container>
-          <Row>
-            <Col xs={12} lg={10}>
+          <Row xsJustify={Justify.center}>
+            <Col>
               <p className={classNames("text--p-lg")}>
                 {t("extendedDescription")}
               </p>
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+              <SectionTitle text={t("packages.title")} center />
+            </Col>
+          </Row>
+          <Row>
+            <Col xs={12} md={6} lg={4}>
+              <PackageCard
+                image="photo_2023-12-22_10-12-41"
+                title={t("packages.package1.title")}
+                subtitle={t("packages.package1.subtitle")}
+                price={t("packages.package1.price")}
+                onClick={() => router.push("/#contact")}
+              />
+            </Col>
+            <Col xs={12} md={6} lg={4}>
+              <PackageCard
+                image="photo_2024-01-22_22-09-15"
+                title={t("packages.package2.title")}
+                subtitle={t("packages.package2.subtitle")}
+                price={t("packages.package2.price")}
+                onClick={() => router.push("/#contact")}
+              />
+            </Col>
+            <Col xs={12} md={6} lg={4}>
+              <PackageCard
+                image="csm_rifugio-lagazuoi-1_2449c8b0c7"
+                title={t("packages.package3.title")}
+                subtitle={t("packages.package3.subtitle")}
+                price={t("packages.package3.price")}
+                onClick={() => router.push("/#contact")}
+              />
             </Col>
           </Row>
         </Container>

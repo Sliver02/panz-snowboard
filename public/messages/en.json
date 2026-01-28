@@ -85,9 +85,8 @@
         "title": "Packages",
         "package1": {
           "title": "Private Lesson",
-          "subtitle": "1:1 instruction, tailored to your level",
           "price": "Starting from €50 / h",
-          "description": "One-to-one lessons fully tailored to your abilities and goals — ideal if you want to start from the basics. Contact me for more information.",
+          "subtitle": "One-to-one lessons fully tailored to your abilities and goals — ideal if you want to start from the basics. Contact me for more information.",
           "features": [
             "Personalized lesson plan",
             "On-snow video feedback",
@@ -96,9 +95,8 @@
         },
         "package2": {
           "title": "Half-Day Group",
-          "subtitle": "Small group coaching — technique & fun",
           "price": "Starting from €60 / h",
-          "description": "Group lessons starting from two people — perfect to share the experience with friends or family. Contact me for more information.",
+          "subtitle": "Group lessons starting from two people — perfect to share the experience with friends or family. Contact me for more information.",
           "features": [
             "Max 4 riders",
             "Warm-up and drills",
@@ -107,9 +105,8 @@
         },
         "package3": {
           "title": "Full-Day Tour",
-          "subtitle": "Guided freeride & scenic snow tours",
           "price": "Starting from €300",
-          "description": "If you want to visit the most beautiful slopes of the Dolomites, dine in the best chalets and hear a few entertaining anecdotes, this is the package for you! Contact me for more information.",
+          "subtitle": "If you want to visit the most beautiful slopes of the Dolomites, dine in the best chalets and hear a few entertaining anecdotes, this is the package for you! Contact me for more information.",
           "features": [
             "Guided route planning",
             "Safety briefing & equipment",
@@ -124,6 +121,25 @@
       "extendedDescription": "Telemark skiing combines the grace of nordic skiing with the thrill of alpine descents, creating a unique and rewarding experience on the slopes. As one of the oldest and most elegant skiing disciplines, telemark offers a distinctive free-heel technique that provides exceptional control and fluidity. I guide you through the fundamentals of telemark skiing, from proper stance and weight distribution to mastering those signature telemark turns. Whether you're completely new to the sport or looking to refine your technique, the stunning terrain of the Dolomites offers endless opportunities for telemark adventures.",
       "button": "more info",
       "heroSubtitle": "Master the art of telemark skiing"
+      ,
+      "packages": {
+        "title": "Packages",
+        "package1": {
+          "title": "Private Lesson",
+          "subtitle": "One-to-one lessons fully tailored to your abilities and goals — ideal if you want to start from the basics. Contact me for more information.",
+          "price": "Starting from €50 / h"
+        },
+        "package2": {
+          "title": "Group Lessons",
+          "subtitle": "Group lessons starting from 2 people — ideal to share the experience with friends or family. Contact me for more information.",
+          "price": "Starting from €60 / h"
+        },
+        "package3": {
+          "title": "Tele Tour",
+          "subtitle": "If you want to visit the most beautiful slopes of the Dolomites, dine in the best chalets and hear a few entertaining anecdotes, this is the package for you! Contact me for more information.",
+          "price": "Starting from €300"
+        }
+      }
     },
     "mountainBike": {
       "title": "Mountain Bike",
