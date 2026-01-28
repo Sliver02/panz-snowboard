@@ -74,13 +74,47 @@
     "errorPrefix": "Errore:"
   },
   "activities": {
+    "bookButton": "Prenota ora",
     "title": "Attività",
     "snowboard": {
       "title": "Snowboard",
       "description": "Impariamo insieme le basi dello snowboard, carving, freestyle, freeride e snow tour, tutto questo e molto altro.",
-      "extendedDescription": "Che tu sia un principiante che muove i primi passi o un rider esperto che vuole perfezionare la tecnica, offro lezioni di snowboard personalizzate adatte al tuo livello e ai tuoi obiettivi. Dal padroneggiare i fondamentali alle tecniche avanzate di carving, ai trick freestyle nel park, all'esplorazione del backcountry freeride, o all'avventura in snow tour panoramici attraverso le Dolomiti, ogni lezione è progettata per costruire la tua sicurezza e le tue abilità condividendo la mia passione per questo sport incredibile. I paesaggi mozzafiato delle Dolomiti offrono lo scenario perfetto per un'esperienza di snowboard indimenticabile.",
+      "extendedDescription": "Lo snowboard non è solo uno sport ma anche uno stile di vita, infatti il mio scopo non è solo quello di insegnarvi la tecnica ma anche di farvi vivere tutte le emozioni che questo ci può regalare! Che siate principianti o esperti, che vogliate migliorare la tecnica di riding o nel freestyle, o che siate interessati ad esplorare le bellissime Dolomiti, cercheremo insieme di creare un percorso adatto alle vostre esigenze per raggiungere i vostri obiettivi divertendosi.",
       "button": "più info",
-      "heroSubtitle": "Istruzione professionale di snowboard nelle Dolomiti"
+      "heroSubtitle": "Istruzione professionale di snowboard nelle Dolomiti",
+      "packages": {
+        "title": "Pacchetti",
+        "package1": {
+          "title": "Lezioni Private",
+          "subtitle": "Lezioni 1 to 1 totalmente personalizzata in base alle tue capacità e ai tuoi obiettivi, ideale per chi vuole cominciare dalle basi. Contattami per maggiori informazioni.",
+          "price": "Da €50 / h",
+          "features": [
+            "Programma personalizzato",
+            "Feedback video on-snow",
+            "Esercizi di progressione"
+          ]
+        },
+        "package2": {
+          "title": "Lezioni di Gruppo",
+          "subtitle": "Lezioni di gruppo a partire da 2 persone, ideale se volete condividere questi momenti con gli amici o la famiglia. Contattami per maggiori informazioni.",
+          "price": "Da €60 / h",
+          "features": [
+            "Max 4 rider",
+            "Riscaldamento e drill",
+            "Apprendimento mirato al terreno"
+          ]
+        },
+        "package3": {
+          "title": "Snow Tour",
+          "subtitle": "Se volete visitare le piste più belle delle Dolomiti, mangiare nei migliori Chalet e ascoltare qualche simpatico aneddoto, questo è il pacchetto per voi!\nContattami per maggiori informazioni.",
+          "price": "Da €300",
+          "features": [
+            "Pianificazione del percorso guidata",
+            "Briefing sicurezza e attrezzatura",
+            "Percorsi panoramici nelle Dolomiti"
+          ]
+        }
+      }
     },
     "telemark": {
       "title": "Telemark",

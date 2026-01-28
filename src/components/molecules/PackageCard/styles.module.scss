@@ -1,0 +1,67 @@
+@use "../../../designSystem/mediaQueries";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background: var(--accent-contrast-text);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+  height: 100%;
+  color: white;
+}
+
+.media {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 220px;
+}
+
+.body {
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: var(--font-inter);
+  color: var(--accent-background);
+}
+
+.price {
+  font-weight: 700;
+  color: var(--accent-background);
+}
+
+.subtitle {
+  margin: 8px 0;
+  color: var(--neutral-text);
+}
+
+.features {
+  margin: 8px 0 0 0;
+  padding-left: 18px;
+  color: var(--neutral-text);
+}
+
+.cta {
+  margin-top: auto;
+  padding-top: 1rem;
+}
+
+@include mediaQueries.media("md") {
+  .media {
+    height: 300px;
+  }
+}

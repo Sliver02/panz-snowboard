@@ -73,13 +73,50 @@
     "errorPrefix": "Error:"
   },
   "activities": {
+    "bookButton": "Book now",
     "title": "Activities",
     "snowboard": {
       "title": "Snowboard",
       "description": "Let's learn together the basics of snowboarding, carving, freestyle, freeride and snow tours, all this and much more.",
-      "extendedDescription": "Whether you're a beginner taking your first turns or an experienced rider looking to refine your technique, I offer personalized snowboard instruction tailored to your level and goals. From mastering the fundamentals to advanced carving techniques, freestyle tricks in the park, exploring backcountry freeride terrain, or embarking on scenic snow tours through the Dolomites, each lesson is designed to build your confidence and skills while sharing my passion for this incredible sport. The breathtaking landscapes of the Dolomites provide the perfect backdrop for an unforgettable snowboarding experience.",
+      "extendedDescription": "snowboard is not just a sport but also a lifestyle, in fact my goal is not only to teach you the technique but also to make you experience all the emotions that this can give us! Whether you are a beginner or an expert, whether you want to improve your riding or freestyle technique, or whether you are interested in exploring the beautiful Dolomites, we will try together to create a path suitable for your needs to achieve your goals while having fun.",
       "button": "more info",
-      "heroSubtitle": "Professional snowboard instruction in the Dolomites"
+      "heroSubtitle": "Professional snowboard instruction in the Dolomites",
+      "packages": {
+        "title": "Packages",
+        "package1": {
+          "title": "Private Lesson",
+          "subtitle": "1:1 instruction, tailored to your level",
+          "price": "Starting from €50 / h",
+          "description": "One-to-one lessons fully tailored to your abilities and goals — ideal if you want to start from the basics. Contact me for more information.",
+          "features": [
+            "Personalized lesson plan",
+            "On-snow video feedback",
+            "Progression exercises"
+          ]
+        },
+        "package2": {
+          "title": "Half-Day Group",
+          "subtitle": "Small group coaching — technique & fun",
+          "price": "Starting from €60 / h",
+          "description": "Group lessons starting from two people — perfect to share the experience with friends or family. Contact me for more information.",
+          "features": [
+            "Max 4 riders",
+            "Warm-up and drills",
+            "Terrain-focused learning"
+          ]
+        },
+        "package3": {
+          "title": "Full-Day Tour",
+          "subtitle": "Guided freeride & scenic snow tours",
+          "price": "Starting from €300",
+          "description": "If you want to visit the most beautiful slopes of the Dolomites, dine in the best chalets and hear a few entertaining anecdotes, this is the package for you! Contact me for more information.",
+          "features": [
+            "Guided route planning",
+            "Safety briefing & equipment",
+            "Scenic Dolomites routes"
+          ]
+        }
+      }
     },
     "telemark": {
       "title": "Telemark",
