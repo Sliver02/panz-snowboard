@@ -74,6 +74,7 @@
   },
   "activities": {
     "bookButton": "Book now",
+    "ctaDescription": "Secure your spot — private lessons and guided days.",
     "title": "Activities",
     "snowboard": {
       "title": "Snowboard",

@@ -10,7 +10,6 @@ import classNames from "classnames";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import PackageCard from "@/components/molecules/PackageCard";
 import { useRouter } from "next/navigation";
-import CTABooking from "@/components/sections/CTABooking";
 
 const MountainBikePage = () => {
   const t = useTranslations("activities.mountainBike");
@@ -172,7 +171,6 @@ const MountainBikePage = () => {
           </Row>
         </Container>
       </Section>
-      <CTABooking />
       <Footer />
     </main>
   );

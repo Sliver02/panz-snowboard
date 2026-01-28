@@ -10,7 +10,6 @@ import classNames from "classnames";
 import SectionTitle from "@/components/atoms/SectionTitle";
 import PackageCard from "@/components/molecules/PackageCard";
 import { useRouter } from "next/navigation";
-import CTABooking from "@/components/sections/CTABooking";
 
 const SnowboardPage = () => {
   const t = useTranslations("activities.snowboard");
@@ -86,7 +85,6 @@ const SnowboardPage = () => {
           </Row>
         </Container>
       </Section>
-      <CTABooking />
       <Footer />
     </main>
   );
