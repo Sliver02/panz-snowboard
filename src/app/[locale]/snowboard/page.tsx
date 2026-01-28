@@ -57,7 +57,7 @@ const SnowboardPage = () => {
           <Row>
             <Col xs={12} md={6} lg={4}>
               <PackageCard
-                image="DDF02641"
+                image="photo_2024-12-17_12-03-35"
                 title={t("packages.package1.title")}
                 subtitle={t("packages.package1.subtitle")}
                 price={t("packages.package1.price")}
@@ -69,7 +69,7 @@ const SnowboardPage = () => {
             </Col>
             <Col xs={12} md={6} lg={4}>
               <PackageCard
-                image="IMG_20241211_124142"
+                image="photo_2024-01-22_22-09-17"
                 title={t("packages.package2.title")}
                 subtitle={t("packages.package2.subtitle")}
                 price={t("packages.package2.price")}
