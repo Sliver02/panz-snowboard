@@ -12,7 +12,9 @@ const SappadaPage = () => {
   const breadcrumb = useTranslations("breadcrumb");
 
   const fullDesc = t("description");
-  const subtitle = fullDesc.split(". ").slice(0, 2).join(". ") + (fullDesc.includes(".") ? "." : "");
+  const subtitle =
+    fullDesc.split(". ").slice(0, 2).join(". ") +
+    (fullDesc.includes(".") ? "." : "");
 
   return (
     <main>
@@ -27,7 +29,10 @@ const SappadaPage = () => {
           alt: "Sappada panorama",
           position: "center",
         }}
-        breadcrumbItems={[{ label: breadcrumb("home"), href: "/" }, { label: t("title") }]}
+        breadcrumbItems={[
+          { label: breadcrumb("home"), href: "/" },
+          { label: t("title") },
+        ]}
       />
 
       <Footer />

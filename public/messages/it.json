@@ -13,7 +13,14 @@
 
   "cortina": {
     "title": "Cortina d'Ampezzo",
-    "description": "Cortina è la regina delle Dolomiti, con sci e mountain bike di livello mondiale in uno scenario mozzafiato. Inverno: ampi comprensori sciistici, snowboard, telemark, freeride. Estate: tour in mountain bike, enduro e avventure outdoor."
+    "subtitle": "La regina delle Dolomiti — vette iconiche e discese alpine classiche",
+    "description": "Cortina d'Ampezzo si trova ai piedi di pareti calcaree spettacolari e offre attività di montagna tutto l'anno. In inverno la zona propone ampi comprensori con impianti, pendii tecnici sulle Tofane e la Faloria e angoli tranquilli per scialpinismo e telemark. In estate si apre una rete di sentieri e vie ferrate per escursioni, arrampicata e tour in E-bike lungo creste panoramiche. Il paese è anche un centro culturale di montagna, con rifugi, escursioni guidate e guide locali pronte a costruire esperienze su misura per ogni livello.",
+    "winterTitle": "Inverno — Sci & Montagne",
+    "winterP1": "Cortina d'Ampezzo è famosa per le Tofane e la Faloria — piste tecniche ripide, funivie panoramiche e lunghe discese classiche. Le Cinque Torri e le vette circostanti offrono sci eccellente e panorami iconici delle Dolomiti.",
+    "winterP2": "Oltre alle piste battute, Cortina è una porta d'accesso per scialpinismo ed escursioni invernali panoramiche; eventi serali e rifugi rendono le serate indimenticabili.",
+    "summerTitle": "Estate — Sentieri & Arrampicata",
+    "summerP1": "In estate Cortina diventa un centro per l'arrampicata e le escursioni — vie ferrata, creste alpine e percorsi ciclabili panoramici nelle valli d'Ampezzo offrono molte opzioni.",
+    "summerP2": "Le attività estive più popolari includono escursioni guidate ai rifugi, arrampicate sulle pareti dolomitiche e tour in E-bike attraverso valli e prati alpini."
   },
   "sappada": {
     "title": "Sappada",
@@ -21,7 +28,14 @@
   },
   "zoldoCivetta": {
     "title": "Zoldo / Civetta",
-    "description": "Zoldo e Civetta offrono esperienze autentiche nelle Dolomiti con piste poco affollate e sentieri selvaggi. Inverno: sci e snowboard a Civetta, telemark a Zoldo. Estate: mountain bike, enduro e avventura nella natura incontaminata."
+    "subtitle": "Zoldo & Civetta — valli tranquille e terreno alpino autentico",
+    "description": "La valle di Zoldo e il massiccio del Civetta offrono un'esperienza dolomitica autentica, lontano dai comprensori più affollati. In inverno la zona combina il territorio servito da impianti a Civetta con linee più isolate e ripide a Zoldo, ideali per telemark, scialpinismo e freeride. Le condizioni della neve e la morfologia del territorio sono perfette per escursioni e discese tecniche. In estate si trovano singletrack ad alta quota, discese nel bosco e creste panoramiche che attirano mountain biker e escursionisti per giri lunghi e tour di più giorni. Rifugi locali, vie ferrate classiche e panorami mozzafiato completano l'offerta — perfetto per chi cerca solitudine e avventura in montagna.",
+    "winterTitle": "Inverno — Civetta & Zoldo",
+    "winterP1": "L'area sciistica del Civetta offre piste lunghe e ben curate, couloir ripidi e ottimo terreno per freeride. Zoldo completa la zona con valli più tranquille, linee classiche da telemark e una forte cultura di montagna.",
+    "winterP2": "A Zoldo è anche possibile organizzare uscite notturne — escursioni serali guidate e discese al chiaro di luna che trasformano le piste in un'esperienza alpina magica sotto le stelle.",
+    "summerTitle": "Estate — Sentieri & Tour in Mountain Bike",
+    "summerP1": "L'estate apre una rete di singletrack e sentieri d'alta quota. Troverai percorsi dal flow nei boschi a lunghe discese alpine e tratti tecnici da enduro.",
+    "summerP2": "I tour in mountain bike partendo da Zoldo attraversano le valli del Cadore, crinali panoramici e prati ampi — ideali per uscite guidate e tour di più giorni."
   },
   "hero": {
     "title": "SPORTS & ADVENTURE",

@@ -33,7 +33,8 @@ const Section = ({
     ["--background-color"]: backgroundColor,
   } as CSSProperties;
 
-  const spacingClass = styles[`spacing-${spacing}` as keyof typeof styles] || "";
+  const spacingClass =
+    styles[`spacing-${spacing}` as keyof typeof styles] || "";
 
   return (
     <div

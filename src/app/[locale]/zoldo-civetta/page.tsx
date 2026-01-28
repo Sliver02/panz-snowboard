@@ -12,9 +12,7 @@ const ZoldoCivettaPage = () => {
   const t = useTranslations("zoldoCivetta");
   const breadcrumb = useTranslations("breadcrumb");
 
-  // short sentence requested for header
-  const headerSubtitle = "Zoldo e Civetta offrono esperienze autentiche nelle Dolomiti con piste poco affollate e sentieri selvaggi.";
-  const subtitle = headerSubtitle;
+  const subtitle = t("subtitle");
 
   return (
     <main>
@@ -29,17 +27,18 @@ const ZoldoCivettaPage = () => {
           alt: "Zoldo and Civetta panorama",
           position: "center",
         }}
-        breadcrumbItems={[{ label: breadcrumb("home"), href: "/" }, { label: t("title") }]}
+        breadcrumbItems={[
+          { label: breadcrumb("home"), href: "/" },
+          { label: t("title") },
+        ]}
       />
 
       <Section spacing="tight">
         <Container>
           <Row xsJustify={Justify.center}>
             <Col xs={12} lg={10}>
-              <h2 className={styles.sectionTitle}>Zoldo & Civetta</h2>
-              <p className="text--p-lg">
-                Zoldo and the Civetta massif sit in the heart of the Dolomites and together offer some of the most authentic mountain experiences in the region. Wild, uncrowded slopes and dramatic limestone walls make this area ideal for both winter adventures and summer exploration. Whether you come for technical descents or quiet alpine trails, the area rewards curiosity and bold riding.
-              </p>
+              <h2 className={styles.sectionTitle}>{t("title")}</h2>
+              <p className="text--p-lg">{t("description")}</p>
             </Col>
           </Row>
         </Container>
@@ -50,36 +49,47 @@ const ZoldoCivettaPage = () => {
           <Container>
             <Row xsJustify={Justify.center}>
               <Col xs={12} lg={10}>
-                <h3 className={styles.sectionTitle}>Winter — Civetta & Zoldo</h3>
+                <h3 className={styles.sectionTitle}>{t("winterTitle")}</h3>
               </Col>
             </Row>
 
-            <Row xsJustify={Justify.center} gap="16px" className={styles.rowBlock}>
+            <Row
+              xsJustify={Justify.center}
+              gap="16px"
+              className={styles.rowBlock}
+            >
               <Col xs={12} md={6} lg={5} className={styles.imageCol}>
-                <Image src="/images/location/zoldo_winter2.jpg" alt="Civetta winter" width={1200} height={800} className={styles.responsiveImage} />
+                <Image
+                  src="/images/location/zoldo_winter2.jpg"
+                  alt="Civetta winter"
+                  width={1200}
+                  height={800}
+                  className={styles.responsiveImage}
+                />
               </Col>
               <Col xs={12} md={6} lg={5} className={styles.textCol}>
-                <p className="text--p-lg">
-                  The Civetta ski area features long, well-prepared runs, steep
-                  couloirs and excellent freeride terrain. Zoldo complements the
-                  area with quieter valleys, classic telemark lines and a strong
-                  mountain culture.
-                </p>
+                <p className="text--p-lg">{t("winterP1")}</p>
               </Col>
             </Row>
 
             <div className={styles.blockSpacing} />
 
-            <Row xsJustify={Justify.center} gap="16px" className={styles.rowBlock}>
+            <Row
+              xsJustify={Justify.center}
+              gap="16px"
+              className={styles.rowBlock}
+            >
               <Col xs={12} md={6} lg={5} className={styles.textCol}>
-                <p className="text--p-lg">
-                  In Zoldo you can also arrange night rides — guided evening
-                  excursions and moonlit descents that turn familiar slopes into
-                  a magical alpine experience under the stars.
-                </p>
+                <p className="text--p-lg">{t("winterP2")}</p>
               </Col>
               <Col xs={12} md={6} lg={5} className={styles.imageCol}>
-                <Image src="/images/location/zoldo_winter3.jpg" alt="Zoldo winter" width={1200} height={800} className={styles.responsiveImage} />
+                <Image
+                  src="/images/location/zoldo_winter3.jpg"
+                  alt="Zoldo winter"
+                  width={1200}
+                  height={800}
+                  className={styles.responsiveImage}
+                />
               </Col>
             </Row>
           </Container>
@@ -91,35 +101,47 @@ const ZoldoCivettaPage = () => {
           <Container>
             <Row xsJustify={Justify.center}>
               <Col xs={12} lg={10}>
-                <h3 className={styles.sectionTitle}>Summer — Trails & Mountain Bike Tours</h3>
+                <h3 className={styles.sectionTitle}>{t("summerTitle")}</h3>
               </Col>
             </Row>
 
-            <Row xsJustify={Justify.center} gap="16px" className={styles.rowBlock}>
+            <Row
+              xsJustify={Justify.center}
+              gap="16px"
+              className={styles.rowBlock}
+            >
               <Col xs={12} md={6} lg={5} className={styles.imageCol}>
-                <Image src="/images/location/zoldo_summer2.jpg" alt="Zoldo summer trails" width={1200} height={800} className={styles.responsiveImage} />
+                <Image
+                  src="/images/location/zoldo_summer2.jpg"
+                  alt="Zoldo summer trails"
+                  width={1200}
+                  height={800}
+                  className={styles.responsiveImage}
+                />
               </Col>
               <Col xs={12} md={6} lg={5} className={styles.textCol}>
-                <p className="text--p-lg">
-                  Summer opens a network of singletrack and high alpine trails.
-                  Expect everything from flowing forest trails to long alpine
-                  descents and technical enduro lines.
-                </p>
+                <p className="text--p-lg">{t("summerP1")}</p>
               </Col>
             </Row>
 
             <div className={styles.blockSpacing} />
 
-            <Row xsJustify={Justify.center} gap="16px" className={styles.rowBlock}>
+            <Row
+              xsJustify={Justify.center}
+              gap="16px"
+              className={styles.rowBlock}
+            >
               <Col xs={12} md={6} lg={5} className={styles.textCol}>
-                <p className="text--p-lg">
-                  Popular mountain bike tours from Zoldo take you through the
-                  Cadore valleys, across ridgelines and down into wide, scenic
-                  meadows — ideal for guided rides and multi-day excursions.
-                </p>
+                <p className="text--p-lg">{t("summerP2")}</p>
               </Col>
               <Col xs={12} md={6} lg={5} className={styles.imageCol}>
-                <Image src="/images/location/zoldo_summer3.jpg" alt="Mountain biking Zoldo" width={1200} height={800} className={styles.responsiveImage} />
+                <Image
+                  src="/images/location/zoldo_summer3.jpg"
+                  alt="Mountain biking Zoldo"
+                  width={1200}
+                  height={800}
+                  className={styles.responsiveImage}
+                />
               </Col>
             </Row>
           </Container>
