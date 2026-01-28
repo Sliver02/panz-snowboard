@@ -120,8 +120,7 @@
       "description": "Discover one of the oldest and most original skiing disciplines, fun is guaranteed.",
       "extendedDescription": "Telemark skiing combines the grace of nordic skiing with the thrill of alpine descents, creating a unique and rewarding experience on the slopes. As one of the oldest and most elegant skiing disciplines, telemark offers a distinctive free-heel technique that provides exceptional control and fluidity. I guide you through the fundamentals of telemark skiing, from proper stance and weight distribution to mastering those signature telemark turns. Whether you're completely new to the sport or looking to refine your technique, the stunning terrain of the Dolomites offers endless opportunities for telemark adventures.",
       "button": "more info",
-      "heroSubtitle": "Master the art of telemark skiing"
-      ,
+      "heroSubtitle": "Master the art of telemark skiing",
       "packages": {
         "title": "Packages",
         "package1": {
@@ -146,7 +145,44 @@
       "description": "Organized tours in the most spectacular locations in the Dolomites, basic techniques, enduro and bike park approach.",
       "extendedDescription": "Explore the Dolomites on two wheels with guided mountain bike tours and instruction tailored to your skill level. From scenic cross-country routes through alpine meadows to technical enduro trails and bike park sessions, I offer comprehensive guidance for mountain bikers of all abilities. Learn fundamental techniques including body positioning, braking, cornering, and climbing, or push your limits on challenging descents and jumps. The Dolomites provide some of the most spectacular and diverse mountain biking terrain in the world, with routes ranging from family-friendly paths to adrenaline-pumping downhill tracks.",
       "button": "more info",
-      "heroSubtitle": "Mountain bike adventures in the Dolomites"
+      "heroSubtitle": "Mountain bike adventures in the Dolomites",
+      "packages": {
+        "title": "Brochure & Packages",
+        "package1": {
+          "title": "Half-Day",
+          "subtitle": "Short guided routes for those with little time but a big desire to explore Pieve di Cadore and surroundings. (see brochures for details)",
+          "price": "Starting from €200",
+          "features": ["Guided route", "Recommended gear", "Local guides"]
+        },
+        "package2": {
+          "title": "Full-Day",
+          "subtitle": "Full-day guided routes to discover Cadore and its wonders — history, culture and nature.",
+          "price": "Starting from €300",
+          "features": ["Refuge lunch", "Guide support", "Scenic routes"]
+        },
+        "package3": {
+          "title": "MTB Tour",
+          "subtitle": "Multi-day guided tours planned according to your needs and abilities.",
+          "price": "Starting from €300/day",
+          "features": [
+            "Custom itineraries",
+            "Logistic support",
+            "Luggage transport"
+          ]
+        }
+      },
+      "brochure": {
+        "title": "BROCHURE",
+        "it": {
+          "title": "Brochure Italian",
+          "subtitle": "Download the Italian brochure (Mountain Bike Experience)"
+        },
+        "en": {
+          "title": "Brochure English",
+          "subtitle": "Download the English brochure (Mountain Bike Experience)"
+        },
+        "download": "DOWNLOAD"
+      }
     }
   },
   "breadcrumb": {

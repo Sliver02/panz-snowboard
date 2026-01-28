@@ -11,7 +11,6 @@ export interface PackageCardProps extends BaseProps {
   title: string;
   subtitle?: string;
   price?: string;
-  features?: string[] | unknown;
   onClick?: () => void;
 }
 
@@ -21,7 +20,6 @@ const PackageCard = ({
   title,
   subtitle,
   price,
-  features = [],
   onClick,
 }: PackageCardProps) => {
   const t = useTranslations("activities");
@@ -40,13 +38,7 @@ const PackageCard = ({
           {price && <div className={styles.price}>{price}</div>}
         </div>
         {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
-        {Array.isArray(features) && features.length > 0 && (
-          <ul className={styles.features}>
-            {features.map((f: unknown, i: number) => (
-              <li key={i}>{String(f)}</li>
-            ))}
-          </ul>
-        )}
+
         {onClick && (
           <div className={styles.cta}>
             <Button onClick={onClick}>{t("bookButton")}</Button>

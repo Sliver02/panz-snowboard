@@ -15,12 +15,6 @@ const TelemarkPage = () => {
   const t = useTranslations("activities.telemark");
   const breadcrumb = useTranslations("breadcrumb");
   const router = useRouter();
-  // helper to call `t` with non-standard options
-  type TFunc = <T = string | unknown>(
-    k: string,
-    opts?: Record<string, unknown>,
-  ) => T;
-  const tAny = t as unknown as TFunc;
 
   return (
     <main>
@@ -57,7 +51,7 @@ const TelemarkPage = () => {
           <Row>
             <Col xs={12} md={6} lg={4}>
               <PackageCard
-                image="photo_2023-12-22_10-12-41"
+                image="photo_2024-01-22_22-09-15"
                 title={t("packages.package1.title")}
                 subtitle={t("packages.package1.subtitle")}
                 price={t("packages.package1.price")}
@@ -66,7 +60,7 @@ const TelemarkPage = () => {
             </Col>
             <Col xs={12} md={6} lg={4}>
               <PackageCard
-                image="photo_2024-01-22_22-09-15"
+                image="photo_2023-12-22_10-12-41"
                 title={t("packages.package2.title")}
                 subtitle={t("packages.package2.subtitle")}
                 price={t("packages.package2.price")}

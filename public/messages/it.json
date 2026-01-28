@@ -146,7 +146,52 @@
       "description": "Tour organizzati nelle località più spettacolari delle Dolomiti, tecniche di base, enduro e approccio al bike park.",
       "extendedDescription": "Esplora le Dolomiti su due ruote con tour guidati in mountain bike e istruzione personalizzata al tuo livello di abilità. Dai percorsi cross-country panoramici attraverso prati alpini ai trail tecnici enduro e sessioni nel bike park, offro una guida completa per mountain biker di tutte le capacità. Impara le tecniche fondamentali inclusa la posizione del corpo, frenata, curve e salite, o supera i tuoi limiti su discese impegnative e salti. Le Dolomiti offrono alcuni dei terreni per mountain bike più spettacolari e diversificati al mondo, con percorsi che vanno da sentieri adatti alle famiglie a piste downhill cariche di adrenalina.",
       "button": "più info",
-      "heroSubtitle": "Avventure in mountain bike nelle Dolomiti"
+      "heroSubtitle": "Avventure in mountain bike nelle Dolomiti",
+      "packages": {
+        "title": "Brochure & Pacchetti",
+        "package1": {
+          "title": "MEZZA GIORNATA",
+          "subtitle": "Percorsi guidati di breve durata, per chi ha poco tempo ma tanta voglia di esplorare Pieve di Cadore e dintorni. (per maggiori dettagli vedi le brochure)",
+          "price": "A PARTIRE DA 200€",
+          "features": [
+            "Percorso guidato",
+            "Attrezzatura consigliata",
+            "Guide locali"
+          ]
+        },
+        "package2": {
+          "title": "GIORNATA INTERA",
+          "subtitle": "Percorsi guidati di una giornata intera, alla scoperta del Cadore e delle sue meraviglie, fra storia, arte e natura.",
+          "price": "A PARTIRE DA 300€",
+          "features": [
+            "Pranzo in rifugio",
+            "Assistenza guida",
+            "Percorsi panoramici"
+          ]
+        },
+        "package3": {
+          "title": "MTB TOUR",
+          "subtitle": "Tour guidati di più giorni, pianificati in base alle vostre esigenze e capacità.",
+          "price": "A PARTIRE DA 300€/Giorno",
+          "features": [
+            "Itinerari personalizzati",
+            "Supporto logistico",
+            "Trasporto bagagli"
+          ]
+        }
+      },
+      "brochure": {
+        "title": "BROCHURE",
+        "it": {
+          "title": "Brochure Italiano",
+          "subtitle": "Scarica la brochure in italiano (Mountain Bike Experience)"
+        },
+        "en": {
+          "title": "Brochure English",
+          "subtitle": "Download the English brochure (Mountain Bike Experience)"
+        },
+        "download": "DOWNLOAD"
+      }
     }
   },
   "breadcrumb": {
