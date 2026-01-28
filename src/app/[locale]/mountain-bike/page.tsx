@@ -95,7 +95,7 @@ const MountainBikePage = () => {
                 }}
               >
                 <img
-                  src="/images/photo_2025-04-09_16-51-22.jpg"
+                  src="/images/photo_2025-11-28_10-54-32.jpg"
                   alt="Brochure ITA"
                   style={{
                     width: "100%",
@@ -137,7 +137,7 @@ const MountainBikePage = () => {
                 }}
               >
                 <img
-                  src="/images/2020_Bike_Ebike_67_FrancoisPanchard.jpg"
+                  src="/images/photo_2025-11-28_10-54-30.jpg"
                   alt="Brochure ENG"
                   style={{
                     width: "100%",
