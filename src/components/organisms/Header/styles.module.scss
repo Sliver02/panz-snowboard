@@ -28,12 +28,16 @@
   .logoContainer {
     position: relative;
     height: 120px;
-    width: 80px;
+    width: 160px;
     z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 
     @include mediaQueries.media("lg") {
       height: 200px;
-      width: 100px;
+      width: 200px;
     }
   }
 
