@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import classNames from "classnames";
 import CardFrame from "@/components/molecules/CardFrame";
 import SectionTitle from "@/components/atoms/SectionTitle";
+import CTABooking from "@/components/sections/CTABooking";
 
 const AboutPage = () => {
   const t = useTranslations("aboutPage");
@@ -68,6 +69,7 @@ const AboutPage = () => {
           </Row>
         </Container>
       </Section>
+      <CTABooking />
       <Footer />
     </main>
   );

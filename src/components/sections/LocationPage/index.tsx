@@ -8,6 +8,7 @@ import { Container, Row, Col } from "@/components/atoms/Grid";
 import { Justify } from "@/components/atoms/Grid/interfaces";
 import { useTranslations } from "next-intl";
 import styles from "./styles.module.scss";
+import CTABooking from "@/components/sections/CTABooking";
 
 export interface ImagePair {
   left: string;
@@ -177,6 +178,7 @@ const LocationPage = ({
         </Section>
       )}
 
+      <CTABooking />
       <Footer />
     </main>
   );
