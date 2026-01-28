@@ -8,7 +8,19 @@
     "mountainBike": "Mountain Bike",
     "calendar": "Calendar",
     "contact": "Contact",
-    "locations": "Locations"
+    "locations": "Locations",
+    "cortina": {
+      "title": "Cortina d'Ampezzo",
+      "description": "Cortina is the queen of the Dolomites, offering world-class skiing and mountain biking in breathtaking scenery. Winter: vast ski areas, snowboarding, telemark, freeride. Summer: mountain bike tours, enduro, and outdoor adventures."
+    },
+    "sappada": {
+      "title": "Sappada",
+      "description": "Sappada is a charming alpine village known for its family-friendly slopes and scenic bike trails. Winter: gentle ski runs, snowboarding, telemark. Summer: mountain biking, hiking, and nature exploration."
+    },
+    "zoldoCivetta": {
+      "title": "Zoldo / Civetta",
+      "description": "Zoldo and Civetta offer authentic Dolomite experiences with uncrowded slopes and wild trails. Winter: ski and snowboard in Civetta, telemark in Zoldo. Summer: mountain bike, enduro, and adventure in pristine nature."
+    }
   },
   "hero": {
     "title": "SPORTS & ADVENTURE",

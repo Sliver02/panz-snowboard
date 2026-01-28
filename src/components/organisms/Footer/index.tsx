@@ -1,4 +1,3 @@
-
 import { Col, Container, Row } from "@/components/atoms/Grid";
 import { FaInstagram, FaLinkedin } from "react-icons/fa";
 import classNames from "classnames";
@@ -6,7 +5,6 @@ import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { RouteEnum } from "@/common/routeEnum";
 import styles from "./styles.module.scss";
-
 
 const Footer = () => {
   const t = useTranslations("header");
@@ -36,7 +34,18 @@ const Footer = () => {
                 <Link href={RouteEnum.ABOUT}>{t("about")}</Link>
               </li>
               <li>
-                <Link href={RouteEnum.HOME + "#locations"}>{t("locations")}</Link>
+                <Link href={RouteEnum.CORTINA}>{t("cortina")}</Link>
+              </li>
+              <li>
+                <Link href={RouteEnum.SAPPADA}>{t("sappada")}</Link>
+              </li>
+              <li>
+                <Link href={RouteEnum.ZOLDO_CIVETTA}>{t("zoldoCivetta")}</Link>
+              </li>
+              <li>
+                <Link href={RouteEnum.HOME + "#locations"}>
+                  {t("locations")}
+                </Link>
               </li>
               <li>
                 <Link href={RouteEnum.HOME + "#contact"}>{t("contact")}</Link>
@@ -72,7 +81,9 @@ const Footer = () => {
             <h3 className={styles.footerTitle}>Info</h3>
             <ul className={styles.footerList}>
               <li>
-                <Link href="mailto:info@lorenzopanzera.com">info@lorenzopanzera.com</Link>
+                <Link href="mailto:info@lorenzopanzera.com">
+                  info@lorenzopanzera.com
+                </Link>
               </li>
               <li>
                 <Link href="/privacy-policy">Privacy Policy</Link>
@@ -83,9 +94,7 @@ const Footer = () => {
         <Row>
           <Col xs={12}>
             <div className={styles.copyright}>
-              <p>
-                © 2026 Lorenzo Panzera - All rights reserved
-              </p>
+              <p>© 2026 Lorenzo Panzera - All rights reserved</p>
               <p>
                 Website by{" "}
                 <Link

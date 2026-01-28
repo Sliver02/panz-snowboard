@@ -53,7 +53,11 @@ const Header = ({ className }: HeaderProps) => {
     },
     {
       label: t("locations"),
-      url: RouteEnum.HOME + "#locations",
+      children: [
+        { label: t("cortina"), url: RouteEnum.CORTINA },
+        { label: t("sappada"), url: RouteEnum.SAPPADA },
+        { label: t("zoldoCivetta"), url: RouteEnum.ZOLDO_CIVETTA },
+      ],
     },
   ];
 

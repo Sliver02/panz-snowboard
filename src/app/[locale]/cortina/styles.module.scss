@@ -1,0 +1,13 @@
+@use "../../../designSystem/variables";
+@use "../../../designSystem/mediaQueries";
+
+.title {
+  font-size: variables.$font-xl;
+  font-weight: bold;
+  margin-bottom: 24px;
+}
+
+.description {
+  font-size: variables.$font-md;
+  color: var(--neutral-dark);
+}
