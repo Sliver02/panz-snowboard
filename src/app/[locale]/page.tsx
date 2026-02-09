@@ -3,6 +3,7 @@ import Contact from "@/components/sections/Contact";
 import Footer from "@/components/organisms/Footer";
 import Header from "@/components/organisms/Header";
 import Hero from "@/components/organisms/Hero";
+import HeroStyles from "@/components/organisms/Hero/styles.module.scss";
 import { useTranslations } from "next-intl";
 import About from "@/components/sections/About";
 import Disciplines from "@/components/sections/Disciplines";
@@ -18,7 +19,7 @@ const Home = () => {
       <Hero
         title={
           <>
-            <p className="text--h-lg text--color-accent">
+            <p className={`${HeroStyles.name} text--color-accent`}>
               Lorenzo Panzera <br />
             </p>
 

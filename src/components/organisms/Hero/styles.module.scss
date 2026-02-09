@@ -50,13 +50,31 @@
     margin-top: 50vh;
     color: var(--neutral-dark);
 
-    // h1 {
-    //   font-size: 6rem;
+    .title {
+      font-size: 6rem;
+      line-height: 95%;
 
-    //   @include mediaQueries.media("md", "max") {
-    //     font-size: 4rem;
-    //   }
-    // }
+      @include mediaQueries.media("md", "max") {
+        font-size: 3rem;
+      }
+
+      .name {
+        font-size: 4rem;
+
+        @include mediaQueries.media("md", "max") {
+          font-size: 2rem;
+        }
+      }
+    }
+
+    .subtitle {
+      font-size: 3rem;
+      margin-top: 1rem;
+
+      @include mediaQueries.media("md", "max") {
+        font-size: 1.5rem;
+      }
+    }
   }
 
   &.compact {

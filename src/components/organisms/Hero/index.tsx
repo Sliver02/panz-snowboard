@@ -31,7 +31,7 @@ const Hero = ({
 }: HeroProps) => {
   const placeholderImage = backgroundImage.src.replace(
     /\.(jpg|png|jpeg)$/,
-    "_placeholder.$1"
+    "_placeholder.$1",
   );
 
   return (
@@ -48,7 +48,7 @@ const Hero = ({
           styles.backgroundImage,
           `${styles.backgroundImage}--position-${
             backgroundImage.position || "center"
-          }`
+          }`,
         )}
         alt={backgroundImage.alt}
         src={backgroundImage.src}
@@ -66,12 +66,12 @@ const Hero = ({
         <Container>
           <Row xsJustify={compact ? Justify.start : Justify.center}>
             <Col xs={12} lg={10}>
-              <h1>{title}</h1>
+              <h1 className={classNames(styles.title)}>{title}</h1>
               <p
                 className={classNames(
+                  styles.subtitle,
                   "text--strong",
-                  "text--p-xxl",
-                  "text--strong"
+                  "text--strong",
                 )}
               >
                 {subtitle}
