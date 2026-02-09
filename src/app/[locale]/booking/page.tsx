@@ -111,7 +111,11 @@ const BookingPage = () => {
     <main>
       <Header />
 
-      <Section>
+      <Section
+        style={{
+          marginTop: "6rem",
+        }}
+      >
         <Container>
           <Row>
             <Col>

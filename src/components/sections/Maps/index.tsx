@@ -20,7 +20,7 @@ const Maps = () => {
           </Col>
         </Row>
         <Row mdAlign={Align.center}>
-          <Col xs={6}>
+          <Col xs={12} md={6}>
             <div
               style={{
                 position: "relative",
@@ -37,11 +37,9 @@ const Maps = () => {
                 alt={t("mapAlt")}
               />
             </div>
-            <p className={classNames("text--p-lg")}>
-              {general("intro")}
-            </p>
+            <p className={classNames("text--p-lg")}>{general("intro")}</p>
           </Col>
-          <Col></Col>
+          <Col xs={12} md={6}></Col>
         </Row>
       </Container>
     </Section>
