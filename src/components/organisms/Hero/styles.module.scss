@@ -78,8 +78,7 @@
   }
 
   &.compact {
-    height: 50vh;
-    max-height: 600px;
+    max-height: 700px;
     min-height: 400px;
 
     // darker overlay for compact hero to improve contrast
@@ -90,6 +89,10 @@
       background: rgba(0, 0, 0, 0.45);
       z-index: 1;
       pointer-events: none;
+    }
+
+    @include mediaQueries.media("md", "max") {
+      max-height: 400px;
     }
 
     .backgroundImage {
@@ -106,7 +109,7 @@
       }
     }
 
-    h1 {
+    .title {
       font-size: 4rem;
 
       @include mediaQueries.media("sm", "max") {

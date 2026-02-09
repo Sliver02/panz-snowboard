@@ -107,7 +107,7 @@
         },
         "package3": {
           "title": "Snow Tour",
-          "subtitle": "Se volete visitare le piste più belle delle Dolomiti, mangiare nei migliori Chalet e ascoltare qualche simpatico aneddoto, questo è il pacchetto per voi!\nContattami per maggiori informazioni.",
+          "subtitle": "Visitare le piste più belle delle Dolomiti, scoprire i tour più famosi come Sellaronda e Grande Guerra, pranzare nei migliori Chalet, accompagnati da una guida esperta! Contattami per maggiori informazioni.",
           "price": "Da €300",
           "features": [
             "Pianificazione del percorso guidata",
@@ -128,17 +128,17 @@
         "package1": {
           "title": "LEZIONI PRIVATE",
           "subtitle": "Lezioni 1 to 1 totalmente personalizzata in base alle tue capacità e ai tuoi obiettivi, ideale per chi vuole cominciare dalle basi. Contattami per maggiori informazioni.",
-          "price": "A PARTIRE DA 50€/ORA"
+          "price": "Da €50/ora"
         },
         "package2": {
           "title": "LEZIONI DI GRUPPO",
           "subtitle": "Lezioni di gruppo a partire da 2 persone, ideale se volete condividere questi momenti con gli amici o la famiglia. Il costo Contattami per maggiori informazioni.",
-          "price": "A PARTIRE DA 60,00€/ORA"
+          "price": "Da €60,00/ora"
         },
         "package3": {
           "title": "TELE TOUR",
-          "subtitle": "Se volete visitare le piste più belle delle Dolomiti, mangiare nei migliori Chalet e ascoltare qualche simpatico aneddoto,     questo è il pacchetto per voi!   Contattami per maggiori informazioni.",
-          "price": "A PARTIRE DA 300,00€"
+          "subtitle": "Visitare le piste più belle delle Dolomiti, scoprire i tour più famosi come Sellaronda e Grande Guerra, pranzare nei migliori Chalet, accompagnati da una guida esperta! Contattami per maggiori informazioni.",
+          "price": "Da €300"
         }
       }
     },
@@ -153,7 +153,7 @@
         "package1": {
           "title": "MEZZA GIORNATA",
           "subtitle": "Percorsi guidati di breve durata, per chi ha poco tempo ma tanta voglia di esplorare Pieve di Cadore e dintorni. (per maggiori dettagli vedi le brochure)",
-          "price": "A PARTIRE DA 200€",
+          "price": "Da €200€",
           "features": [
             "Percorso guidato",
             "Attrezzatura consigliata",
@@ -163,7 +163,7 @@
         "package2": {
           "title": "GIORNATA INTERA",
           "subtitle": "Percorsi guidati di una giornata intera, alla scoperta del Cadore e delle sue meraviglie, fra storia, arte e natura.",
-          "price": "A PARTIRE DA 300€",
+          "price": "Da €250",
           "features": [
             "Pranzo in rifugio",
             "Assistenza guida",
@@ -173,7 +173,7 @@
         "package3": {
           "title": "MTB TOUR",
           "subtitle": "Tour guidati di più giorni, pianificati in base alle vostre esigenze e capacità.",
-          "price": "A PARTIRE DA 300€/Giorno",
+          "price": "Da €300/Giorno",
           "features": [
             "Itinerari personalizzati",
             "Supporto logistico",
