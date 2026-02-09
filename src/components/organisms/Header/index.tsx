@@ -7,6 +7,7 @@ import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname, useRouter } from "next/navigation";
 import styles from "./styles.module.scss";
 
 export interface HeaderProps extends BaseProps {
@@ -25,6 +26,35 @@ const Header = ({ className }: HeaderProps) => {
 
   const [openMenu, setOpenMenu] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const pathname = usePathname();
+  const router = useRouter();
+
+  const deriveLocaleFromPath = (p?: string | null) => {
+    if (!p) return undefined;
+    const m = p.match(/^\/(en|it)(?:\b|\/)/);
+    return m?.[1];
+  };
+
+  const derivedLocale = (() => {
+    const fromPath = deriveLocaleFromPath(pathname);
+    if (fromPath) return fromPath;
+    if (typeof navigator !== "undefined") {
+      return navigator.language?.toLowerCase().startsWith("it") ? "it" : "en";
+    }
+    return "it";
+  })();
+
+  const changeLocale = (newLocale: string) => {
+    if (!pathname) return;
+    const currentMatch = pathname.match(/^\/(en|it)(?:\b|\/)/);
+    const newPath = currentMatch
+      ? pathname.replace(/^\/(en|it)/, `/${newLocale}`)
+      : `/${newLocale}${pathname}`;
+
+    router.push(newPath);
+  };
+
+  const [openLang, setOpenLang] = useState(false);
 
   const navItems: NavItem[] = [
     {
@@ -103,7 +133,10 @@ const Header = ({ className }: HeaderProps) => {
                     <Link
                       key={childIndex}
                       href={child.url!}
-                      className={styles.dropdownItem}
+                      className={classNames(
+                        styles.dropdownItem,
+                        styles.navbar__button,
+                      )}
                     >
                       {child.label}
                     </Link>
@@ -124,6 +157,50 @@ const Header = ({ className }: HeaderProps) => {
             )}
           </div>
         ))}
+
+        <div className={classNames(styles.navItem, styles.langSelector)}>
+          <div
+            className={styles.dropdown}
+            onMouseEnter={() => setOpenLang(true)}
+            onMouseLeave={() => setOpenLang(false)}
+          >
+            <button
+              className={classNames(
+                styles.navbar__button,
+                styles.dropdownButton,
+              )}
+              onClick={() => setOpenLang((v) => !v)}
+              aria-expanded={openLang}
+            >
+              {derivedLocale?.toUpperCase()}
+              <MdKeyboardArrowDown size={20} />
+            </button>
+            <div
+              className={classNames(styles.dropdownMenu, {
+                [styles.dropdownMenuOpen]: openLang,
+              })}
+            >
+              <button
+                className={classNames(
+                  styles.dropdownItem,
+                  styles.navbar__button,
+                )}
+                onClick={() => changeLocale("it")}
+              >
+                IT
+              </button>
+              <button
+                className={classNames(
+                  styles.dropdownItem,
+                  styles.navbar__button,
+                )}
+                onClick={() => changeLocale("en")}
+              >
+                EN
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div
@@ -174,6 +251,28 @@ const Header = ({ className }: HeaderProps) => {
             )}
           </div>
         ))}
+
+        <div className={styles.mobileNavItem}>
+          <div className={styles.mobileDropdownLabel}>Language</div>
+          <button
+            className={classNames(styles["menu__button"], styles.mobileSubItem)}
+            onClick={() => {
+              changeLocale("it");
+              setOpenMenu(false);
+            }}
+          >
+            IT
+          </button>
+          <button
+            className={classNames(styles["menu__button"], styles.mobileSubItem)}
+            onClick={() => {
+              changeLocale("en");
+              setOpenMenu(false);
+            }}
+          >
+            EN
+          </button>
+        </div>
       </div>
     </div>
   );
