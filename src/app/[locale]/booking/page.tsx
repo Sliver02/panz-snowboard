@@ -80,6 +80,7 @@ const BookingPage = () => {
         serviceId,
         templateId,
         {
+          reciver_email: process.env.NEXT_PUBLIC_RECEIVER_EMAIL,
           name: `${data.firstName} ${data.lastName}`,
           email: data.email,
           title: `Booking: ${data.activity} - ${data.firstName} ${data.lastName}`,

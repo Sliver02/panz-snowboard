@@ -67,7 +67,6 @@
     "message": "Message",
     "send": "Send",
     "loading": "Loading...",
-    "successTitle": "RSVP sent by",
     "successMessage": "Email sent!",
     "errorMessage": "Error sending email",
     "errorPrefix": "Error:"

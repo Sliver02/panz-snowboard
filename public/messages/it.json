@@ -68,7 +68,6 @@
     "message": "Messaggio",
     "send": "Invia",
     "loading": "Caricamento...",
-    "successTitle": "RSVP inviato da",
     "successMessage": "Email inviata!",
     "errorMessage": "Errore nell'invio",
     "errorPrefix": "Errore:"
