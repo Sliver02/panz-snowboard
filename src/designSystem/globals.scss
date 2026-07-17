@@ -2,112 +2,179 @@
 @use "mediaQueries";
 @use "text";
 
+// ─── Layer 1: Palette primitives ─────────────────────────────────────────────
+// Raw Lorenzo Panzera brand ramps — never reference these directly in components.
+// Swap brand colors here; semantic tokens below pick them up automatically.
 :root {
-  // color palette
-  --neutral-background: #f4f6ff;
-  --neutral-light: #f4f6ff;
-  --neutral-main: #9a9b9f;
-  --neutral-dark: #0f232c;
+	--palette-neutral-0: #ffffff;
+	--palette-neutral-50: #f4f6ff; // cool near-white surface
+	--palette-neutral-500: #9a9b9f; // muted text / border
+	--palette-neutral-900: #0f232c; // ink / text
+	--palette-neutral-1000: #000000;
 
-  --primary-background: #e9ceb0;
-  --primary-lighter: #f5e3ce;
-  --primary-light: #f4a66c;
-  --primary-main: #f48847;
-  --primary-dark: #f26549;
-  --primary-text: #0f232c;
+	// orange (primary)
+	--palette-orange-100: #f5e3ce; // lighter
+	--palette-orange-200: #e9ceb0; // background (sand surface)
+	--palette-orange-300: #f4a66c; // light
+	--palette-orange-500: #f48847; // main
+	--palette-orange-600: #f26549; // dark
 
-  --accent-background: #cbe9f8;
-  --accent-light: #5eaacc;
-  --accent-main: #296f96;
-  --accent-dark: #1d546d;
-  --accent-contrast-text: #0f232c;
+	// blue (accent)
+	--palette-blue-100: #cbe9f8; // background
+	--palette-blue-300: #5eaacc; // light
+	--palette-blue-500: #296f96; // main
+	--palette-blue-700: #1d546d; // dark
 
-  --secondary-light: #49aa83;
-  --secondary-main: #339665;
-  --secondary-dark: #317a60;
+	// green (secondary)
+	--palette-green-400: #49aa83; // light
+	--palette-green-500: #339665; // main
+	--palette-green-600: #317a60; // dark
 
-  --thertiary-light: #ffdeb3;
-  --thertiary-main: #f3c98b;
-  --thertiary-dark: #eba055;
+	// sand (tertiary)
+	--palette-sand-300: #ffdeb3; // light
+	--palette-sand-500: #f3c98b; // main
+	--palette-sand-700: #eba055; // dark
+
+	--palette-error-500: #ef4444;
+	--palette-success-500: #22c55e;
+	--palette-warning-500: #f97316;
 }
 
-// @media (prefers-color-scheme: dark) {
-//   :root {
-//     // color palette
-//     --neutral-background: #1c1d23;
-//     --neutral-border: #bdbfca;
-//     --neutral-dark: #f4f6ff;
-//   }
-// }
+// ─── Layer 2: Semantic tokens ─────────────────────────────────────────────────
+// Components reference only these — never palette values directly.
+:root {
+	--color-bg: var(--palette-orange-200);
+	--color-bg-raised: var(--palette-neutral-0);
+	--color-bg-sunken: var(--palette-orange-100);
 
-// global reset
+	--color-text: var(--palette-neutral-900);
+	--color-text-secondary: var(--palette-neutral-500);
+	--color-text-disabled: var(--palette-neutral-500);
+	--color-text-inverse: var(--palette-neutral-50);
+
+	--color-border: var(--palette-neutral-500);
+	--color-border-focus: var(--palette-orange-500);
+
+	--color-primary: var(--palette-orange-500);
+	--color-primary-hover: var(--palette-orange-600);
+	--color-primary-text: var(--palette-neutral-900);
+
+	--color-accent: var(--palette-blue-500);
+	--color-accent-hover: var(--palette-blue-700);
+
+	--color-error: var(--palette-error-500);
+	--color-success: var(--palette-success-500);
+	--color-warning: var(--palette-warning-500);
+
+	// Fonts — wired via next/font in app/[locale]/layout.tsx
+	--font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
+	--font-heading: var(--font-anton), system-ui, sans-serif;
+}
+
+// ─── Layer 2b: Brand-semantic aliases ─────────────────────────────────────────
+// Lorenzo Panzera's original token names, now backed by Layer-1 primitives (still
+// two-layer, no raw hex in components). Kept so brand components resolve to their
+// exact colors with zero visual drift.
+:root {
+	--neutral-background: var(--palette-neutral-50);
+	--neutral-light: var(--palette-neutral-50);
+	--neutral-main: var(--palette-neutral-500);
+	--neutral-dark: var(--palette-neutral-900);
+	--neutral-text: var(--palette-neutral-900); // was undefined before rebase
+
+	--primary-background: var(--palette-orange-200);
+	--primary-lighter: var(--palette-orange-100);
+	--primary-light: var(--palette-orange-300);
+	--primary-main: var(--palette-orange-500);
+	--primary-dark: var(--palette-orange-600);
+	--primary-text: var(--palette-neutral-900);
+
+	--accent-background: var(--palette-blue-100);
+	--accent-light: var(--palette-blue-300);
+	--accent-main: var(--palette-blue-500);
+	--accent-dark: var(--palette-blue-700);
+	--accent-contrast-text: var(--palette-neutral-900);
+
+	--secondary-light: var(--palette-green-400);
+	--secondary-main: var(--palette-green-500);
+	--secondary-dark: var(--palette-green-600);
+
+	--tertiary-light: var(--palette-sand-300);
+	--tertiary-main: var(--palette-sand-500);
+	--tertiary-dark: var(--palette-sand-700);
+
+	--surface-secondary: var(--palette-orange-100); // was undefined before rebase
+}
+
+// ─── Dark mode ────────────────────────────────────────────────────────────────
+// Not currently enabled (site ships light-only). The two-layer structure is ready:
+// remap Layer-2 tokens under [data-theme="dark"] when needed. No prefers-color-scheme.
+
+// ─── CSS Reset ────────────────────────────────────────────────────────────────
 *,
 *::after,
-*:before {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  box-sizing: border-box;
-  font-family: inherit;
+*::before {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+	font-family: inherit;
 }
 
 html,
 body {
-  scroll-behavior: smooth;
-  height: -webkit-fill-available;
+	scroll-behavior: smooth;
+	height: -webkit-fill-available;
 
-  background-color: var(--primary-background);
-  color: var(--neutral-dark);
+	background-color: var(--color-bg);
+	color: var(--color-text);
 
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
 
-  font-family: var(--font-inter);
-  font-display: swap;
-  font-size: variables.$font-md;
-  line-height: 1.2;
-
-  @include mediaQueries.media("lg") {
-    font-size: variables.$font-md;
-  }
+	font-family: var(--font-body);
+	font-display: swap;
+	font-size: #{variables.$font-md}px;
+	line-height: 1.2;
 }
 
 body {
-  overflow-x: hidden;
-  margin-right: calc(-1 * (100vw - 100%));
+	overflow-x: hidden;
+	// Prevents layout shift when a scrollbar appears/disappears
+	margin-right: calc(-1 * (100vw - 100%));
 
-  &.freeze {
-    overflow-y: hidden;
-  }
+	&.freeze {
+		overflow-y: hidden;
+	}
 
-  .root {
-    isolation: isolate;
-  }
+	.root {
+		isolation: isolate;
+	}
 }
 
 main {
-  width: 100%;
-  height: 100%;
+	width: 100%;
+	height: 100%;
 }
 
 a {
-  font-weight: 500;
-  color: var(--primary-light);
-  text-decoration: none;
+	font-weight: 500;
+	color: var(--primary-light);
+	text-decoration: none;
 
-  &:hover,
-  &:focus {
-    color: var(--primary-light);
-  }
+	&:hover,
+	&:focus {
+		color: var(--primary-light);
+	}
 }
 
 button {
-  cursor: pointer;
-  background-color: transparent;
-  text-decoration: none;
-  color: inherit;
+	cursor: pointer;
+	background-color: transparent;
+	text-decoration: none;
+	color: inherit;
 }

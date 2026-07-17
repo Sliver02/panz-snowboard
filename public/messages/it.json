@@ -1,262 +1,254 @@
 {
-  "header": {
-    "home": "Home",
-    "about": "Chi sono",
-    "activities": "Attività",
-    "snowboard": "Snowboard",
-    "telemark": "Telemark",
-    "mountainBike": "Mountain Bike",
-    "calendar": "Calendario",
-    "contact": "Contatti",
-    "locations": "Dove insegno"
-  },
+	"header": {
+		"home": "Home",
+		"about": "Chi sono",
+		"activities": "Attività",
+		"snowboard": "Snowboard",
+		"telemark": "Telemark",
+		"mountainBike": "Mountain Bike",
+		"calendar": "Calendario",
+		"contact": "Contatti",
+		"locations": "Dove insegno"
+	},
 
-  "cortina": {
-    "title": "Cortina d'Ampezzo",
-    "subtitle": "Il regno delle Dolomiti — discese leggendarie e panorami mozzafiato",
-    "description": "Cortina d'Ampezzo si trova ai piedi di pareti calcaree spettacolari e offre attività di montagna tutto l'anno. In inverno la zona propone ampi comprensori con impianti, pendii tecnici sulle Tofane e la Faloria e angoli tranquilli per scialpinismo e telemark. In estate si apre una rete di sentieri e vie ferrate per escursioni, arrampicata e tour in E-bike lungo creste panoramiche. Il paese è anche un centro culturale di montagna, con rifugi, escursioni guidate e guide locali pronte a costruire esperienze su misura per ogni livello.",
-    "winterTitle": "Inverno — Sci & Montagne",
-    "winterP1": "Cortina d'Ampezzo è famosa per le Tofane e la Faloria — piste tecniche ripide, funivie panoramiche e lunghe discese classiche. Le Cinque Torri e le vette circostanti offrono sci eccellente e panorami iconici delle Dolomiti.",
-    "winterP2": "Oltre alle piste battute, Cortina è una porta d'accesso per scialpinismo ed escursioni invernali panoramiche; eventi serali e rifugi rendono le serate indimenticabili.",
-    "summerTitle": "Estate — Sentieri & Arrampicata",
-    "summerP1": "In estate Cortina diventa un centro per l'arrampicata e le escursioni — vie ferrata, creste alpine e percorsi ciclabili panoramici nelle valli d'Ampezzo offrono molte opzioni.",
-    "summerP2": "Le attività estive più popolari includono escursioni guidate ai rifugi, arrampicate sulle pareti dolomitiche e tour in E-bike attraverso valli e prati alpini."
-  },
-  "sappada": {
-    "title": "Sappada",
-    "subtitle": "Borgo alpino accogliente con piste per famiglie e sentieri panoramici",
-    "description": "Sappada è un borgo alpino incantevole, noto per le piste adatte alle famiglie e i sentieri panoramici per la bici. Le valli limitrofe offrono singletrack tranquilli e opzioni per tour facili adatte a tutti i livelli. In inverno si trovano piste dolci, snowpark locali e discese da telemark tranquille; in estate l'area si apre con sentieri per mountain bike e camminate, perfetti per giornate in famiglia o uscite enduro tecniche.",
-    "winterTitle": "Inverno — Piste Familiari & Tour",
-    "winterP1": "Sappada offre pendii accessibili e terreni ideali per famiglie e principianti. Percorsi in fuoripista e rifugi nelle vicinanze permettono escursioni e scialpinismo facili.",
-    "winterP2": "Le serate a Sappada sono caratterizzate da rifugi accoglienti e cultura alpina locale — un'alternativa tranquilla ai grandi comprensori.",
-    "summerTitle": "Estate — Sentieri & Natura",
-    "summerP1": "In estate si aprono sentieri flow in bosco e piste alpine panoramiche attorno a Sappada per uscite rilassanti tutto il giorno.",
-    "summerP2": "Tour guidati in mountain bike, uscite in E-bike e camminate su creste rendono Sappada una base ideale per avventure di più giorni a bassa intensità."
-  },
-  "zoldoCivetta": {
-    "title": "Zoldo / Civetta",
-    "subtitle": "Creste selvagge e valli appartate — perfette per freeride e avventure alpine",
-    "description": "La valle di Zoldo e il massiccio del Civetta offrono un'esperienza dolomitica autentica, lontano dai comprensori più affollati. In inverno la zona combina il territorio servito da impianti a Civetta con linee più isolate e ripide a Zoldo, ideali per telemark, scialpinismo e freeride. Le condizioni della neve e la morfologia del territorio sono perfette per escursioni e discese tecniche. In estate si trovano singletrack ad alta quota, discese nel bosco e creste panoramiche che attirano mountain biker e escursionisti per giri lunghi e tour di più giorni. Rifugi locali, vie ferrate classiche e panorami mozzafiato completano l'offerta — perfetto per chi cerca solitudine e avventura in montagna.",
-    "winterTitle": "Inverno — Civetta & Zoldo",
-    "winterP1": "L'area sciistica del Civetta offre piste lunghe e ben curate, couloir ripidi e ottimo terreno per freeride. Zoldo completa la zona con valli più tranquille, linee classiche da telemark e una forte cultura di montagna.",
-    "winterP2": "A Zoldo è anche possibile organizzare uscite notturne — escursioni serali guidate e discese al chiaro di luna che trasformano le piste in un'esperienza alpina magica sotto le stelle.",
-    "summerTitle": "Estate — Sentieri & Tour in Mountain Bike",
-    "summerP1": "L'estate apre una rete di singletrack e sentieri d'alta quota. Troverai percorsi dal flow nei boschi a lunghe discese alpine e tratti tecnici da enduro.",
-    "summerP2": "I tour in mountain bike partendo da Zoldo attraversano le valli del Cadore, crinali panoramici e prati ampi — ideali per uscite guidate e tour di più giorni."
-  },
-  "hero": {
-    "title": "SPORTS & ADVENTURE",
-    "subtitle": "Snowboard - Telemark - Mountain Bike"
-  },
-  "general": {
-    "intro": "Benvenuti! Mi chiamo Lorenzo Panzera, sono maestro di snowboard, telemark e guida mountain bike, in poche parole il mio lavoro è quello di trasmettervi il mio amore per lo sport e la montagna!"
-  },
-  "maps": {
-    "title": "Dove insegno",
-    "mapAlt": "Mappa delle zone di insegnamento nelle Dolomiti"
-  },
-  "about": {
-    "photoAlt": "Lorenzo Panzera - Maestro di snowboard",
-    "title": "Lorenzo Panzera",
-    "button": "Chi sono"
-  },
-  "contact": {
-    "title": "Contatti",
-    "description": "Contattami per lezioni, tour o qualsiasi domanda su snowboard, telemark o mountain bike.",
-    "email": "Email",
-    "name": "Nome",
-    "message": "Messaggio",
-    "send": "Invia",
-    "loading": "Caricamento...",
-    "successMessage": "Email inviata!",
-    "errorMessage": "Errore nell'invio",
-    "errorPrefix": "Errore:"
-  },
-  "activities": {
-    "bookButton": "Prenota ora",
-    "ctaDescription": "Assicurati il tuo posto — lezioni private e giornate guidate.",
-    "title": "Attività",
-    "snowboard": {
-      "title": "Snowboard",
-      "description": "Impariamo insieme le basi dello snowboard, carving, freestyle, freeride e snow tour, tutto questo e molto altro.",
-      "extendedDescription": "Lo snowboard non è solo uno sport ma anche uno stile di vita, infatti il mio scopo non è solo quello di insegnarvi la tecnica ma anche di farvi vivere tutte le emozioni che questo ci può regalare! Che siate principianti o esperti, che vogliate migliorare la tecnica di riding o nel freestyle, o che siate interessati ad esplorare le bellissime Dolomiti, cercheremo insieme di creare un percorso adatto alle vostre esigenze per raggiungere i vostri obiettivi divertendosi.",
-      "button": "più info",
-      "heroSubtitle": "Istruzione professionale di snowboard nelle Dolomiti",
-      "packages": {
-        "title": "Pacchetti",
-        "package1": {
-          "title": "Lezioni Private",
-          "subtitle": "Lezioni 1 to 1 totalmente personalizzata in base alle tue capacità e ai tuoi obiettivi, ideale per chi vuole cominciare dalle basi. Contattami per maggiori informazioni.",
-          "price": "Da €50 / h",
-          "features": [
-            "Programma personalizzato",
-            "Feedback video on-snow",
-            "Esercizi di progressione"
-          ]
-        },
-        "package2": {
-          "title": "Lezioni di Gruppo",
-          "subtitle": "Lezioni di gruppo a partire da 2 persone, ideale se volete condividere questi momenti con gli amici o la famiglia. Contattami per maggiori informazioni.",
-          "price": "Da €60 / h",
-          "features": [
-            "Max 4 rider",
-            "Riscaldamento e drill",
-            "Apprendimento mirato al terreno"
-          ]
-        },
-        "package3": {
-          "title": "Snow Tour",
-          "subtitle": "Visitare le piste più belle delle Dolomiti, scoprire i tour più famosi come Sellaronda e Grande Guerra, pranzare nei migliori Chalet, accompagnati da una guida esperta! Contattami per maggiori informazioni.",
-          "price": "Da €300",
-          "features": [
-            "Pianificazione del percorso guidata",
-            "Briefing sicurezza e attrezzatura",
-            "Percorsi panoramici nelle Dolomiti"
-          ]
-        }
-      }
-    },
-    "telemark": {
-      "title": "Telemark",
-      "description": "Alla scoperta di una delle discipline più antiche ed originali dello sci, il divertimento è assicurato.",
-      "extendedDescription": "Lo sci telemark combina la grazia dello sci nordico con il brivido delle discese alpine, creando un'esperienza unica e gratificante sulle piste. Come una delle discipline sciistiche più antiche ed eleganti, il telemark offre una tecnica distintiva a tallone libero che garantisce un controllo e una fluidità eccezionali. Ti guido attraverso i fondamentali dello sci telemark, dalla postura corretta e la distribuzione del peso fino a padroneggiare le caratteristiche curve telemark. Che tu sia completamente nuovo allo sport o voglia perfezionare la tua tecnica, il terreno stupendo delle Dolomiti offre infinite opportunità per avventure telemark.",
-      "button": "più info",
-      "heroSubtitle": "Maestria nell'arte dello sci telemark",
-      "packages": {
-        "title": "Pacchetti",
-        "package1": {
-          "title": "LEZIONI PRIVATE",
-          "subtitle": "Lezioni 1 to 1 totalmente personalizzata in base alle tue capacità e ai tuoi obiettivi, ideale per chi vuole cominciare dalle basi. Contattami per maggiori informazioni.",
-          "price": "Da €50/ora"
-        },
-        "package2": {
-          "title": "LEZIONI DI GRUPPO",
-          "subtitle": "Lezioni di gruppo a partire da 2 persone, ideale se volete condividere questi momenti con gli amici o la famiglia. Il costo Contattami per maggiori informazioni.",
-          "price": "Da €60,00/ora"
-        },
-        "package3": {
-          "title": "TELE TOUR",
-          "subtitle": "Visitare le piste più belle delle Dolomiti, scoprire i tour più famosi come Sellaronda e Grande Guerra, pranzare nei migliori Chalet, accompagnati da una guida esperta! Contattami per maggiori informazioni.",
-          "price": "Da €300"
-        }
-      }
-    },
-    "mountainBike": {
-      "title": "Mountain Bike",
-      "description": "Tour organizzati nelle località più spettacolari delle Dolomiti, tecniche di base, enduro e approccio al bike park.",
-      "extendedDescription": "Esplora le Dolomiti su due ruote con tour guidati in mountain bike e istruzione personalizzata al tuo livello di abilità. Dai percorsi cross-country panoramici attraverso prati alpini ai trail tecnici enduro e sessioni nel bike park, offro una guida completa per mountain biker di tutte le capacità. Impara le tecniche fondamentali inclusa la posizione del corpo, frenata, curve e salite, o supera i tuoi limiti su discese impegnative e salti. Le Dolomiti offrono alcuni dei terreni per mountain bike più spettacolari e diversificati al mondo, con percorsi che vanno da sentieri adatti alle famiglie a piste downhill cariche di adrenalina.",
-      "button": "più info",
-      "heroSubtitle": "Avventure in mountain bike nelle Dolomiti",
-      "packages": {
-        "title": "Brochure & Pacchetti",
-        "package1": {
-          "title": "MEZZA GIORNATA",
-          "subtitle": "Percorsi guidati di breve durata, per chi ha poco tempo ma tanta voglia di esplorare Pieve di Cadore e dintorni. (per maggiori dettagli vedi le brochure)",
-          "price": "Da €200€",
-          "features": [
-            "Percorso guidato",
-            "Attrezzatura consigliata",
-            "Guide locali"
-          ]
-        },
-        "package2": {
-          "title": "GIORNATA INTERA",
-          "subtitle": "Percorsi guidati di una giornata intera, alla scoperta del Cadore e delle sue meraviglie, fra storia, arte e natura.",
-          "price": "Da €250",
-          "features": [
-            "Pranzo in rifugio",
-            "Assistenza guida",
-            "Percorsi panoramici"
-          ]
-        },
-        "package3": {
-          "title": "MTB TOUR",
-          "subtitle": "Tour guidati di più giorni, pianificati in base alle vostre esigenze e capacità.",
-          "price": "Da €300/Giorno",
-          "features": [
-            "Itinerari personalizzati",
-            "Supporto logistico",
-            "Trasporto bagagli"
-          ]
-        }
-      },
-      "brochure": {
-        "title": "BROCHURE",
-        "it": {
-          "title": "Brochure Italiano",
-          "subtitle": "Scarica la brochure in italiano (Mountain Bike Experience)"
-        },
-        "en": {
-          "title": "Brochure English",
-          "subtitle": "Download the English brochure (Mountain Bike Experience)"
-        },
-        "download": "DOWNLOAD"
-      }
-    }
-  },
-  "breadcrumb": {
-    "home": "Home"
-  },
-  "aboutPage": {
-    "title": "Chi Sono",
-    "subtitle": "Passione per le montagne e lo sport",
-    "description": {
-      "p1": "Sport all'aria aperta, montagna e natura: sicuramente sono queste le esperienze che meglio mi definiscono. Il mio nome è Lorenzo Panzera, meglio conosciuto come Panz, e alcuni anni fa sono riuscito a trasformare le mie passioni anche in un lavoro, diventando maestro di Snowboard, Telemark e Guida Mountain Bike. È da qui che voglio partire per raccontarvi meglio cosa faccio e cosa offro.",
-      "title2": "Che attività offro?",
-      "p2": "Come maestro di snowboard e di telemark ski vorrei avvicinare quante più persone possibile a due discipline che non hanno in comune solo la neve, ma anche la sensazione di libertà, la creatività, l’adrenalina e il divertimento! Vi guiderò passo passo dalle basi, se siete dei principianti, o perfezionando insieme tecnica e stile se siete più esperti.<br></br>Come guida di mountain bike, uno sport che sta prendendo sempre più piede anche grazie alle E-bike, vi porterò alla scoperta dei posti più famosi e spettacolari delle Dolomiti, senza trascurare, però, anche sentieri e percorsi meno noti ma ugualmente meritevoli.",
-      "title3": "Dove svolgo queste attività?",
-      "p3": "Partendo dalla mia sede, a Pieve di Cadore, solitamente lavoro a Cortina d’Ampezzo, una posizione strategica che, però, mi consente di raggiungere tutte le principali località delle Dolomiti, a seconda delle vostre necessità.<br></br>A prescindere da quello che sceglierete di fare, il mio obiettivo principale sarà quello di trasmettervi la stessa passione e lo stesso amore che provo per questi sport e per la montagna."
-    }
-  },
-  "privacyPage": {
-    "title": "Informativa sulla privacy",
-    "description": {
-      "p1": "Gentile Utente/Visitatore, ai sensi dell’art. 13 del Regolamento UE 2016/679 (GDPR) forniamo le seguenti informazioni relative al trattamento dei dati personali raccolti tramite questo sito.",
-      "title2": "Titolare del trattamento",
-      "p2": "Il Titolare del trattamento è Lorenzo Panzera<br></br>Via Galghena 15, 32044 - Pieve di Cadore (BL) - Italia<br></br>P.IVA 01287640252<br></br>Tel. (+39) 338 809 0798<br></br>Email: panzisco@gmail.com<br></br>Sito: www.lorenzopanzera.com",
-      "title3": "Finalità e base giuridica",
-      "p3": "I dati personali forniti volontariamente dagli utenti (es. nome, email, recapiti) saranno trattati per rispondere alle richieste inviate tramite il form del sito e per erogare i servizi richiesti. Il trattamento si basa sull'esecuzione del contratto o su misure precontrattuali (art. 6(1)(b) GDPR) e, ove applicabile, sul consenso (art. 6(1)(a)) per comunicazioni di marketing.",
-      "title4": "Tipologia di dati",
-      "p4": "I dati trattati possono comprendere: dati identificativi e di contatto (nome, email, telefono), dati contrattuali e contabili, e dati di navigazione (indirizzo IP, informazioni sul browser e sul dispositivo) raccolti automaticamente per finalità tecniche e statistiche anonime.",
-      "title5": "Dati di navigazione",
-      "p5": "I sistemi informatici e le procedure software preposte al funzionamento del sito acquisiscono, nel normale esercizio, alcuni dati personali che sono trasmessi implicitamente dall'uso dei protocolli di comunicazione Internet (es. indirizzo IP, nomi di dominio, orari di accesso). Questi dati sono utilizzati solo per finalità tecniche e statistiche e conservati per il tempo strettamente necessario.",
-      "title6": "Modalità del trattamento",
-      "p6": "Il trattamento avviene mediante strumenti manuali, informatici e telematici con logiche organizzative ed elaborative strettamente correlate alle finalità e con misure idonee a garantire la sicurezza, l'integrità e la riservatezza dei dati."
-    },
-    "contact": {
-      "title": "Contatti",
-      "p1": "Per esercitare i diritti o richiedere informazioni, contattare il Titolare: panzisco@gmail.com<br></br>Tel. (+39) 338 809 0798"
-    }
-  },
-  "bookingPage": {
-    "title": "Prenotazioni",
-    "intro": "Per prenotare la vostra attività o per avere maggiori informazioni potete compilare il form qui sotto oppure contattarmi direttamente:",
-    "firstName": "Nome",
-    "lastName": "Cognome",
-    "startDate": "Inizio prenotazione",
-    "endDate": "Fine prenotazione",
-    "hours": "Ore",
-    "hourShort": "h",
-    "hoursShort": "h",
-    "fullDay": "Giornata intera",
-    "tour": "Tour",
-    "activity": "Attività",
-    "level": "Livello",
-    "levelSelect": "Seleziona livello",
-    "levelBeginner": "Principiante",
-    "levelIntermediate": "Intermedio",
-    "levelAdvanced": "Avanzato",
-    "people": "Numero persone totali (max 6)",
-    "phone": "Telefono",
-    "email": "E-mail",
-    "message": "Altre richieste / Note",
-    "send": "Invia prenotazione",
-    "loading": "Caricamento...",
-    "errorMessage": "Errore nell'invio della prenotazione",
-    "submittedMessage": "Prenotazione inviata (demo). Ti ricontatterò a breve.",
-    "termsTitle": "Condizioni generali delle prenotazioni",
-    "terms": {
-      "p1": "Nel caso in cui il cliente non si presentasse, il sottoscritto attenderà 15 minuti e la prenotazione non sarà rimborsabile. Le disdette entro 24 ore possono essere rimborsate a discrezione del titolare; le disdette in giornata non sono rimborsabili. È possibile cambiare la data della prenotazione entro 24 ore dall'inizio previo accordo con il titolare."
-    }
-  }
+	"cortina": {
+		"title": "Cortina d'Ampezzo",
+		"subtitle": "Il regno delle Dolomiti — discese leggendarie e panorami mozzafiato",
+		"description": "Cortina d'Ampezzo si trova ai piedi di pareti calcaree spettacolari e offre attività di montagna tutto l'anno. In inverno la zona propone ampi comprensori con impianti, pendii tecnici sulle Tofane e la Faloria e angoli tranquilli per scialpinismo e telemark. In estate si apre una rete di sentieri e vie ferrate per escursioni, arrampicata e tour in E-bike lungo creste panoramiche. Il paese è anche un centro culturale di montagna, con rifugi, escursioni guidate e guide locali pronte a costruire esperienze su misura per ogni livello.",
+		"winterTitle": "Inverno — Sci & Montagne",
+		"winterP1": "Cortina d'Ampezzo è famosa per le Tofane e la Faloria — piste tecniche ripide, funivie panoramiche e lunghe discese classiche. Le Cinque Torri e le vette circostanti offrono sci eccellente e panorami iconici delle Dolomiti.",
+		"winterP2": "Oltre alle piste battute, Cortina è una porta d'accesso per scialpinismo ed escursioni invernali panoramiche; eventi serali e rifugi rendono le serate indimenticabili.",
+		"summerTitle": "Estate — Sentieri & Arrampicata",
+		"summerP1": "In estate Cortina diventa un centro per l'arrampicata e le escursioni — vie ferrata, creste alpine e percorsi ciclabili panoramici nelle valli d'Ampezzo offrono molte opzioni.",
+		"summerP2": "Le attività estive più popolari includono escursioni guidate ai rifugi, arrampicate sulle pareti dolomitiche e tour in E-bike attraverso valli e prati alpini."
+	},
+	"sappada": {
+		"title": "Sappada",
+		"subtitle": "Borgo alpino accogliente con piste per famiglie e sentieri panoramici",
+		"description": "Sappada è un borgo alpino incantevole, noto per le piste adatte alle famiglie e i sentieri panoramici per la bici. Le valli limitrofe offrono singletrack tranquilli e opzioni per tour facili adatte a tutti i livelli. In inverno si trovano piste dolci, snowpark locali e discese da telemark tranquille; in estate l'area si apre con sentieri per mountain bike e camminate, perfetti per giornate in famiglia o uscite enduro tecniche.",
+		"winterTitle": "Inverno — Piste Familiari & Tour",
+		"winterP1": "Sappada offre pendii accessibili e terreni ideali per famiglie e principianti. Percorsi in fuoripista e rifugi nelle vicinanze permettono escursioni e scialpinismo facili.",
+		"winterP2": "Le serate a Sappada sono caratterizzate da rifugi accoglienti e cultura alpina locale — un'alternativa tranquilla ai grandi comprensori.",
+		"summerTitle": "Estate — Sentieri & Natura",
+		"summerP1": "In estate si aprono sentieri flow in bosco e piste alpine panoramiche attorno a Sappada per uscite rilassanti tutto il giorno.",
+		"summerP2": "Tour guidati in mountain bike, uscite in E-bike e camminate su creste rendono Sappada una base ideale per avventure di più giorni a bassa intensità."
+	},
+	"zoldoCivetta": {
+		"title": "Zoldo / Civetta",
+		"subtitle": "Creste selvagge e valli appartate — perfette per freeride e avventure alpine",
+		"description": "La valle di Zoldo e il massiccio del Civetta offrono un'esperienza dolomitica autentica, lontano dai comprensori più affollati. In inverno la zona combina il territorio servito da impianti a Civetta con linee più isolate e ripide a Zoldo, ideali per telemark, scialpinismo e freeride. Le condizioni della neve e la morfologia del territorio sono perfette per escursioni e discese tecniche. In estate si trovano singletrack ad alta quota, discese nel bosco e creste panoramiche che attirano mountain biker e escursionisti per giri lunghi e tour di più giorni. Rifugi locali, vie ferrate classiche e panorami mozzafiato completano l'offerta — perfetto per chi cerca solitudine e avventura in montagna.",
+		"winterTitle": "Inverno — Civetta & Zoldo",
+		"winterP1": "L'area sciistica del Civetta offre piste lunghe e ben curate, couloir ripidi e ottimo terreno per freeride. Zoldo completa la zona con valli più tranquille, linee classiche da telemark e una forte cultura di montagna.",
+		"winterP2": "A Zoldo è anche possibile organizzare uscite notturne — escursioni serali guidate e discese al chiaro di luna che trasformano le piste in un'esperienza alpina magica sotto le stelle.",
+		"summerTitle": "Estate — Sentieri & Tour in Mountain Bike",
+		"summerP1": "L'estate apre una rete di singletrack e sentieri d'alta quota. Troverai percorsi dal flow nei boschi a lunghe discese alpine e tratti tecnici da enduro.",
+		"summerP2": "I tour in mountain bike partendo da Zoldo attraversano le valli del Cadore, crinali panoramici e prati ampi — ideali per uscite guidate e tour di più giorni."
+	},
+	"hero": {
+		"title": "SPORTS & ADVENTURE",
+		"subtitle": "Snowboard - Telemark - Mountain Bike"
+	},
+	"general": {
+		"intro": "Benvenuti! Mi chiamo Lorenzo Panzera, sono maestro di snowboard, telemark e guida mountain bike, in poche parole il mio lavoro è quello di trasmettervi il mio amore per lo sport e la montagna!"
+	},
+	"maps": {
+		"title": "Dove insegno",
+		"mapAlt": "Mappa delle zone di insegnamento nelle Dolomiti"
+	},
+	"about": {
+		"photoAlt": "Lorenzo Panzera - Maestro di snowboard",
+		"title": "Lorenzo Panzera",
+		"button": "Chi sono"
+	},
+	"contact": {
+		"title": "Contatti",
+		"description": "Contattami per lezioni, tour o qualsiasi domanda su snowboard, telemark o mountain bike.",
+		"email": "Email",
+		"name": "Nome",
+		"message": "Messaggio",
+		"send": "Invia",
+		"loading": "Caricamento...",
+		"successMessage": "Email inviata!",
+		"errorMessage": "Errore nell'invio",
+		"errorPrefix": "Errore:"
+	},
+	"activities": {
+		"bookButton": "Prenota ora",
+		"ctaDescription": "Assicurati il tuo posto — lezioni private e giornate guidate.",
+		"title": "Attività",
+		"snowboard": {
+			"title": "Snowboard",
+			"description": "Impariamo insieme le basi dello snowboard, carving, freestyle, freeride e snow tour, tutto questo e molto altro.",
+			"extendedDescription": "Lo snowboard non è solo uno sport ma anche uno stile di vita, infatti il mio scopo non è solo quello di insegnarvi la tecnica ma anche di farvi vivere tutte le emozioni che questo ci può regalare! Che siate principianti o esperti, che vogliate migliorare la tecnica di riding o nel freestyle, o che siate interessati ad esplorare le bellissime Dolomiti, cercheremo insieme di creare un percorso adatto alle vostre esigenze per raggiungere i vostri obiettivi divertendosi.",
+			"button": "più info",
+			"heroSubtitle": "Istruzione professionale di snowboard nelle Dolomiti",
+			"packages": {
+				"title": "Pacchetti",
+				"package1": {
+					"title": "Lezioni Private",
+					"subtitle": "Lezioni 1 to 1 totalmente personalizzata in base alle tue capacità e ai tuoi obiettivi, ideale per chi vuole cominciare dalle basi. Contattami per maggiori informazioni.",
+					"price": "Da €50 / h",
+					"features": [
+						"Programma personalizzato",
+						"Feedback video on-snow",
+						"Esercizi di progressione"
+					]
+				},
+				"package2": {
+					"title": "Lezioni di Gruppo",
+					"subtitle": "Lezioni di gruppo a partire da 2 persone, ideale se volete condividere questi momenti con gli amici o la famiglia. Contattami per maggiori informazioni.",
+					"price": "Da €60 / h",
+					"features": [
+						"Max 4 rider",
+						"Riscaldamento e drill",
+						"Apprendimento mirato al terreno"
+					]
+				},
+				"package3": {
+					"title": "Snow Tour",
+					"subtitle": "Visitare le piste più belle delle Dolomiti, scoprire i tour più famosi come Sellaronda e Grande Guerra, pranzare nei migliori Chalet, accompagnati da una guida esperta! Contattami per maggiori informazioni.",
+					"price": "Da €300",
+					"features": [
+						"Pianificazione del percorso guidata",
+						"Briefing sicurezza e attrezzatura",
+						"Percorsi panoramici nelle Dolomiti"
+					]
+				}
+			}
+		},
+		"telemark": {
+			"title": "Telemark",
+			"description": "Alla scoperta di una delle discipline più antiche ed originali dello sci, il divertimento è assicurato.",
+			"extendedDescription": "Lo sci telemark combina la grazia dello sci nordico con il brivido delle discese alpine, creando un'esperienza unica e gratificante sulle piste. Come una delle discipline sciistiche più antiche ed eleganti, il telemark offre una tecnica distintiva a tallone libero che garantisce un controllo e una fluidità eccezionali. Ti guido attraverso i fondamentali dello sci telemark, dalla postura corretta e la distribuzione del peso fino a padroneggiare le caratteristiche curve telemark. Che tu sia completamente nuovo allo sport o voglia perfezionare la tua tecnica, il terreno stupendo delle Dolomiti offre infinite opportunità per avventure telemark.",
+			"button": "più info",
+			"heroSubtitle": "Maestria nell'arte dello sci telemark",
+			"packages": {
+				"title": "Pacchetti",
+				"package1": {
+					"title": "LEZIONI PRIVATE",
+					"subtitle": "Lezioni 1 to 1 totalmente personalizzata in base alle tue capacità e ai tuoi obiettivi, ideale per chi vuole cominciare dalle basi. Contattami per maggiori informazioni.",
+					"price": "Da €50/ora"
+				},
+				"package2": {
+					"title": "LEZIONI DI GRUPPO",
+					"subtitle": "Lezioni di gruppo a partire da 2 persone, ideale se volete condividere questi momenti con gli amici o la famiglia. Il costo Contattami per maggiori informazioni.",
+					"price": "Da €60,00/ora"
+				},
+				"package3": {
+					"title": "TELE TOUR",
+					"subtitle": "Visitare le piste più belle delle Dolomiti, scoprire i tour più famosi come Sellaronda e Grande Guerra, pranzare nei migliori Chalet, accompagnati da una guida esperta! Contattami per maggiori informazioni.",
+					"price": "Da €300"
+				}
+			}
+		},
+		"mountainBike": {
+			"title": "Mountain Bike",
+			"description": "Tour organizzati nelle località più spettacolari delle Dolomiti, tecniche di base, enduro e approccio al bike park.",
+			"extendedDescription": "Esplora le Dolomiti su due ruote con tour guidati in mountain bike e istruzione personalizzata al tuo livello di abilità. Dai percorsi cross-country panoramici attraverso prati alpini ai trail tecnici enduro e sessioni nel bike park, offro una guida completa per mountain biker di tutte le capacità. Impara le tecniche fondamentali inclusa la posizione del corpo, frenata, curve e salite, o supera i tuoi limiti su discese impegnative e salti. Le Dolomiti offrono alcuni dei terreni per mountain bike più spettacolari e diversificati al mondo, con percorsi che vanno da sentieri adatti alle famiglie a piste downhill cariche di adrenalina.",
+			"button": "più info",
+			"heroSubtitle": "Avventure in mountain bike nelle Dolomiti",
+			"packages": {
+				"title": "Brochure & Pacchetti",
+				"package1": {
+					"title": "MEZZA GIORNATA",
+					"subtitle": "Percorsi guidati di breve durata, per chi ha poco tempo ma tanta voglia di esplorare Pieve di Cadore e dintorni. (per maggiori dettagli vedi le brochure)",
+					"price": "Da €200€",
+					"features": ["Percorso guidato", "Attrezzatura consigliata", "Guide locali"]
+				},
+				"package2": {
+					"title": "GIORNATA INTERA",
+					"subtitle": "Percorsi guidati di una giornata intera, alla scoperta del Cadore e delle sue meraviglie, fra storia, arte e natura.",
+					"price": "Da €250",
+					"features": ["Pranzo in rifugio", "Assistenza guida", "Percorsi panoramici"]
+				},
+				"package3": {
+					"title": "MTB TOUR",
+					"subtitle": "Tour guidati di più giorni, pianificati in base alle vostre esigenze e capacità.",
+					"price": "Da €300/Giorno",
+					"features": [
+						"Itinerari personalizzati",
+						"Supporto logistico",
+						"Trasporto bagagli"
+					]
+				}
+			},
+			"brochure": {
+				"title": "BROCHURE",
+				"it": {
+					"title": "Brochure Italiano",
+					"subtitle": "Scarica la brochure in italiano (Mountain Bike Experience)"
+				},
+				"en": {
+					"title": "Brochure English",
+					"subtitle": "Download the English brochure (Mountain Bike Experience)"
+				},
+				"download": "DOWNLOAD"
+			}
+		}
+	},
+	"breadcrumb": {
+		"home": "Home"
+	},
+	"aboutPage": {
+		"title": "Chi Sono",
+		"subtitle": "Passione per le montagne e lo sport",
+		"description": {
+			"p1": "Sport all'aria aperta, montagna e natura: sicuramente sono queste le esperienze che meglio mi definiscono. Il mio nome è Lorenzo Panzera, meglio conosciuto come Panz, e alcuni anni fa sono riuscito a trasformare le mie passioni anche in un lavoro, diventando maestro di Snowboard, Telemark e Guida Mountain Bike. È da qui che voglio partire per raccontarvi meglio cosa faccio e cosa offro.",
+			"title2": "Che attività offro?",
+			"p2": "Come maestro di snowboard e di telemark ski vorrei avvicinare quante più persone possibile a due discipline che non hanno in comune solo la neve, ma anche la sensazione di libertà, la creatività, l’adrenalina e il divertimento! Vi guiderò passo passo dalle basi, se siete dei principianti, o perfezionando insieme tecnica e stile se siete più esperti.<br></br>Come guida di mountain bike, uno sport che sta prendendo sempre più piede anche grazie alle E-bike, vi porterò alla scoperta dei posti più famosi e spettacolari delle Dolomiti, senza trascurare, però, anche sentieri e percorsi meno noti ma ugualmente meritevoli.",
+			"title3": "Dove svolgo queste attività?",
+			"p3": "Partendo dalla mia sede, a Pieve di Cadore, solitamente lavoro a Cortina d’Ampezzo, una posizione strategica che, però, mi consente di raggiungere tutte le principali località delle Dolomiti, a seconda delle vostre necessità.<br></br>A prescindere da quello che sceglierete di fare, il mio obiettivo principale sarà quello di trasmettervi la stessa passione e lo stesso amore che provo per questi sport e per la montagna."
+		}
+	},
+	"privacyPage": {
+		"title": "Informativa sulla privacy",
+		"description": {
+			"p1": "Gentile Utente/Visitatore, ai sensi dell’art. 13 del Regolamento UE 2016/679 (GDPR) forniamo le seguenti informazioni relative al trattamento dei dati personali raccolti tramite questo sito.",
+			"title2": "Titolare del trattamento",
+			"p2": "Il Titolare del trattamento è Lorenzo Panzera<br></br>Via Galghena 15, 32044 - Pieve di Cadore (BL) - Italia<br></br>P.IVA 01287640252<br></br>Tel. (+39) 338 809 0798<br></br>Email: panzisco@gmail.com<br></br>Sito: www.lorenzopanzera.com",
+			"title3": "Finalità e base giuridica",
+			"p3": "I dati personali forniti volontariamente dagli utenti (es. nome, email, recapiti) saranno trattati per rispondere alle richieste inviate tramite il form del sito e per erogare i servizi richiesti. Il trattamento si basa sull'esecuzione del contratto o su misure precontrattuali (art. 6(1)(b) GDPR) e, ove applicabile, sul consenso (art. 6(1)(a)) per comunicazioni di marketing.",
+			"title4": "Tipologia di dati",
+			"p4": "I dati trattati possono comprendere: dati identificativi e di contatto (nome, email, telefono), dati contrattuali e contabili, e dati di navigazione (indirizzo IP, informazioni sul browser e sul dispositivo) raccolti automaticamente per finalità tecniche e statistiche anonime.",
+			"title5": "Dati di navigazione",
+			"p5": "I sistemi informatici e le procedure software preposte al funzionamento del sito acquisiscono, nel normale esercizio, alcuni dati personali che sono trasmessi implicitamente dall'uso dei protocolli di comunicazione Internet (es. indirizzo IP, nomi di dominio, orari di accesso). Questi dati sono utilizzati solo per finalità tecniche e statistiche e conservati per il tempo strettamente necessario.",
+			"title6": "Modalità del trattamento",
+			"p6": "Il trattamento avviene mediante strumenti manuali, informatici e telematici con logiche organizzative ed elaborative strettamente correlate alle finalità e con misure idonee a garantire la sicurezza, l'integrità e la riservatezza dei dati."
+		},
+		"contact": {
+			"title": "Contatti",
+			"p1": "Per esercitare i diritti o richiedere informazioni, contattare il Titolare: panzisco@gmail.com<br></br>Tel. (+39) 338 809 0798"
+		}
+	},
+	"bookingPage": {
+		"title": "Prenotazioni",
+		"intro": "Per prenotare la vostra attività o per avere maggiori informazioni potete compilare il form qui sotto oppure contattarmi direttamente:",
+		"firstName": "Nome",
+		"lastName": "Cognome",
+		"startDate": "Inizio prenotazione",
+		"endDate": "Fine prenotazione",
+		"hours": "Ore",
+		"hourShort": "h",
+		"hoursShort": "h",
+		"fullDay": "Giornata intera",
+		"tour": "Tour",
+		"activity": "Attività",
+		"level": "Livello",
+		"levelSelect": "Seleziona livello",
+		"levelBeginner": "Principiante",
+		"levelIntermediate": "Intermedio",
+		"levelAdvanced": "Avanzato",
+		"people": "Numero persone totali (max 6)",
+		"phone": "Telefono",
+		"email": "E-mail",
+		"message": "Altre richieste / Note",
+		"send": "Invia prenotazione",
+		"loading": "Caricamento...",
+		"errorMessage": "Errore nell'invio della prenotazione",
+		"submittedMessage": "Prenotazione inviata (demo). Ti ricontatterò a breve.",
+		"termsTitle": "Condizioni generali delle prenotazioni",
+		"terms": {
+			"p1": "Nel caso in cui il cliente non si presentasse, il sottoscritto attenderà 15 minuti e la prenotazione non sarà rimborsabile. Le disdette entro 24 ore possono essere rimborsate a discrezione del titolare; le disdette in giornata non sono rimborsabili. È possibile cambiare la data della prenotazione entro 24 ore dall'inizio previo accordo con il titolare."
+		}
+	}
 }

@@ -1,249 +1,241 @@
 {
-  "header": {
-    "home": "Home",
-    "about": "About me",
-    "activities": "Activities",
-    "snowboard": "Snowboard",
-    "telemark": "Telemark",
-    "mountainBike": "Mountain Bike",
-    "calendar": "Calendar",
-    "contact": "Contact",
-    "locations": "Locations"
-  },
-  "cortina": {
-    "title": "Cortina d'Ampezzo",
-    "subtitle": "Legendary Dolomite playground — epic ski terrain and towering pinnacles",
-    "description": "Cortina d'Ampezzo sits beneath dramatic limestone walls and hosts a diverse range of mountain activities year-round. In winter the area features large lift-linked ski zones, steep technical slopes on the Tofane and Faloria, and quieter corners for ski touring and telemark. In summer, a network of trails and via ferrata opens up alpine ridgelines for hiking, climbing and E-bike tours. The town itself is a cultural hub with mountain huts, guided excursions and local mountain guides available to craft tailor-made experiences for every level.",
-    "winterTitle": "Winter — Ski & Mountains",
-    "winterP1": "Cortina d'Ampezzo is famous for the Tofane and Faloria areas — steep technical pistes, scenic gondolas and classic long runs. The dramatic Cinque Torri and the surrounding peaks offer superb skiing and iconic Dolomite panoramas.",
-    "winterP2": "Beyond groomers, Cortina is a gateway for ski mountaineering and scenic winter hikes; evening events and mountain huts turn cold nights into memorable alpine evenings.",
-    "summerTitle": "Summer — Trails & Climbing",
-    "summerP1": "In summer Cortina becomes a rock-climbing and hiking hub — via ferrata routes, alpine ridgelines and panoramic cycle paths across the Ampezzo valleys provide endless options.",
-    "summerP2": "Popular summer activities include guided hikes to Rifugios, climbing the Dolomite walls, and scenic E-bike tours through the valleys and alpine meadows."
-  },
-  "sappada": {
-    "title": "Sappada",
-    "subtitle": "Charming alpine village with family-friendly slopes and scenic singletracks",
-    "description": "Sappada is a charming alpine village known for its family-friendly slopes and scenic bike trails. The nearby valleys offer quiet singletracks and easy touring options for all levels. In winter you find gentle ski runs, local snow parks and calm telemark lines; in summer the area becomes a network of trails for mountain biking and hiking, perfect for family days or technical enduro rides.",
-    "winterTitle": "Winter — Family Slopes & Tours",
-    "winterP1": "Sappada offers approachable slopes and gentle terrain, ideal for families and learners. Nearby backcountry routes and local huts provide easy touring and ski touring options.",
-    "winterP2": "Evenings in Sappada feature cozy lodges and local Alpine culture — a quiet alternative to larger resorts.",
-    "summerTitle": "Summer — Trails & Nature",
-    "summerP1": "Summer opens flowy forest trails and scenic alpine tracks around Sappada for relaxed all-day rides.",
-    "summerP2": "Guided mountain bike tours, e-bike outings and hilltop hikes make Sappada a great base for low-key multi-day adventures."
-  },
-  "zoldoCivetta": {
-    "title": "Zoldo / Civetta",
-    "subtitle": "Wild ridgelines and secluded valleys — ideal for freeride and alpine adventures",
-    "description": "The Zoldo valley and the Civetta massif provide an authentic Dolomite experience away from the busiest resorts. In winter the area combines technical lift-served terrain in Civetta with quieter, steep telemark lines and backcountry possibilities in Zoldo. Snow conditions and varied topography make the area great for freeride and mountain touring. In summer, high alpine singletracks, forested descents and panoramic ridge trails attract mountain bikers and hikers looking for long rides and multi-day tours. Local huts (rifugi), classic via ferrata and scenic ridgelines complete the offering — ideal for riders and trekkers seeking solitude and challenge.",
-    "winterTitle": "Winter — Civetta & Zoldo",
-    "winterP1": "The Civetta ski area features long, well-prepared runs, steep couloirs and excellent freeride terrain. Zoldo complements the area with quieter valleys, classic telemark lines and a strong mountain culture.",
-    "winterP2": "In Zoldo you can also arrange night rides — guided evening excursions and moonlit descents that turn familiar slopes into a magical alpine experience under the stars.",
-    "summerTitle": "Summer — Trails & Mountain Bike Tours",
-    "summerP1": "Summer opens a network of singletrack and high alpine trails. Expect everything from flowing forest trails to long alpine descents and technical enduro lines.",
-    "summerP2": "Popular mountain bike tours from Zoldo take you through the Cadore valleys, across ridgelines and down into wide, scenic meadows — ideal for guided rides and multi-day excursions."
-  },
-  "hero": {
-    "title": "SPORTS & ADVENTURE",
-    "subtitle": "Snowboard - Telemark - Mountain Bike"
-  },
-  "general": {
-    "intro": "Welcome! My name is Lorenzo Panzera, I'm a snowboard instructor, telemark instructor, and mountain bike guide. In a few words, my job is to share my love for sports and the mountains with you!"
-  },
-  "maps": {
-    "title": "Main Locations",
-    "mapAlt": "Map of teaching locations in the Dolomites"
-  },
-  "about": {
-    "photoAlt": "Lorenzo Panzera - Snowboard teacher",
-    "title": "Lorenzo Panzera",
-    "button": "About me"
-  },
-  "contact": {
-    "title": "Contact",
-    "description": "Get in touch for lessons, tours, or any questions about snowboard, telemark, or mountain bike activities.",
-    "email": "Email",
-    "name": "Name",
-    "message": "Message",
-    "send": "Send",
-    "loading": "Loading...",
-    "successMessage": "Email sent!",
-    "errorMessage": "Error sending email",
-    "errorPrefix": "Error:"
-  },
-  "activities": {
-    "bookButton": "Book now",
-    "ctaDescription": "Secure your spot — private lessons and guided days.",
-    "title": "Activities",
-    "snowboard": {
-      "title": "Snowboard",
-      "description": "Let's learn together the basics of snowboarding, carving, freestyle, freeride and snow tours, all this and much more.",
-      "extendedDescription": "snowboard is not just a sport but also a lifestyle, in fact my goal is not only to teach you the technique but also to make you experience all the emotions that this can give us! Whether you are a beginner or an expert, whether you want to improve your riding or freestyle technique, or whether you are interested in exploring the beautiful Dolomites, we will try together to create a path suitable for your needs to achieve your goals while having fun.",
-      "button": "more info",
-      "heroSubtitle": "Professional snowboard instruction in the Dolomites",
-      "packages": {
-        "title": "Packages",
-        "package1": {
-          "title": "Private Lesson",
-          "price": "Starting from €50 / h",
-          "subtitle": "One-to-one lessons fully tailored to your abilities and goals — ideal if you want to start from the basics. Contact me for more information.",
-          "features": [
-            "Personalized lesson plan",
-            "On-snow video feedback",
-            "Progression exercises"
-          ]
-        },
-        "package2": {
-          "title": "Half-Day Group",
-          "price": "Starting from €60 / h",
-          "subtitle": "Group lessons starting from two people — perfect to share the experience with friends or family. Contact me for more information.",
-          "features": [
-            "Max 4 riders",
-            "Warm-up and drills",
-            "Terrain-focused learning"
-          ]
-        },
-        "package3": {
-          "title": "Full-Day Tour",
-          "price": "Starting from €300",
-          "subtitle": "If you want to visit the most beautiful slopes of the Dolomites, discover the most famous tours like Sellaronda and Grande Guerra, dine in the best chalets, accompanied by an expert guide! Contact me for more information.",
-          "features": [
-            "Guided route planning",
-            "Safety briefing & equipment",
-            "Scenic Dolomites routes"
-          ]
-        }
-      }
-    },
-    "telemark": {
-      "title": "Telemark",
-      "description": "Discover one of the oldest and most original skiing disciplines, fun is guaranteed.",
-      "extendedDescription": "Telemark skiing combines the grace of nordic skiing with the thrill of alpine descents, creating a unique and rewarding experience on the slopes. As one of the oldest and most elegant skiing disciplines, telemark offers a distinctive free-heel technique that provides exceptional control and fluidity. I guide you through the fundamentals of telemark skiing, from proper stance and weight distribution to mastering those signature telemark turns. Whether you're completely new to the sport or looking to refine your technique, the stunning terrain of the Dolomites offers endless opportunities for telemark adventures.",
-      "button": "more info",
-      "heroSubtitle": "Master the art of telemark skiing",
-      "packages": {
-        "title": "Packages",
-        "package1": {
-          "title": "Private Lesson",
-          "subtitle": "One-to-one lessons fully tailored to your abilities and goals — ideal if you want to start from the basics. Contact me for more information.",
-          "price": "Starting from €50/h"
-        },
-        "package2": {
-          "title": "Group Lessons",
-          "subtitle": "Group lessons starting from 2 people — ideal to share the experience with friends or family. Contact me for more information.",
-          "price": "Starting from €60/h"
-        },
-        "package3": {
-          "title": "Tele Tour",
-          "subtitle": "If you want to visit the most beautiful slopes of the Dolomites, discover the most famous tours like Sellaronda and Grande Guerra, dine in the best chalets, accompanied by an expert guide! Contact me for more information.",
-          "price": "Starting from €300"
-        }
-      }
-    },
-    "mountainBike": {
-      "title": "Mountain Bike",
-      "description": "Organized tours in the most spectacular locations in the Dolomites, basic techniques, enduro and bike park approach.",
-      "extendedDescription": "Explore the Dolomites on two wheels with guided mountain bike tours and instruction tailored to your skill level. From scenic cross-country routes through alpine meadows to technical enduro trails and bike park sessions, I offer comprehensive guidance for mountain bikers of all abilities. Learn fundamental techniques including body positioning, braking, cornering, and climbing, or push your limits on challenging descents and jumps. The Dolomites provide some of the most spectacular and diverse mountain biking terrain in the world, with routes ranging from family-friendly paths to adrenaline-pumping downhill tracks.",
-      "button": "more info",
-      "heroSubtitle": "Mountain bike adventures in the Dolomites",
-      "packages": {
-        "title": "Brochure & Packages",
-        "package1": {
-          "title": "Half-Day",
-          "subtitle": "Short guided routes for those with little time but a big desire to explore Pieve di Cadore and surroundings. (see brochures for details)",
-          "price": "Starting from €200",
-          "features": ["Guided route", "Recommended gear", "Local guides"]
-        },
-        "package2": {
-          "title": "Full-Day",
-          "subtitle": "Full-day guided routes to discover Cadore and its wonders — history, culture and nature.",
-          "price": "Starting from €250",
-          "features": ["Refuge lunch", "Guide support", "Scenic routes"]
-        },
-        "package3": {
-          "title": "MTB Tour",
-          "subtitle": "Multi-day guided tours planned according to your needs and abilities.",
-          "price": "Starting from €300/day",
-          "features": [
-            "Custom itineraries",
-            "Logistic support",
-            "Luggage transport"
-          ]
-        }
-      },
-      "brochure": {
-        "title": "BROCHURE",
-        "it": {
-          "title": "Brochure Italian",
-          "subtitle": "Download the Italian brochure (Mountain Bike Experience)"
-        },
-        "en": {
-          "title": "Brochure English",
-          "subtitle": "Download the English brochure (Mountain Bike Experience)"
-        },
-        "download": "DOWNLOAD"
-      }
-    }
-  },
-  "breadcrumb": {
-    "home": "Home"
-  },
-  "aboutPage": {
-    "title": "About Me",
-    "subtitle": "Passion for mountains and sports",
-    "description": {
-      "p1": "Outdoor sports, mountains, and nature: these are definitely the experiences that best define me. My name is Lorenzo Panzera, better known as Panz, and a few years ago I managed to turn my passions into a job, becoming a certified instructor of Snowboard, Telemark, and Mountain Bike Guide. This is where I want to start to tell you more about what I do and what I offer.",
-      "title2": "What activities do I offer?",
-      "p2": "As snowboard instructor and telemark ski instructor, I want to bring as many people as possible closer to two disciplines that share not only snow but also the feeling of freedom, creativity, adrenaline, and fun! I will guide you step by step from the basics if you are beginners, or by perfecting technique and style together if you are more experienced.<br></br><br></br>As a mountain bike guide, a sport that is gaining more and more ground also thanks to E-bikes, I will take you to discover the most famous and spectacular places in the Dolomites, without neglecting less known but equally worthy trails and routes.",
-      "title3": "Where do I carry out these activities?",
-      "p3": "Starting from my base, in Pieve di Cadore, I usually work in Cortina d’Ampezzo, a strategic location that, however, allows me to reach all the main locations of the Dolomites, depending on your needs.<br></br><br></br>Regardless of what you choose to do, my main goal will be to convey to you the same passion and love that I feel for these sports and for the mountains."
-    }
-  },
-  "privacyPage": {
-    "title": "Privacy Policy",
-    "description": {
-      "p1": "Dear User/Visitor, pursuant to art. 13 of EU Regulation 2016/679 (GDPR), we provide the following information regarding the processing of personal data collected through this website.",
-      "title2": "Data Controller",
-      "p2": "The data controller is Lorenzo Panzera<br></br>Via Galghena 15, 32044 - Pieve di Cadore (BL) - Italy<br></br>VAT: 01287640252<br></br>Tel. (+39) 338 809 0798<br></br>Email: panzisco@gmail.com<br></br>Website: www.lorenzopanzera.com",
-      "title3": "Purposes and legal basis",
-      "p3": "Personal data voluntarily provided by users (e.g. name, email, contact details) will be processed to answer requests sent via the site form and to provide the requested services. Processing is based on execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) and, where applicable, on consent (art. 6(1)(a)) for marketing communications.",
-      "title4": "Types of data",
-      "p4": "Processed data may include identification and contact data (name, email, phone), contractual and accounting data, and navigation data (IP address, browser and device information) collected automatically for technical and anonymous statistical purposes.",
-      "title5": "Navigation data",
-      "p5": "Information systems and software procedures responsible for the site operation acquire, in normal operation, certain personal data which are implicitly transmitted by use of Internet communication protocols (e.g., IP address, domain names, access times). Such data are used only for technical and statistical purposes and are retained for the time strictly necessary.",
-      "title6": "Processing methods",
-      "p6": "Data are processed using manual, IT and telematic tools with organizational and logical procedures strictly related to the purposes described and adopting appropriate security measures to ensure confidentiality and integrity."
-    }
-  },
-  "bookingPage": {
-    "title": "Booking",
-    "intro": "To book an activity or request information, fill the form below or contact me directly:",
-    "firstName": "First name",
-    "lastName": "Last name",
-    "startDate": "Start date",
-    "endDate": "End date",
-    "hours": "Hours",
-    "hourShort": "h",
-    "hoursShort": "h",
-    "fullDay": "Full day",
-    "tour": "Tour",
-    "activity": "Activity",
-    "level": "Level",
-    "levelSelect": "Select level",
-    "levelBeginner": "Beginner",
-    "levelIntermediate": "Intermediate",
-    "levelAdvanced": "Advanced",
-    "people": "Number of people (max 6)",
-    "phone": "Phone",
-    "email": "E-mail",
-    "message": "Other requests / Notes",
-    "send": "Send booking",
-    "loading": "Loading...",
-    "errorMessage": "Error sending booking",
-    "submittedMessage": "Booking submitted (demo). I'll contact you soon.",
-    "termsTitle": "Booking terms",
-    "terms": {
-      "p1": "If the client does not show up, the instructor will wait 15 minutes and the reservation will not be refundable. Cancellations within 24 hours may be refunded at the instructor's discretion; same-day cancellations are not refundable. Changes to the booking date are possible up to 24 hours before the start, subject to agreement with the instructor."
-    }
-  }
+	"header": {
+		"home": "Home",
+		"about": "About me",
+		"activities": "Activities",
+		"snowboard": "Snowboard",
+		"telemark": "Telemark",
+		"mountainBike": "Mountain Bike",
+		"calendar": "Calendar",
+		"contact": "Contact",
+		"locations": "Locations"
+	},
+	"cortina": {
+		"title": "Cortina d'Ampezzo",
+		"subtitle": "Legendary Dolomite playground — epic ski terrain and towering pinnacles",
+		"description": "Cortina d'Ampezzo sits beneath dramatic limestone walls and hosts a diverse range of mountain activities year-round. In winter the area features large lift-linked ski zones, steep technical slopes on the Tofane and Faloria, and quieter corners for ski touring and telemark. In summer, a network of trails and via ferrata opens up alpine ridgelines for hiking, climbing and E-bike tours. The town itself is a cultural hub with mountain huts, guided excursions and local mountain guides available to craft tailor-made experiences for every level.",
+		"winterTitle": "Winter — Ski & Mountains",
+		"winterP1": "Cortina d'Ampezzo is famous for the Tofane and Faloria areas — steep technical pistes, scenic gondolas and classic long runs. The dramatic Cinque Torri and the surrounding peaks offer superb skiing and iconic Dolomite panoramas.",
+		"winterP2": "Beyond groomers, Cortina is a gateway for ski mountaineering and scenic winter hikes; evening events and mountain huts turn cold nights into memorable alpine evenings.",
+		"summerTitle": "Summer — Trails & Climbing",
+		"summerP1": "In summer Cortina becomes a rock-climbing and hiking hub — via ferrata routes, alpine ridgelines and panoramic cycle paths across the Ampezzo valleys provide endless options.",
+		"summerP2": "Popular summer activities include guided hikes to Rifugios, climbing the Dolomite walls, and scenic E-bike tours through the valleys and alpine meadows."
+	},
+	"sappada": {
+		"title": "Sappada",
+		"subtitle": "Charming alpine village with family-friendly slopes and scenic singletracks",
+		"description": "Sappada is a charming alpine village known for its family-friendly slopes and scenic bike trails. The nearby valleys offer quiet singletracks and easy touring options for all levels. In winter you find gentle ski runs, local snow parks and calm telemark lines; in summer the area becomes a network of trails for mountain biking and hiking, perfect for family days or technical enduro rides.",
+		"winterTitle": "Winter — Family Slopes & Tours",
+		"winterP1": "Sappada offers approachable slopes and gentle terrain, ideal for families and learners. Nearby backcountry routes and local huts provide easy touring and ski touring options.",
+		"winterP2": "Evenings in Sappada feature cozy lodges and local Alpine culture — a quiet alternative to larger resorts.",
+		"summerTitle": "Summer — Trails & Nature",
+		"summerP1": "Summer opens flowy forest trails and scenic alpine tracks around Sappada for relaxed all-day rides.",
+		"summerP2": "Guided mountain bike tours, e-bike outings and hilltop hikes make Sappada a great base for low-key multi-day adventures."
+	},
+	"zoldoCivetta": {
+		"title": "Zoldo / Civetta",
+		"subtitle": "Wild ridgelines and secluded valleys — ideal for freeride and alpine adventures",
+		"description": "The Zoldo valley and the Civetta massif provide an authentic Dolomite experience away from the busiest resorts. In winter the area combines technical lift-served terrain in Civetta with quieter, steep telemark lines and backcountry possibilities in Zoldo. Snow conditions and varied topography make the area great for freeride and mountain touring. In summer, high alpine singletracks, forested descents and panoramic ridge trails attract mountain bikers and hikers looking for long rides and multi-day tours. Local huts (rifugi), classic via ferrata and scenic ridgelines complete the offering — ideal for riders and trekkers seeking solitude and challenge.",
+		"winterTitle": "Winter — Civetta & Zoldo",
+		"winterP1": "The Civetta ski area features long, well-prepared runs, steep couloirs and excellent freeride terrain. Zoldo complements the area with quieter valleys, classic telemark lines and a strong mountain culture.",
+		"winterP2": "In Zoldo you can also arrange night rides — guided evening excursions and moonlit descents that turn familiar slopes into a magical alpine experience under the stars.",
+		"summerTitle": "Summer — Trails & Mountain Bike Tours",
+		"summerP1": "Summer opens a network of singletrack and high alpine trails. Expect everything from flowing forest trails to long alpine descents and technical enduro lines.",
+		"summerP2": "Popular mountain bike tours from Zoldo take you through the Cadore valleys, across ridgelines and down into wide, scenic meadows — ideal for guided rides and multi-day excursions."
+	},
+	"hero": {
+		"title": "SPORTS & ADVENTURE",
+		"subtitle": "Snowboard - Telemark - Mountain Bike"
+	},
+	"general": {
+		"intro": "Welcome! My name is Lorenzo Panzera, I'm a snowboard instructor, telemark instructor, and mountain bike guide. In a few words, my job is to share my love for sports and the mountains with you!"
+	},
+	"maps": {
+		"title": "Main Locations",
+		"mapAlt": "Map of teaching locations in the Dolomites"
+	},
+	"about": {
+		"photoAlt": "Lorenzo Panzera - Snowboard teacher",
+		"title": "Lorenzo Panzera",
+		"button": "About me"
+	},
+	"contact": {
+		"title": "Contact",
+		"description": "Get in touch for lessons, tours, or any questions about snowboard, telemark, or mountain bike activities.",
+		"email": "Email",
+		"name": "Name",
+		"message": "Message",
+		"send": "Send",
+		"loading": "Loading...",
+		"successMessage": "Email sent!",
+		"errorMessage": "Error sending email",
+		"errorPrefix": "Error:"
+	},
+	"activities": {
+		"bookButton": "Book now",
+		"ctaDescription": "Secure your spot — private lessons and guided days.",
+		"title": "Activities",
+		"snowboard": {
+			"title": "Snowboard",
+			"description": "Let's learn together the basics of snowboarding, carving, freestyle, freeride and snow tours, all this and much more.",
+			"extendedDescription": "snowboard is not just a sport but also a lifestyle, in fact my goal is not only to teach you the technique but also to make you experience all the emotions that this can give us! Whether you are a beginner or an expert, whether you want to improve your riding or freestyle technique, or whether you are interested in exploring the beautiful Dolomites, we will try together to create a path suitable for your needs to achieve your goals while having fun.",
+			"button": "more info",
+			"heroSubtitle": "Professional snowboard instruction in the Dolomites",
+			"packages": {
+				"title": "Packages",
+				"package1": {
+					"title": "Private Lesson",
+					"price": "Starting from €50 / h",
+					"subtitle": "One-to-one lessons fully tailored to your abilities and goals — ideal if you want to start from the basics. Contact me for more information.",
+					"features": [
+						"Personalized lesson plan",
+						"On-snow video feedback",
+						"Progression exercises"
+					]
+				},
+				"package2": {
+					"title": "Half-Day Group",
+					"price": "Starting from €60 / h",
+					"subtitle": "Group lessons starting from two people — perfect to share the experience with friends or family. Contact me for more information.",
+					"features": ["Max 4 riders", "Warm-up and drills", "Terrain-focused learning"]
+				},
+				"package3": {
+					"title": "Full-Day Tour",
+					"price": "Starting from €300",
+					"subtitle": "If you want to visit the most beautiful slopes of the Dolomites, discover the most famous tours like Sellaronda and Grande Guerra, dine in the best chalets, accompanied by an expert guide! Contact me for more information.",
+					"features": [
+						"Guided route planning",
+						"Safety briefing & equipment",
+						"Scenic Dolomites routes"
+					]
+				}
+			}
+		},
+		"telemark": {
+			"title": "Telemark",
+			"description": "Discover one of the oldest and most original skiing disciplines, fun is guaranteed.",
+			"extendedDescription": "Telemark skiing combines the grace of nordic skiing with the thrill of alpine descents, creating a unique and rewarding experience on the slopes. As one of the oldest and most elegant skiing disciplines, telemark offers a distinctive free-heel technique that provides exceptional control and fluidity. I guide you through the fundamentals of telemark skiing, from proper stance and weight distribution to mastering those signature telemark turns. Whether you're completely new to the sport or looking to refine your technique, the stunning terrain of the Dolomites offers endless opportunities for telemark adventures.",
+			"button": "more info",
+			"heroSubtitle": "Master the art of telemark skiing",
+			"packages": {
+				"title": "Packages",
+				"package1": {
+					"title": "Private Lesson",
+					"subtitle": "One-to-one lessons fully tailored to your abilities and goals — ideal if you want to start from the basics. Contact me for more information.",
+					"price": "Starting from €50/h"
+				},
+				"package2": {
+					"title": "Group Lessons",
+					"subtitle": "Group lessons starting from 2 people — ideal to share the experience with friends or family. Contact me for more information.",
+					"price": "Starting from €60/h"
+				},
+				"package3": {
+					"title": "Tele Tour",
+					"subtitle": "If you want to visit the most beautiful slopes of the Dolomites, discover the most famous tours like Sellaronda and Grande Guerra, dine in the best chalets, accompanied by an expert guide! Contact me for more information.",
+					"price": "Starting from €300"
+				}
+			}
+		},
+		"mountainBike": {
+			"title": "Mountain Bike",
+			"description": "Organized tours in the most spectacular locations in the Dolomites, basic techniques, enduro and bike park approach.",
+			"extendedDescription": "Explore the Dolomites on two wheels with guided mountain bike tours and instruction tailored to your skill level. From scenic cross-country routes through alpine meadows to technical enduro trails and bike park sessions, I offer comprehensive guidance for mountain bikers of all abilities. Learn fundamental techniques including body positioning, braking, cornering, and climbing, or push your limits on challenging descents and jumps. The Dolomites provide some of the most spectacular and diverse mountain biking terrain in the world, with routes ranging from family-friendly paths to adrenaline-pumping downhill tracks.",
+			"button": "more info",
+			"heroSubtitle": "Mountain bike adventures in the Dolomites",
+			"packages": {
+				"title": "Brochure & Packages",
+				"package1": {
+					"title": "Half-Day",
+					"subtitle": "Short guided routes for those with little time but a big desire to explore Pieve di Cadore and surroundings. (see brochures for details)",
+					"price": "Starting from €200",
+					"features": ["Guided route", "Recommended gear", "Local guides"]
+				},
+				"package2": {
+					"title": "Full-Day",
+					"subtitle": "Full-day guided routes to discover Cadore and its wonders — history, culture and nature.",
+					"price": "Starting from €250",
+					"features": ["Refuge lunch", "Guide support", "Scenic routes"]
+				},
+				"package3": {
+					"title": "MTB Tour",
+					"subtitle": "Multi-day guided tours planned according to your needs and abilities.",
+					"price": "Starting from €300/day",
+					"features": ["Custom itineraries", "Logistic support", "Luggage transport"]
+				}
+			},
+			"brochure": {
+				"title": "BROCHURE",
+				"it": {
+					"title": "Brochure Italian",
+					"subtitle": "Download the Italian brochure (Mountain Bike Experience)"
+				},
+				"en": {
+					"title": "Brochure English",
+					"subtitle": "Download the English brochure (Mountain Bike Experience)"
+				},
+				"download": "DOWNLOAD"
+			}
+		}
+	},
+	"breadcrumb": {
+		"home": "Home"
+	},
+	"aboutPage": {
+		"title": "About Me",
+		"subtitle": "Passion for mountains and sports",
+		"description": {
+			"p1": "Outdoor sports, mountains, and nature: these are definitely the experiences that best define me. My name is Lorenzo Panzera, better known as Panz, and a few years ago I managed to turn my passions into a job, becoming a certified instructor of Snowboard, Telemark, and Mountain Bike Guide. This is where I want to start to tell you more about what I do and what I offer.",
+			"title2": "What activities do I offer?",
+			"p2": "As snowboard instructor and telemark ski instructor, I want to bring as many people as possible closer to two disciplines that share not only snow but also the feeling of freedom, creativity, adrenaline, and fun! I will guide you step by step from the basics if you are beginners, or by perfecting technique and style together if you are more experienced.<br></br><br></br>As a mountain bike guide, a sport that is gaining more and more ground also thanks to E-bikes, I will take you to discover the most famous and spectacular places in the Dolomites, without neglecting less known but equally worthy trails and routes.",
+			"title3": "Where do I carry out these activities?",
+			"p3": "Starting from my base, in Pieve di Cadore, I usually work in Cortina d’Ampezzo, a strategic location that, however, allows me to reach all the main locations of the Dolomites, depending on your needs.<br></br><br></br>Regardless of what you choose to do, my main goal will be to convey to you the same passion and love that I feel for these sports and for the mountains."
+		}
+	},
+	"privacyPage": {
+		"title": "Privacy Policy",
+		"description": {
+			"p1": "Dear User/Visitor, pursuant to art. 13 of EU Regulation 2016/679 (GDPR), we provide the following information regarding the processing of personal data collected through this website.",
+			"title2": "Data Controller",
+			"p2": "The data controller is Lorenzo Panzera<br></br>Via Galghena 15, 32044 - Pieve di Cadore (BL) - Italy<br></br>VAT: 01287640252<br></br>Tel. (+39) 338 809 0798<br></br>Email: panzisco@gmail.com<br></br>Website: www.lorenzopanzera.com",
+			"title3": "Purposes and legal basis",
+			"p3": "Personal data voluntarily provided by users (e.g. name, email, contact details) will be processed to answer requests sent via the site form and to provide the requested services. Processing is based on execution of a contract or pre-contractual measures (art. 6(1)(b) GDPR) and, where applicable, on consent (art. 6(1)(a)) for marketing communications.",
+			"title4": "Types of data",
+			"p4": "Processed data may include identification and contact data (name, email, phone), contractual and accounting data, and navigation data (IP address, browser and device information) collected automatically for technical and anonymous statistical purposes.",
+			"title5": "Navigation data",
+			"p5": "Information systems and software procedures responsible for the site operation acquire, in normal operation, certain personal data which are implicitly transmitted by use of Internet communication protocols (e.g., IP address, domain names, access times). Such data are used only for technical and statistical purposes and are retained for the time strictly necessary.",
+			"title6": "Processing methods",
+			"p6": "Data are processed using manual, IT and telematic tools with organizational and logical procedures strictly related to the purposes described and adopting appropriate security measures to ensure confidentiality and integrity."
+		}
+	},
+	"bookingPage": {
+		"title": "Booking",
+		"intro": "To book an activity or request information, fill the form below or contact me directly:",
+		"firstName": "First name",
+		"lastName": "Last name",
+		"startDate": "Start date",
+		"endDate": "End date",
+		"hours": "Hours",
+		"hourShort": "h",
+		"hoursShort": "h",
+		"fullDay": "Full day",
+		"tour": "Tour",
+		"activity": "Activity",
+		"level": "Level",
+		"levelSelect": "Select level",
+		"levelBeginner": "Beginner",
+		"levelIntermediate": "Intermediate",
+		"levelAdvanced": "Advanced",
+		"people": "Number of people (max 6)",
+		"phone": "Phone",
+		"email": "E-mail",
+		"message": "Other requests / Notes",
+		"send": "Send booking",
+		"loading": "Loading...",
+		"errorMessage": "Error sending booking",
+		"submittedMessage": "Booking submitted (demo). I'll contact you soon.",
+		"termsTitle": "Booking terms",
+		"terms": {
+			"p1": "If the client does not show up, the instructor will wait 15 minutes and the reservation will not be refundable. Cancellations within 24 hours may be refunded at the instructor's discretion; same-day cancellations are not refundable. Changes to the booking date are possible up to 24 hours before the start, subject to agreement with the instructor."
+		}
+	}
 }

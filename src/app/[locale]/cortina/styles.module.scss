@@ -2,52 +2,52 @@
 @use "../../../designSystem/mediaQueries";
 
 .title {
-  font-size: variables.$font-xl;
-  font-weight: bold;
-  margin-bottom: 24px;
+	font-size: variables.$font-xl;
+	font-weight: bold;
+	margin-bottom: 24px;
 }
 
 .description {
-  font-size: variables.$font-md;
-  color: var(--neutral-dark);
+	font-size: variables.$font-md;
+	color: var(--neutral-dark);
 }
 
 .sectionTitle {
-  margin: 0 0 6px 0;
-  font-size: variables.$font-xl;
-  font-weight: 800;
-  color: var(--neutral-dark);
+	margin: 0 0 6px 0;
+	font-size: variables.$font-xl;
+	font-weight: 800;
+	color: var(--neutral-dark);
 }
 
 .responsiveImage {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 6px;
-  object-fit: cover;
+	width: 100%;
+	height: auto;
+	display: block;
+	border-radius: 6px;
+	object-fit: cover;
 }
 
 .tightSection {
-  padding-top: 6px;
-  padding-bottom: 6px;
+	padding-top: 6px;
+	padding-bottom: 6px;
 }
 
 .rowBlock {
-  gap: 16px;
+	gap: 16px;
 }
 
 .imageCol {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .textCol {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .blockSpacing {
-  margin-top: 12px;
-  margin-bottom: 12px;
+	margin-top: 12px;
+	margin-bottom: 12px;
 }

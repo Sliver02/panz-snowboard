@@ -1,0 +1,51 @@
+@use "../../../designSystem/variables";
+@use "../../../designSystem/mediaQueries";
+
+.breadcrumb {
+	padding: 20px 0;
+	font-weight: bold;
+	color: inherit;
+}
+
+.list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 8px;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.item {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	font-size: 14px;
+
+	@include mediaQueries.media("sm", "max") {
+		font-size: 12px;
+	}
+}
+
+.link {
+	color: inherit;
+	text-decoration: none;
+	transition: opacity 0.2s ease;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.current {
+	color: inherit;
+	font-weight: 500;
+	opacity: 0.7;
+}
+
+.separator {
+	color: inherit;
+	user-select: none;
+	opacity: 0.5;
+}
