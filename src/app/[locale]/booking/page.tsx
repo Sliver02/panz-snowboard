@@ -114,7 +114,8 @@ const BookingPage = () => {
 
 			<Section
 				style={{
-					marginTop: "6rem",
+					// No hero on this page, so clear the fixed header manually.
+					marginTop: "clamp(9rem, 13vw, 13rem)",
 				}}
 			>
 				<Container>
@@ -187,7 +188,12 @@ const BookingPage = () => {
 									</Col>
 
 									<Col xs={12} md={6} lg={2}>
-										<div className={stylesTF.wrapper}>
+										<div
+											className={classNames(
+												stylesTF.wrapper,
+												stylesTF.fullWidth
+											)}
+										>
 											<select
 												className={stylesTF.control}
 												{...register("hours")}
@@ -218,7 +224,12 @@ const BookingPage = () => {
 									</Col>
 
 									<Col xs={12} md={6} lg={3}>
-										<div className={stylesTF.wrapper}>
+										<div
+											className={classNames(
+												stylesTF.wrapper,
+												stylesTF.fullWidth
+											)}
+										>
 											<select
 												className={stylesTF.control}
 												{...register("activity")}
@@ -241,7 +252,12 @@ const BookingPage = () => {
 									</Col>
 
 									<Col xs={12} md={6} lg={3}>
-										<div className={stylesTF.wrapper}>
+										<div
+											className={classNames(
+												stylesTF.wrapper,
+												stylesTF.fullWidth
+											)}
+										>
 											<select
 												className={stylesTF.control}
 												{...register("level")}

@@ -173,7 +173,11 @@ export default async function RootLayout({
 	const messages = await getMessages({ locale });
 
 	return (
-		<html lang={locale} data-theme="light">
+		<html
+			lang={locale}
+			data-theme="light"
+			className={classNames(inter.variable, anton.variable)}
+		>
 			<head>
 				<link rel="alternate" href="https://lorenzopanzera.com/en/" hrefLang="en" />
 				<link rel="alternate" href="https://lorenzopanzera.com/it/" hrefLang="it" />
@@ -185,7 +189,7 @@ export default async function RootLayout({
 					}}
 				/>
 			</head>
-			<body className={classNames(inter.variable, anton.variable)}>
+			<body>
 				<NextIntlClientProvider messages={messages}>
 					<SmoothScroll>
 						<div className={classNames("root")}>{children}</div>

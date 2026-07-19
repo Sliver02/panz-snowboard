@@ -8,6 +8,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import { useScroll } from "@/hooks/useScroll";
 import styles from "./Header.module.scss";
 
 export interface HeaderProps extends BaseProps {
@@ -28,6 +29,8 @@ export const Header = ({ className }: HeaderProps) => {
 	const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 	const pathname = usePathname();
 	const router = useRouter();
+	const { scrollY } = useScroll();
+	const scrolled = scrollY > 8;
 
 	const deriveLocaleFromPath = (p?: string | null) => {
 		if (!p) return undefined;
@@ -93,7 +96,7 @@ export const Header = ({ className }: HeaderProps) => {
 	];
 
 	return (
-		<div className={classNames(className, styles.header)}>
+		<div className={classNames(className, styles.header, { [styles.scrolled]: scrolled })}>
 			<div className={classNames(styles.logoContainer)}>
 				<Link className={classNames(styles.navbar__button)} href="." replace>
 					<Image
