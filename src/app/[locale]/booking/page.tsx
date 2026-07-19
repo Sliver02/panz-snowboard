@@ -187,7 +187,7 @@ const BookingPage = () => {
 										/>
 									</Col>
 
-									<Col xs={12} md={6} lg={2}>
+									<Col xs={12} md={6} lg={3}>
 										<div
 											className={classNames(
 												stylesTF.wrapper,
@@ -282,7 +282,7 @@ const BookingPage = () => {
 										</div>
 									</Col>
 
-									<Col xs={12} md={6} lg={2}>
+									<Col xs={12} md={6} lg={3}>
 										<Input
 											label={t("people")}
 											type="number"
