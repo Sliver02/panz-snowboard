@@ -1,24 +1,23 @@
 import { BaseProps } from "@/common/globalInterfaces";
 import classNames from "classnames";
 import styles from "./CardFrame.module.scss";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export interface CardFrameProps extends BaseProps {
-	image: string;
-	imageFormat?: string;
+	/** Import the image so Next generates its blur placeholder. */
+	image: StaticImageData;
 	alt?: string;
 }
 
-export const CardFrame = ({ className, image, imageFormat = "jpg", alt }: CardFrameProps) => {
+export const CardFrame = ({ className, image, alt }: CardFrameProps) => {
 	return (
 		<div className={classNames(className, styles.cardFrame)}>
 			<div className={classNames(styles.imageContainer)}>
 				<Image
 					className={classNames(styles.backgroundImage)}
 					alt={alt ?? ""}
-					src={"/images/" + image + "." + imageFormat}
+					src={image}
 					placeholder="blur"
-					blurDataURL={"/images/" + image + "_placeholder." + imageFormat}
 					fill
 				/>
 

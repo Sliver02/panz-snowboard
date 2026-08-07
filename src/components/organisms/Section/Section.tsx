@@ -2,15 +2,12 @@ import classNames from "classnames";
 import styles from "./Section.module.scss";
 import { BaseProps } from "@/common/globalInterfaces";
 import { CSSProperties } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 export interface SectionProps extends BaseProps {
 	backgroundColor?: string;
-	backgroundImage?: {
-		src: string;
-		alt: string;
-		format?: "png" | "jpg" | "jpeg" | "webp";
-	};
+	/** Decorative background — import the image so Next generates its blur placeholder. */
+	backgroundImage?: StaticImageData;
 	/**
 	 * Spacing presets for the section. Defaults to 'default'.
 	 * - 'default': current spacing
@@ -46,15 +43,8 @@ export const Section = ({
 				<Image
 					className={classNames(styles.backgroundImage)}
 					alt=""
-					src={"/images/" + backgroundImage.src + "." + (backgroundImage.format || "jpg")}
+					src={backgroundImage}
 					placeholder="blur"
-					blurDataURL={
-						"/images/" +
-						backgroundImage.src +
-						"_placeholder" +
-						"." +
-						(backgroundImage.format || "jpg")
-					}
 					fill
 				/>
 			)}

@@ -2,7 +2,7 @@
 import { Header } from "@/components/organisms/Header";
 import { Hero } from "@/components/organisms/Hero";
 import { Section } from "@/components/organisms/Section";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { Footer } from "@/components/organisms/Footer";
 import { Container, Row, Col } from "@/components/atoms/Grid";
 import { Justify } from "@/components/atoms/Grid/interfaces";
@@ -11,14 +11,16 @@ import styles from "./LocationPage.module.scss";
 import { CTABooking } from "@/components/sections/CTABooking";
 
 export interface ImagePair {
-	left: string;
-	right: string;
+	/** Import the images so Next generates their blur placeholders. */
+	left: StaticImageData;
+	right: StaticImageData;
 }
 
 export interface LocationPageProps {
 	namespace: string; // translation namespace, e.g. "cortina"
 	backgroundImage: {
-		src: string;
+		/** Import the image so Next generates its blur placeholder. */
+		src: StaticImageData;
 		alt?: string;
 		position?: "center" | "top" | "bottom" | "left" | "right" | undefined;
 	};
@@ -83,6 +85,7 @@ export const LocationPage = ({
 										width={1200}
 										height={800}
 										className={styles.responsiveImage}
+										placeholder="blur"
 									/>
 								</Col>
 								<Col xs={12} md={6} lg={5} className={styles.textCol}>
@@ -105,6 +108,7 @@ export const LocationPage = ({
 										width={1200}
 										height={800}
 										className={styles.responsiveImage}
+										placeholder="blur"
 									/>
 								</Col>
 								<Col xs={12} md={6} lg={5} className={styles.textCol}>
@@ -134,6 +138,7 @@ export const LocationPage = ({
 										width={1200}
 										height={800}
 										className={styles.responsiveImage}
+										placeholder="blur"
 									/>
 								</Col>
 								<Col xs={12} md={6} lg={5} className={styles.textCol}>
@@ -156,6 +161,7 @@ export const LocationPage = ({
 										width={1200}
 										height={800}
 										className={styles.responsiveImage}
+										placeholder="blur"
 									/>
 								</Col>
 								<Col xs={12} md={6} lg={5} className={styles.textCol}>

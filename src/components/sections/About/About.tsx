@@ -8,6 +8,7 @@ import { RouteEnum } from "@/common/routeEnum";
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import portraitImage from "@public/images/photo_2024-12-17_23-31-21.jpg";
 
 export const About = () => {
 	const t = useTranslations("about");
@@ -18,7 +19,7 @@ export const About = () => {
 			<Container>
 				<Row>
 					<Col xs={12} md={6}>
-						<CardFrame image="photo_2024-12-17_23-31-21" alt={t("photoAlt")} />
+						<CardFrame image={portraitImage} alt={t("photoAlt")} />
 					</Col>
 					<Col xs={12} md={6}>
 						<Row mdAlign={Align.center}>

@@ -9,6 +9,7 @@ import { About } from "@/components/sections/About";
 import { Disciplines } from "@/components/sections/Disciplines";
 import { Maps } from "@/components/sections/Maps";
 import { InfiniteText } from "@/components/molecules/InfiniteText";
+import heroImage from "@public/images/DDF04065.jpg";
 
 const Home = () => {
 	const t = useTranslations("hero");
@@ -28,7 +29,7 @@ const Home = () => {
 				}
 				subtitle={t("subtitle")}
 				backgroundImage={{
-					src: "/images/DDF04065.jpg",
+					src: heroImage,
 					alt: "Snowboard teacher | Cortina, Faloria, Tofana, Dolomites, Belluno",
 					position: "top",
 				}}

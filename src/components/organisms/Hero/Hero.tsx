@@ -3,7 +3,7 @@ import { Breadcrumb, BreadcrumbItem } from "@/components/atoms/Breadcrumb";
 import { Col, Container, Row } from "@/components/atoms/Grid";
 import { Justify } from "@/components/atoms/Grid/interfaces";
 import classNames from "classnames";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./Hero.module.scss";
 import { ReactNode } from "react";
 
@@ -11,7 +11,8 @@ export interface HeroProps extends BaseProps {
 	title: ReactNode;
 	subtitle: ReactNode;
 	backgroundImage: {
-		src: string;
+		/** Import the image so Next generates its blur placeholder. */
+		src: StaticImageData;
 		alt: string;
 		position?: "top" | "center" | "bottom" | "left" | "right";
 	};
@@ -29,8 +30,6 @@ export const Hero = ({
 	backgroundImage,
 	breadcrumbItems,
 }: HeroProps) => {
-	const placeholderImage = backgroundImage.src.replace(/\.(jpg|png|jpeg)$/, "_placeholder.$1");
-
 	return (
 		<div
 			className={classNames(className, styles.hero, {
@@ -48,7 +47,6 @@ export const Hero = ({
 				alt={backgroundImage.alt}
 				src={backgroundImage.src}
 				placeholder="blur"
-				blurDataURL={placeholderImage}
 				priority
 				fill
 			/>

@@ -1,20 +1,24 @@
 import { LocationPage } from "@/components/sections/LocationPage";
+import heroImage from "@public/images/location/sappada_winter2.jpg";
+import winterLeftImage from "@public/images/location/sappada_winter1.jpg";
+import summerLeftImage from "@public/images/location/sappada_summer1.jpg";
+import summerRightImage from "@public/images/location/sappada_summer2.jpg";
 
 const SappadaPage = () => {
 	return (
 		<LocationPage
 			namespace="sappada"
 			backgroundImage={{
-				src: "/images/location/sappada_winter2.jpg",
+				src: heroImage,
 				alt: "Sappada panorama",
 			}}
 			winter={{
-				left: "/images/location/sappada_winter1.jpg",
-				right: "/images/location/sappada_winter2.jpg",
+				left: winterLeftImage,
+				right: heroImage,
 			}}
 			summer={{
-				left: "/images/location/sappada_summer1.jpg",
-				right: "/images/location/sappada_summer2.jpg",
+				left: summerLeftImage,
+				right: summerRightImage,
 			}}
 		/>
 	);

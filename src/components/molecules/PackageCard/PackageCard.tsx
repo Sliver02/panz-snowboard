@@ -3,10 +3,12 @@ import classNames from "classnames";
 import styles from "./PackageCard.module.scss";
 import { BaseProps } from "@/common/globalInterfaces";
 import { Button } from "@/components/atoms/Button";
+import { StaticImageData } from "next/image";
 import { useTranslations } from "use-intl";
 
 export interface PackageCardProps extends BaseProps {
-	image?: string;
+	/** Import the image so Next generates its blur placeholder. */
+	image?: StaticImageData;
 	title: string;
 	subtitle?: string;
 	price?: string;
@@ -28,7 +30,7 @@ export const PackageCard = ({
 			{image && (
 				<div
 					className={styles.media}
-					style={{ backgroundImage: `url(/images/${image}.jpg)` }}
+					style={{ backgroundImage: `url(${image.src}), url(${image.blurDataURL})` }}
 				/>
 			)}
 			<div className={styles.body}>
