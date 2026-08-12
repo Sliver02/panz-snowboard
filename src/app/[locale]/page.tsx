@@ -7,6 +7,7 @@ import HeroStyles from "@/components/organisms/Hero/Hero.module.scss";
 import { useTranslations } from "next-intl";
 import { About } from "@/components/sections/About";
 import { Disciplines } from "@/components/sections/Disciplines";
+import { InstagramFeed } from "@/components/sections/InstagramFeed";
 import { Maps } from "@/components/sections/Maps";
 import { InfiniteText } from "@/components/molecules/InfiniteText";
 
@@ -49,6 +50,7 @@ const Home = () => {
 			<Disciplines />
 
 			<Maps />
+			<InstagramFeed />
 			<Contact />
 			<Footer />
 		</main>

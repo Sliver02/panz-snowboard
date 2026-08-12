@@ -2,15 +2,12 @@
 @use "../../../designSystem/mediaQueries";
 
 .section {
-	height: 100%;
-	min-height: 80vh;
-	padding: 2rem 0;
+	// Fluid rhythm instead of a forced 80vh: short sections no longer float in a
+	// void, tall ones still breathe. Padding scales with the viewport.
+	padding: clamp(3rem, 7vw, 6rem) 0;
 
 	background: var(--background-color);
 	background-position: center;
-	background-attachment: fixed;
-
-	transition: padding 0.3s ease-in;
 
 	position: relative;
 	display: flex;
@@ -34,16 +31,13 @@
 }
 
 .spacing-tight {
-	padding: 0.75rem 0 !important;
-	min-height: 30vh !important;
+	padding: clamp(1rem, 3vw, 2rem) 0 !important;
 }
 
 .spacing-none {
 	padding: 0 !important;
-	min-height: auto !important;
 }
 
 .spacing-large {
-	padding: 4rem 0 !important;
-	min-height: 100vh !important;
+	padding: clamp(4rem, 10vw, 8rem) 0 !important;
 }

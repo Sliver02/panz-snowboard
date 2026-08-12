@@ -238,5 +238,12 @@
 		"terms": {
 			"p1": "If the client does not show up, the instructor will wait 15 minutes and the reservation will not be refundable. Cancellations within 24 hours may be refunded at the instructor's discretion; same-day cancellations are not refundable. Changes to the booking date are possible up to 24 hours before the start, subject to agreement with the instructor."
 		}
+	},
+	"instagram": {
+		"title": "On the mountain",
+		"subtitle": "Powder days, lessons and backcountry lines around the Dolomites — the latest is always on Instagram.",
+		"tileAlt": "Open {handle} on Instagram",
+		"latestLabel": "Latest post",
+		"latestCaption": "Lessons, conditions and where I'm riding this week — follow along for daily updates."
 	}
 }

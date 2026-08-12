@@ -251,5 +251,12 @@
 		"terms": {
 			"p1": "Nel caso in cui il cliente non si presentasse, il sottoscritto attenderà 15 minuti e la prenotazione non sarà rimborsabile. Le disdette entro 24 ore possono essere rimborsate a discrezione del titolare; le disdette in giornata non sono rimborsabili. È possibile cambiare la data della prenotazione entro 24 ore dall'inizio previo accordo con il titolare."
 		}
+	},
+	"instagram": {
+		"title": "In montagna",
+		"subtitle": "Giornate di powder, lezioni e linee in backcountry nelle Dolomiti — le ultime novità sono sempre su Instagram.",
+		"tileAlt": "Apri {handle} su Instagram",
+		"latestLabel": "Ultimo post",
+		"latestCaption": "Lezioni, condizioni della neve e dove sto sciando questa settimana — seguimi per gli aggiornamenti."
 	}
 }
