@@ -10,6 +10,10 @@ import classNames from "classnames";
 import { SectionTitle } from "@/components/atoms/SectionTitle";
 import { PackageCard } from "@/components/molecules/PackageCard";
 import { useRouter } from "next/navigation";
+import heroImage from "@public/images/2020_Bike_Ebike_67_FrancoisPanchard.jpg";
+import package1Image from "@public/images/Veneto_Pieve_Cadore.jpg";
+import package2Image from "@public/images/photo_2025-04-09_16-51-22.jpg";
+import package3Image from "@public/images/vign_resize.jpg";
 
 const MountainBikePage = () => {
 	const t = useTranslations("activities.mountainBike");
@@ -25,7 +29,7 @@ const MountainBikePage = () => {
 				title={t("title")}
 				subtitle={t("heroSubtitle")}
 				backgroundImage={{
-					src: "/images/2020_Bike_Ebike_67_FrancoisPanchard.jpg",
+					src: heroImage,
 					alt: "Mountain bike tours in the Dolomites",
 					position: "center",
 				}}
@@ -46,7 +50,7 @@ const MountainBikePage = () => {
 					<Row>
 						<Col xs={12} md={6} lg={4}>
 							<PackageCard
-								image="Veneto_Pieve_Cadore"
+								image={package1Image}
 								title={t("packages.package1.title")}
 								subtitle={t("packages.package1.subtitle")}
 								price={t("packages.package1.price")}
@@ -55,7 +59,7 @@ const MountainBikePage = () => {
 						</Col>
 						<Col xs={12} md={6} lg={4}>
 							<PackageCard
-								image="photo_2025-04-09_16-51-22"
+								image={package2Image}
 								title={t("packages.package2.title")}
 								subtitle={t("packages.package2.subtitle")}
 								price={t("packages.package2.price")}
@@ -64,7 +68,7 @@ const MountainBikePage = () => {
 						</Col>
 						<Col xs={12} md={6} lg={4}>
 							<PackageCard
-								image="vign_resize"
+								image={package3Image}
 								title={t("packages.package3.title")}
 								subtitle={t("packages.package3.subtitle")}
 								price={t("packages.package3.price")}

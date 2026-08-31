@@ -5,6 +5,7 @@ import { SectionTitle } from "@/components/atoms/SectionTitle";
 import { Section } from "@/components/organisms/Section";
 import classNames from "classnames";
 import Image from "next/image";
+import mapImage from "@public/images/mappa.png";
 import { useTranslations } from "next-intl";
 
 export const Maps = () => {
@@ -30,7 +31,8 @@ export const Maps = () => {
 							}}
 						>
 							<Image
-								src={"/images/mappa.png"}
+								src={mapImage}
+								placeholder="blur"
 								fill
 								style={{ objectFit: "cover" }} // or 'contain'
 								sizes="100vw" // or specific sizes

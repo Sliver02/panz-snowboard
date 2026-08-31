@@ -123,7 +123,10 @@ export const Header = ({ className }: HeaderProps) => {
 									{item.label}
 								</a>
 							) : (
-								<Link className={classNames(styles.navbar__button)} href={item.url!}>
+								<Link
+									className={classNames(styles.navbar__button)}
+									href={item.url!}
+								>
 									{item.label}
 								</Link>
 							)}

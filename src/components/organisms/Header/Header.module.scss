@@ -55,7 +55,9 @@
 		justify-content: center;
 		overflow: hidden;
 		pointer-events: auto;
-		transition: height 0.25s ease, width 0.25s ease;
+		transition:
+			height 0.25s ease,
+			width 0.25s ease;
 
 		@include mediaQueries.media("lg") {
 			height: 150px;

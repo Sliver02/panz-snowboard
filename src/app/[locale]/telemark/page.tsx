@@ -10,6 +10,10 @@ import classNames from "classnames";
 import { SectionTitle } from "@/components/atoms/SectionTitle";
 import { PackageCard } from "@/components/molecules/PackageCard";
 import { useRouter } from "next/navigation";
+import heroImage from "@public/images/IMG_20241211_124142.jpg";
+import package1Image from "@public/images/photo_2024-01-22_22-09-15.jpg";
+import package2Image from "@public/images/photo_2023-12-22_10-12-41.jpg";
+import package3Image from "@public/images/csm_rifugio-lagazuoi-1_2449c8b0c7.jpg";
 
 const TelemarkPage = () => {
 	const t = useTranslations("activities.telemark");
@@ -25,7 +29,7 @@ const TelemarkPage = () => {
 				title={t("title")}
 				subtitle={t("heroSubtitle")}
 				backgroundImage={{
-					src: "/images/IMG_20241211_124142.jpg",
+					src: heroImage,
 					alt: "Telemark skiing in the Dolomites",
 					position: "center",
 				}}
@@ -46,7 +50,7 @@ const TelemarkPage = () => {
 					<Row>
 						<Col xs={12} md={6} lg={4}>
 							<PackageCard
-								image="photo_2024-01-22_22-09-15"
+								image={package1Image}
 								title={t("packages.package1.title")}
 								subtitle={t("packages.package1.subtitle")}
 								price={t("packages.package1.price")}
@@ -55,7 +59,7 @@ const TelemarkPage = () => {
 						</Col>
 						<Col xs={12} md={6} lg={4}>
 							<PackageCard
-								image="photo_2023-12-22_10-12-41"
+								image={package2Image}
 								title={t("packages.package2.title")}
 								subtitle={t("packages.package2.subtitle")}
 								price={t("packages.package2.price")}
@@ -64,7 +68,7 @@ const TelemarkPage = () => {
 						</Col>
 						<Col xs={12} md={6} lg={4}>
 							<PackageCard
-								image="csm_rifugio-lagazuoi-1_2449c8b0c7"
+								image={package3Image}
 								title={t("packages.package3.title")}
 								subtitle={t("packages.package3.subtitle")}
 								price={t("packages.package3.price")}

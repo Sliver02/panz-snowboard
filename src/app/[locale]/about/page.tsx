@@ -10,6 +10,8 @@ import classNames from "classnames";
 import { CardFrame } from "@/components/molecules/CardFrame";
 import { SectionTitle } from "@/components/atoms/SectionTitle";
 import { CTABooking } from "@/components/sections/CTABooking";
+import heroImage from "@public/images/photo_2023-12-22_09-57-05.jpg";
+import portraitImage from "@public/images/photo_2025-11-28_10-54-35.jpg";
 
 const AboutPage = () => {
 	const t = useTranslations("aboutPage");
@@ -24,7 +26,7 @@ const AboutPage = () => {
 				title={t("title")}
 				subtitle={t("subtitle")}
 				backgroundImage={{
-					src: "/images/photo_2023-12-22_09-57-05.jpg",
+					src: heroImage,
 					alt: "Lorenzo Panzera - Snowboard instructor in the Dolomites",
 					position: "center",
 				}}
@@ -55,7 +57,7 @@ const AboutPage = () => {
 
 						<Col xs={12} md={4} lg={4}>
 							<CardFrame
-								image="photo_2025-11-28_10-54-35"
+								image={portraitImage}
 								alt={"profile picture of Lorenzo Panzera"}
 							/>
 						</Col>

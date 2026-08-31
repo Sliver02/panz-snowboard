@@ -1,35 +1,27 @@
 import classNames from "classnames";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import styles from "./CardDisplay.module.scss";
 import { BaseProps } from "@/common/globalInterfaces";
 import { ReactNode } from "react";
 import { Button, ButtonProps } from "@/components/atoms/Button";
 
 export interface CardDisplayProps extends BaseProps {
-	image: string;
-	imageFormat?: string;
+	/** Import the image so Next generates its blur placeholder. */
+	image: StaticImageData;
 	title?: string;
 	description?: ReactNode;
 	button?: ButtonProps;
 }
 
-export const CardDisplay = ({
-	className,
-	title,
-	description,
-	image,
-	imageFormat = "jpg",
-	button,
-}: CardDisplayProps) => {
+export const CardDisplay = ({ className, title, description, image, button }: CardDisplayProps) => {
 	return (
 		<div className={classNames(className, styles.cardDisplay)}>
 			<div className={classNames(styles.imageContainer)}>
 				<Image
 					className={classNames(styles.backgroundImage)}
 					alt={title ?? ""}
-					src={"/images/" + image + "." + imageFormat}
+					src={image}
 					placeholder="blur"
-					blurDataURL={"/images/" + image + "_placeholder." + imageFormat}
 					fill
 				/>
 				{title && (

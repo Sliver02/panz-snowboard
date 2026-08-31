@@ -1,20 +1,24 @@
 import { LocationPage } from "@/components/sections/LocationPage";
+import heroImage from "@public/images/location/zoldo_summer2.jpg";
+import winterLeftImage from "@public/images/location/zoldo_winter2.jpg";
+import winterRightImage from "@public/images/location/zoldo_winter3.jpg";
+import summerRightImage from "@public/images/location/zoldo_summer3.jpg";
 
 const ZoldoCivettaPage = () => {
 	return (
 		<LocationPage
 			namespace="zoldoCivetta"
 			backgroundImage={{
-				src: "/images/location/zoldo_summer2.jpg",
+				src: heroImage,
 				alt: "Zoldo and Civetta panorama",
 			}}
 			winter={{
-				left: "/images/location/zoldo_winter2.jpg",
-				right: "/images/location/zoldo_winter3.jpg",
+				left: winterLeftImage,
+				right: winterRightImage,
 			}}
 			summer={{
-				left: "/images/location/zoldo_summer2.jpg",
-				right: "/images/location/zoldo_summer3.jpg",
+				left: heroImage,
+				right: summerRightImage,
 			}}
 		/>
 	);
