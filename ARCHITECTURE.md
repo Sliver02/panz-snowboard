@@ -151,7 +151,7 @@ that name). The proxy skips static assets, API routes, and files with extensions
 Locales are `["it", "en"]` with **`it` (Italian) as the default**. Route structure:
 `app/[locale]/…` with `generateStaticParams` emitting one entry per locale. Routes:
 home, about, booking, snowboard, telemark, mountain-bike, cortina, sappada,
-zoldo-civetta, privacy-policy.
+zoldo-civetta, cadore, privacy-policy.
 
 Navigation helpers from `@/i18n/routing` are locale-aware wrappers around Next.js
 primitives: `Link`, `usePathname`, `redirect`, `useRouter`, `getPathname`. Messages
