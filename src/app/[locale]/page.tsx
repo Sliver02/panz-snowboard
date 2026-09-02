@@ -1,5 +1,5 @@
 "use client";
-import { Contact } from "@/components/sections/Contact";
+import { CTABooking } from "@/components/sections/CTABooking";
 import { Footer } from "@/components/organisms/Footer";
 import { Header } from "@/components/organisms/Header";
 import { Hero } from "@/components/organisms/Hero";
@@ -19,6 +19,7 @@ const Home = () => {
 		<main>
 			<Header />
 			<Hero
+				negative
 				title={
 					<>
 						<p className={`${HeroStyles.name} text--color-accent`}>
@@ -52,7 +53,7 @@ const Home = () => {
 
 			<Maps />
 			<InstagramFeed />
-			<Contact />
+			<CTABooking />
 			<Footer />
 		</main>
 	);
