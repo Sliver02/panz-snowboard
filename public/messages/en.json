@@ -44,6 +44,18 @@
 		"summerP1": "Summer opens a network of singletrack and high alpine trails. Expect everything from flowing forest trails to long alpine descents and technical enduro lines.",
 		"summerP2": "Popular mountain bike tours from Zoldo take you through the Cadore valleys, across ridgelines and down into wide, scenic meadows — ideal for guided rides and multi-day excursions."
 	},
+	"cadore": {
+		"title": "Cadore",
+		"subtitle": "The historic heart of the Dolomites, between the Tre Cime di Lavaredo and the lakes of Misurina and Centro Cadore",
+		"description": "Cadore is the historic cradle of the Belluno Dolomites, centred on Pieve di Cadore, birthplace of the painter Titian. From here it's a short drive to the Tre Cime di Lavaredo, Lago di Misurina and the wide Lago di Centro Cadore basin, ringed by the Marmarole group and the Cortina Dolomites. In winter the area offers family-friendly ski slopes and quick access to the larger Cortina and Auronzo resorts; in summer, trails, via ferrata and mountain bike routes open up through forests, alpine lakes and historic mountain huts.",
+		"winterTitle": "Winter, Tre Cime & Ski Areas",
+		"winterP1": "From Pieve di Cadore it's a short reach to the Auronzo ski area and the slopes facing the Tre Cime di Lavaredo, with ski touring and snowshoeing among some of the most photographed views in the Dolomites.",
+		"winterP2": "Lago di Misurina, often frozen over in winter, and the area's small villages offer a quieter pace, ideal for riders looking for calmer slopes and evenings at the rifugio.",
+		"summerTitle": "Summer, Lakes & Trails",
+		"summerP1": "In summer Lago di Centro Cadore and Lago di Misurina become the starting point for scenic rides and lakeside walks, with the Marmarole and Tre Cime as a backdrop.",
+		"summerP2": "Trails, via ferrata and forest roads connect Pieve di Cadore to Auronzo and Misurina, perfect for guided mountain bike tours through history, art and nature.",
+		"photoCredits": "Photos: Tre Cime di Lavaredo (Daniele Bonaldo, Soluvo, Jhon Doc98), Lago di Misurina (Marco Granara), Lago di Centro Cadore (Antonio De Lorenzo). Wikimedia Commons, CC BY-SA license."
+	},
 	"hero": {
 		"title": "SPORTS & ADVENTURE",
 		"subtitle": "Snowboard - Telemark - Mountain Bike"

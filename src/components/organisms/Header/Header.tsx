@@ -62,6 +62,7 @@ export const Header = ({ className }: HeaderProps) => {
 				{ label: t("cortina.title"), url: RouteEnum.CORTINA },
 				{ label: t("sappada.title"), url: RouteEnum.SAPPADA },
 				{ label: t("zoldoCivetta.title"), url: RouteEnum.ZOLDO_CIVETTA },
+				{ label: t("cadore.title"), url: RouteEnum.CADORE },
 			],
 		},
 	];

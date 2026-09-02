@@ -45,6 +45,18 @@
 		"summerP1": "L'estate apre una rete di singletrack e sentieri d'alta quota. Troverai percorsi dal flow nei boschi a lunghe discese alpine e tratti tecnici da enduro.",
 		"summerP2": "I tour in mountain bike partendo da Zoldo attraversano le valli del Cadore, crinali panoramici e prati ampi — ideali per uscite guidate e tour di più giorni."
 	},
+	"cadore": {
+		"title": "Cadore",
+		"subtitle": "Il cuore storico delle Dolomiti, tra le Tre Cime di Lavaredo e i laghi di Misurina e Centro Cadore",
+		"description": "Il Cadore è la culla storica delle Dolomiti Bellunesi, con Pieve di Cadore, città natale di Tiziano, come centro culturale della zona. Da qui si raggiungono in poco tempo le Tre Cime di Lavaredo, il Lago di Misurina e il grande bacino del Lago di Centro Cadore, circondati dalle vette delle Marmarole e delle Dolomiti d'Ampezzo. In inverno l'area offre comprensori a misura di famiglia e accesso rapido alle grandi piste di Cortina e Auronzo; in estate si aprono sentieri, vie ferrate e percorsi in mountain bike tra boschi, laghi alpini e rifugi storici.",
+		"winterTitle": "Inverno, Tre Cime & Comprensori",
+		"winterP1": "Da Pieve di Cadore si raggiungono in breve i comprensori di Auronzo e le piste che si affacciano sulle Tre Cime di Lavaredo, con scialpinismo ed escursioni sulla neve tra alcuni dei panorami più fotografati delle Dolomiti.",
+		"winterP2": "Il Lago di Misurina, spesso ghiacciato d'inverno, e i piccoli borghi della zona regalano un'atmosfera più tranquilla, ideale per chi cerca piste meno affollate e serate in rifugio.",
+		"summerTitle": "Estate, Laghi & Sentieri",
+		"summerP1": "In estate il Lago di Centro Cadore e il Lago di Misurina diventano il punto di partenza per pedalate panoramiche e passeggiate lungo le rive, con le Marmarole e le Tre Cime sullo sfondo.",
+		"summerP2": "Sentieri, vie ferrate e strade forestali collegano Pieve di Cadore ad Auronzo e Misurina, perfetti per tour guidati in mountain bike tra storia, arte e natura.",
+		"photoCredits": "Foto: Tre Cime di Lavaredo (Daniele Bonaldo, Soluvo, Jhon Doc98), Lago di Misurina (Marco Granara), Lago di Centro Cadore (Antonio De Lorenzo). Wikimedia Commons, licenza CC BY-SA."
+	},
 	"hero": {
 		"title": "SPORTS & ADVENTURE",
 		"subtitle": "Snowboard - Telemark - Mountain Bike"

@@ -28,6 +28,8 @@ export interface LocationPageProps {
 	winter?: ImagePair;
 	summer?: ImagePair;
 	heroSubtitle?: string;
+	/** Small credit line for sourced (non-own-camera) photography, e.g. Wikimedia Commons attribution. */
+	imageCredits?: string;
 }
 
 export const LocationPage = ({
@@ -36,6 +38,7 @@ export const LocationPage = ({
 	winter,
 	summer,
 	heroSubtitle,
+	imageCredits,
 }: LocationPageProps) => {
 	const t = useTranslations(namespace);
 	const breadcrumb = useTranslations("breadcrumb");
@@ -171,6 +174,21 @@ export const LocationPage = ({
 						</Container>
 					</div>
 				</Section>
+			)}
+
+			{imageCredits && (
+				<Container>
+					<Row xsJustify={Justify.center}>
+						<Col xs={12} lg={10}>
+							<p
+								className="text--p-xs"
+								style={{ opacity: 0.6, marginBottom: "1rem" }}
+							>
+								{imageCredits}
+							</p>
+						</Col>
+					</Row>
+				</Container>
 			)}
 
 			<CTABooking />
