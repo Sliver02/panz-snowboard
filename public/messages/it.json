@@ -161,10 +161,10 @@
 			"button": "più info",
 			"heroSubtitle": "Avventure in mountain bike nelle Dolomiti",
 			"packages": {
-				"title": "Brochure & Pacchetti",
+				"title": "Pacchetti",
 				"package1": {
 					"title": "MEZZA GIORNATA",
-					"subtitle": "Percorsi guidati di breve durata, per chi ha poco tempo ma tanta voglia di esplorare Pieve di Cadore e dintorni. (per maggiori dettagli vedi le brochure)",
+					"subtitle": "Percorsi guidati di breve durata, per chi ha poco tempo ma tanta voglia di esplorare Pieve di Cadore e dintorni.",
 					"price": "Da €200€",
 					"features": ["Percorso guidato", "Attrezzatura consigliata", "Guide locali"]
 				},
@@ -184,18 +184,6 @@
 						"Trasporto bagagli"
 					]
 				}
-			},
-			"brochure": {
-				"title": "BROCHURE",
-				"it": {
-					"title": "Brochure Italiano",
-					"subtitle": "Scarica la brochure in italiano (Mountain Bike Experience)"
-				},
-				"en": {
-					"title": "Brochure English",
-					"subtitle": "Download the English brochure (Mountain Bike Experience)"
-				},
-				"download": "DOWNLOAD"
 			}
 		}
 	},
