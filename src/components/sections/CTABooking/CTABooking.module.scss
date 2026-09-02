@@ -1,26 +1,48 @@
 .cta {
-	background: linear-gradient(90deg, var(--primary-main), var(--accent-main));
-	color: white;
-	padding: 40px 0;
+	overflow: hidden;
 }
 
-.inner {
-	max-width: 1100px;
-	margin: 0 auto;
+.scrim {
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(
+		90deg,
+		color-mix(in srgb, var(--primary-dark) 85%, transparent),
+		color-mix(in srgb, var(--accent-dark) 80%, transparent)
+	);
+	pointer-events: none;
+}
+
+// Stacked above .scrim (and, via Section's own fix, above the background image):
+// a positioned sibling that comes after .scrim in the DOM paints on top of it.
+.contentWrapper {
+	position: relative;
+}
+
+.title,
+.description {
+	color: var(--neutral-light);
+}
+
+.description {
+	opacity: 0.92;
+}
+
+.actions {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
-	text-align: center;
-	gap: 16px;
-	padding: 0 16px;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+	margin-top: 1.5rem;
 }
 
-.button {
-	display: inline-block;
-	color: white;
-	background: var(--primary-main);
-	padding: 12px 28px;
-	border-radius: 6px;
-	text-decoration: none;
-	font-weight: 600;
+.secondaryButton {
+	color: var(--neutral-light);
+	border-color: var(--neutral-light);
+
+	&:hover {
+		background-color: var(--neutral-light);
+		color: var(--primary-dark);
+	}
 }
