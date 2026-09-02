@@ -25,6 +25,9 @@
 	.backgroundImage {
 		object-fit: cover;
 		opacity: 0.8;
+		// Subtle scroll parallax — set inline from scroll position via the
+		// --parallax-offset var (see Hero.tsx).
+		transform: translateY(var(--parallax-offset, 0px));
 
 		&--position-top {
 			object-position: top;
