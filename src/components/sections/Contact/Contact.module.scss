@@ -1,4 +1,8 @@
 .contact {
+	// Wider than the Modal atom's default — the two-column email/name row needs
+	// more room to breathe than a generic modal (e.g. a confirmation dialog) would.
+	width: min(46rem, calc(100vw - 2rem));
+
 	.socialContainer {
 		display: flex;
 		flex-wrap: wrap;

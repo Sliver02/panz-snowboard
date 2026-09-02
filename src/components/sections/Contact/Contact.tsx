@@ -2,15 +2,16 @@ import ContactTemplate from "@/common/emailTemplates/ContactTemplate";
 import { AlertResponse } from "@/common/globalInterfaces";
 import { Alert } from "@/components/atoms/Alert";
 import { Button } from "@/components/atoms/Button";
-import { Col, Container, Row } from "@/components/atoms/Grid";
-import { SectionTitle } from "@/components/atoms/SectionTitle";
+import { Card } from "@/components/atoms/Card";
+import { Col, Row } from "@/components/atoms/Grid";
 import { Input } from "@/components/atoms/Input";
+import { Modal } from "@/components/atoms/Modal";
 import emailjs from "@emailjs/browser";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { Send } from "lucide-react";
 import classNames from "classnames";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { ReactElement, useState } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -31,7 +32,12 @@ const contactSchema = z.object({
 
 export type ContactFormProps = z.infer<typeof contactSchema>;
 
-export const Contact = () => {
+export interface ContactProps {
+	/** Element that opens the modal, e.g. a `Button` — rendered via Base UI's Dialog.Trigger. */
+	trigger: ReactElement;
+}
+
+export const Contact = ({ trigger }: ContactProps) => {
 	const t = useTranslations("contact");
 
 	const [loading, setLoading] = useState(false);
@@ -47,15 +53,11 @@ export const Contact = () => {
 	});
 
 	const submitForm = async (data: ContactFormProps) => {
-		console.log("submit-form", data);
-
 		try {
 			setLoading(true);
 			setAlert(null);
 
 			const htmlContent = renderToStaticMarkup(<ContactTemplate {...data} />);
-
-			console.log(process.env.NEXT_PUBLIC_RECEIVER_EMAIL, "NEXT_PUBLIC_RECEIVER_EMAIL");
 
 			const res = await emailjs.send(
 				serviceId,
@@ -71,21 +73,18 @@ export const Contact = () => {
 			);
 
 			if (res.text === "OK") {
-				console.log(t("successMessage"));
 				setAlert({
 					severity: "success",
 					text: t("successMessage"),
 				});
 				reset();
 			} else {
-				console.error(t("errorMessage"));
 				setAlert({
 					severity: "error",
 					text: t("errorMessage"),
 				});
 			}
 		} catch (error) {
-			console.error(t("errorPrefix"), error);
 			setAlert({
 				severity: "error",
 				text: t("errorPrefix") + " " + error,
@@ -96,20 +95,10 @@ export const Contact = () => {
 	};
 
 	return (
-		<div id="contact" className={classNames(styles.contact)}>
+		<Modal trigger={trigger} label={t("title")} className={classNames(styles.contact)}>
 			<form onSubmit={handleSubmit(submitForm)}>
-				<Container>
+				<Card title={t("title")} subtitle={t("description")} surface="shadow" size="large">
 					<Row>
-						<Col>
-							<SectionTitle text={t("title")} />
-							<p className={classNames("text--p-lg")}>{t("description")}</p>
-						</Col>
-					</Row>
-
-					<Row>
-						<Col xs={12}>
-							<p className={classNames("text--strong", "text--p-lg")}>{t("email")}</p>
-						</Col>
 						<Col xs={12} lg={6}>
 							<Input
 								fullWidth
@@ -143,7 +132,7 @@ export const Contact = () => {
 								type="submit"
 								variant="contained"
 								disabled={loading}
-								icon={<Send />}
+								icon={<Send size={18} />}
 							>
 								{loading ? t("loading") : t("send")}
 							</Button>
@@ -163,8 +152,8 @@ export const Contact = () => {
 							</Col>
 						</Row>
 					)}
-				</Container>
+				</Card>
 			</form>
-		</div>
+		</Modal>
 	);
 };
