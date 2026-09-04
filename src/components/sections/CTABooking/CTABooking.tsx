@@ -12,7 +12,7 @@ import { Section } from "@/components/organisms/Section";
 import { Contact } from "@/components/sections/Contact";
 import { useTranslations } from "next-intl";
 import { CalendarCheck, MessageCircle } from "lucide-react";
-import bandImage from "@public/images/PXL_20241207_092505122.jpg";
+import bandImage from "@public/images/photo_2024-01-22_22-38-03.jpg";
 
 export const CTABooking = ({ className }: BaseProps) => {
 	const t = useTranslations("activities");
