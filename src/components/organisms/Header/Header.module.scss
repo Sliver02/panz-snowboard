@@ -19,7 +19,12 @@
 
 	transition: padding 0.25s ease;
 
-	background: linear-gradient(180deg, #1c1d23aa 0%, #1c1d2355 50%, #1c1d2300 100%);
+	background: linear-gradient(
+		180deg,
+		color-mix(in srgb, var(--neutral-dark) 67%, transparent) 0%,
+		color-mix(in srgb, var(--neutral-dark) 33%, transparent) 50%,
+		transparent 100%
+	);
 
 	@include mediaQueries.media("lg") {
 		padding: 1rem 5rem;

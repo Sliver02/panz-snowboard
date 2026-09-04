@@ -3,12 +3,21 @@
 .card {
 	display: flex;
 	flex-direction: column;
-	background: var(--accent-contrast-text);
-	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
-	border-radius: 8px;
+	background: var(--neutral-dark);
+	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
+	border-radius: 0.75rem;
 	overflow: hidden;
 	height: 100%;
-	color: white;
+	color: var(--neutral-background);
+	transition:
+		transform 0.35s ease,
+		box-shadow 0.35s ease;
+
+	&:hover,
+	&:focus-within {
+		transform: translateY(-6px);
+		box-shadow: 0 20px 32px rgba(0, 0, 0, 0.3);
+	}
 }
 
 .media {
@@ -36,23 +45,24 @@
 	margin: 0;
 	font-size: 1.1rem;
 	font-family: var(--font-inter);
-	color: var(--accent-background);
+	color: var(--neutral-background);
 }
 
 .price {
 	font-weight: 700;
-	color: var(--accent-background);
+	color: var(--primary-light);
+	white-space: nowrap;
 }
 
 .subtitle {
 	margin: 8px 0;
-	color: var(--neutral-background);
+	color: color-mix(in srgb, var(--neutral-background) 75%, transparent);
 }
 
 .features {
 	margin: 8px 0 0 0;
 	padding-left: 18px;
-	color: var(--neutral-text);
+	color: color-mix(in srgb, var(--neutral-background) 75%, transparent);
 }
 
 .cta {
@@ -63,5 +73,11 @@
 @include mediaQueries.media("md") {
 	.media {
 		height: 400px;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.card {
+		transition: none;
 	}
 }
