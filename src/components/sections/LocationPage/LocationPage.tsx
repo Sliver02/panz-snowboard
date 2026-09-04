@@ -5,15 +5,22 @@ import { Section } from "@/components/organisms/Section";
 import Image, { StaticImageData } from "next/image";
 import { Footer } from "@/components/organisms/Footer";
 import { Container, Row, Col } from "@/components/atoms/Grid";
-import { Justify } from "@/components/atoms/Grid/interfaces";
+import { Align } from "@/components/atoms/Grid/interfaces";
 import { useTranslations } from "next-intl";
+import classNames from "classnames";
+import { Snowflake, Sun } from "lucide-react";
 import styles from "./LocationPage.module.scss";
 import { CTABooking } from "@/components/sections/CTABooking";
+import { LocationsMap, MapFocus } from "@/components/molecules/LocationsMap";
+import { CardFrame } from "@/components/molecules/CardFrame";
+import { FadeIn } from "@/components/atoms/FadeIn";
+import { Paragraphs } from "@/components/atoms/Paragraphs";
 
-export interface ImagePair {
-	/** Import the images so Next generates their blur placeholders. */
-	left: StaticImageData;
-	right: StaticImageData;
+export interface SeasonContent {
+	/** Import the image so Next generates its blur placeholder. */
+	mainImage: StaticImageData;
+	/** Optional second photo, shown as a smaller inset over the main one. */
+	insetImage?: StaticImageData;
 }
 
 export interface LocationPageProps {
@@ -25,12 +32,77 @@ export interface LocationPageProps {
 		position?: "center" | "top" | "bottom" | "left" | "right" | undefined;
 	};
 	intro?: boolean;
-	winter?: ImagePair;
-	summer?: ImagePair;
+	winter?: SeasonContent;
+	summer?: SeasonContent;
 	heroSubtitle?: string;
 	/** Small credit line for sourced (non-own-camera) photography, e.g. Wikimedia Commons attribution. */
 	imageCredits?: string;
+	/** Center/zoom for this location's own map embed. Omit to show the full overview. */
+	mapFocus?: MapFocus;
 }
+
+interface SeasonSectionProps {
+	title: string;
+	icon: "winter" | "summer";
+	content: SeasonContent;
+	paragraphs: string;
+	reverse?: boolean;
+	imageCredits?: string;
+}
+
+const SeasonSection = ({
+	title,
+	icon,
+	content,
+	paragraphs,
+	reverse,
+	imageCredits,
+}: SeasonSectionProps) => (
+	<Section
+		backgroundColor={icon === "winter" ? "var(--palette-blue-100)" : "var(--palette-sand-300)"}
+	>
+		<Container>
+			<Row mdAlign={Align.center} mdReverse={reverse}>
+				<Col xs={12} md={7} className={styles.photoCol}>
+					<div className={styles.mainPhoto}>
+						<CardFrame image={content.mainImage} alt="" />
+						{content.insetImage && (
+							<div
+								className={classNames(styles.insetPhoto, {
+									[styles.insetPhotoReverse]: reverse,
+								})}
+							>
+								<Image
+									src={content.insetImage}
+									alt=""
+									fill
+									style={{ objectFit: "cover" }}
+									placeholder="blur"
+								/>
+							</div>
+						)}
+					</div>
+				</Col>
+				<Col xs={12} md={5} className={styles.textCol}>
+					<FadeIn>
+						<h3 className={classNames(styles.sectionTitle, styles.seasonTitle)}>
+							{icon === "winter" ? (
+								<Snowflake size={28} aria-hidden />
+							) : (
+								<Sun size={28} aria-hidden />
+							)}
+							{title}
+						</h3>
+						<Paragraphs text={paragraphs} />
+						{imageCredits && (
+							<p className={classNames("text--p-xs", styles.imageCredits)}>{imageCredits}</p>
+						)}
+					</FadeIn>
+				</Col>
+			</Row>
+		</Container>
+	</Section>
+);
 
 export const LocationPage = ({
 	namespace,
@@ -39,6 +111,7 @@ export const LocationPage = ({
 	summer,
 	heroSubtitle,
 	imageCredits,
+	mapFocus,
 }: LocationPageProps) => {
 	const t = useTranslations(namespace);
 	const breadcrumb = useTranslations("breadcrumb");
@@ -61,134 +134,40 @@ export const LocationPage = ({
 
 			<Section spacing="tight">
 				<Container>
-					<Row xsJustify={Justify.center}>
-						<Col xs={12} lg={10}>
-							<h2 className={styles.sectionTitle}>{t("title")}</h2>
-							<p className="text--p-lg">{t("description")}</p>
+					<Row mdAlign={Align.center}>
+						<Col xs={12} md={6}>
+							<FadeIn>
+								<h2 className={styles.sectionTitle}>{t("title")}</h2>
+								<Paragraphs text={t("description")} />
+							</FadeIn>
+						</Col>
+						<Col xs={12} md={5} mdOffset={1}>
+							<div className={styles.mapContainer}>
+								<LocationsMap focus={mapFocus} />
+							</div>
 						</Col>
 					</Row>
 				</Container>
 			</Section>
 
 			{winter && (
-				<Section>
-					<div className={styles.tightSection}>
-						<Container>
-							<Row xsJustify={Justify.center}>
-								<Col xs={12} lg={10}>
-									<h3 className={styles.sectionTitle}>{t("winterTitle")}</h3>
-								</Col>
-							</Row>
-
-							<Row xsJustify={Justify.center} gap="16px" className={styles.rowBlock}>
-								<Col xs={12} md={6} lg={5} className={styles.imageCol}>
-									<Image
-										src={winter.left}
-										alt=""
-										width={1200}
-										height={800}
-										className={styles.responsiveImage}
-										placeholder="blur"
-									/>
-								</Col>
-								<Col xs={12} md={6} lg={5} className={styles.textCol}>
-									<p className="text--p-lg">{t("winterP1")}</p>
-								</Col>
-							</Row>
-
-							<div className={styles.blockSpacing} />
-
-							<Row
-								xsJustify={Justify.center}
-								gap="16px"
-								className={styles.rowBlock}
-								mdReverse
-							>
-								<Col xs={12} md={6} lg={5} className={styles.imageCol}>
-									<Image
-										src={winter.right}
-										alt=""
-										width={1200}
-										height={800}
-										className={styles.responsiveImage}
-										placeholder="blur"
-									/>
-								</Col>
-								<Col xs={12} md={6} lg={5} className={styles.textCol}>
-									<p className="text--p-lg">{t("winterP2")}</p>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-				</Section>
+				<SeasonSection
+					title={t("winterTitle")}
+					icon="winter"
+					content={winter}
+					paragraphs={`${t("winterP1")}\n\n${t("winterP2")}`}
+				/>
 			)}
 
 			{summer && (
-				<Section>
-					<div className={styles.tightSection}>
-						<Container>
-							<Row xsJustify={Justify.center}>
-								<Col xs={12} lg={10}>
-									<h3 className={styles.sectionTitle}>{t("summerTitle")}</h3>
-								</Col>
-							</Row>
-
-							<Row xsJustify={Justify.center} gap="16px" className={styles.rowBlock}>
-								<Col xs={12} md={6} lg={5} className={styles.imageCol}>
-									<Image
-										src={summer.left}
-										alt=""
-										width={1200}
-										height={800}
-										className={styles.responsiveImage}
-										placeholder="blur"
-									/>
-								</Col>
-								<Col xs={12} md={6} lg={5} className={styles.textCol}>
-									<p className="text--p-lg">{t("summerP1")}</p>
-								</Col>
-							</Row>
-
-							<div className={styles.blockSpacing} />
-
-							<Row
-								xsJustify={Justify.center}
-								gap="16px"
-								className={styles.rowBlock}
-								mdReverse
-							>
-								<Col xs={12} md={6} lg={5} className={styles.imageCol}>
-									<Image
-										src={summer.right}
-										alt=""
-										width={1200}
-										height={800}
-										className={styles.responsiveImage}
-										placeholder="blur"
-									/>
-								</Col>
-								<Col xs={12} md={6} lg={5} className={styles.textCol}>
-									<p className="text--p-lg">{t("summerP2")}</p>
-								</Col>
-							</Row>
-						</Container>
-					</div>
-				</Section>
-			)}
-
-			{imageCredits && (
-				<Container>
-					<Row xsJustify={Justify.center}>
-						<Col xs={12} lg={10}>
-							<p
-								className="text--p-xs"
-								style={{ opacity: 0.6, marginBottom: "1rem" }}
-							>
-								{imageCredits}
-							</p>
-						</Col>
-					</Row>
-				</Container>
+				<SeasonSection
+					title={t("summerTitle")}
+					icon="summer"
+					content={summer}
+					paragraphs={`${t("summerP1")}\n\n${t("summerP2")}`}
+					reverse
+					imageCredits={imageCredits}
+				/>
 			)}
 
 			<CTABooking />

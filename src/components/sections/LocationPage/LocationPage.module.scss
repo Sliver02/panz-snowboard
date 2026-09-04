@@ -1,42 +1,63 @@
 @use "../../../designSystem/variables";
-@use "../../../designSystem/mediaQueries";
+@use "../../../designSystem/utils";
 
 .sectionTitle {
 	margin: 0 0 6px 0;
-	font-size: variables.$font-xl;
+	@include utils.toRem(font-size, variables.$font-xl);
 	font-weight: 800;
 	color: var(--neutral-dark);
 }
 
-.responsiveImage {
-	width: 100%;
-	height: auto;
-	display: block;
-	border-radius: 6px;
-	object-fit: cover;
-}
-
-.tightSection {
-	padding-top: 6px;
-	padding-bottom: 6px;
-}
-
-.rowBlock {
-	gap: 16px;
-}
-
-.imageCol {
+.seasonTitle {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	gap: 0.6rem;
+	margin-bottom: 1.5rem;
+}
+
+.mapContainer {
+	position: relative;
+	width: 100%;
+	height: 400px;
+}
+
+.photoCol {
+	display: flex;
+	align-items: center;
+}
+
+.mainPhoto {
+	position: relative;
+	width: 100%;
+}
+
+// Horizontal offset stays positive (inside the main photo's own box) so the
+// inset can never bleed past the photo column into the text column beside
+// it — only the bottom edge is allowed to hang past mainPhoto, since that
+// side never has a neighboring column to collide with.
+.insetPhoto {
+	position: absolute;
+	right: 0.75rem;
+	bottom: -1.5rem;
+	width: 42%;
+	aspect-ratio: 4 / 3;
+	overflow: hidden;
+	border-radius: 8px;
+	border: 6px solid var(--color-bg-raised);
+	box-shadow: 0 10px 24px rgba(0, 0, 0, 0.25);
+	z-index: 2;
+}
+
+.insetPhotoReverse {
+	right: auto;
+	left: 0.75rem;
 }
 
 .textCol {
-	display: flex;
-	align-items: center;
+	padding: 1rem 0;
 }
 
-.blockSpacing {
-	margin-top: 12px;
-	margin-bottom: 12px;
+.imageCredits {
+	margin-top: 1rem !important;
+	opacity: 0.65;
 }

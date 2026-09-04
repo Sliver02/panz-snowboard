@@ -1,8 +1,9 @@
 import { LocationPage } from "@/components/sections/LocationPage";
 import heroImage from "@public/images/location/zoldo_summer2.jpg";
-import winterLeftImage from "@public/images/location/zoldo_winter2.jpg";
-import winterRightImage from "@public/images/location/zoldo_winter3.jpg";
-import summerRightImage from "@public/images/location/zoldo_summer3.jpg";
+import winterMainImage from "@public/images/location/zoldo_winter2.jpg";
+import winterInsetImage from "@public/images/location/zoldo_winter3.jpg";
+import summerMainImage from "@public/images/location/zoldo_summer.jpg";
+import summerInsetImage from "@public/images/location/zoldo_summer3.jpg";
 
 const ZoldoCivettaPage = () => {
 	return (
@@ -13,13 +14,14 @@ const ZoldoCivettaPage = () => {
 				alt: "Zoldo and Civetta panorama",
 			}}
 			winter={{
-				left: winterLeftImage,
-				right: winterRightImage,
+				mainImage: winterMainImage,
+				insetImage: winterInsetImage,
 			}}
 			summer={{
-				left: heroImage,
-				right: summerRightImage,
+				mainImage: summerMainImage,
+				insetImage: summerInsetImage,
 			}}
+			mapFocus={{ longitude: 12.183, latitude: 46.35, zoom: 11 }}
 		/>
 	);
 };
