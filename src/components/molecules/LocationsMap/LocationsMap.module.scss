@@ -1,0 +1,31 @@
+.locationsMap {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 8px;
+}
+
+.tokenWarning {
+	position: absolute;
+	inset: 0 0 auto 0;
+	z-index: 1;
+	padding: 8px 12px;
+	background: var(--palette-warning-500);
+	color: var(--palette-neutral-0);
+	font-size: 12px;
+	font-weight: 600;
+	text-align: center;
+}
+
+.markerLink {
+	display: block;
+	line-height: 0;
+	cursor: pointer;
+	transition: transform 0.15s ease;
+
+	&:hover,
+	&:focus-visible {
+		transform: scale(1.1);
+	}
+}
