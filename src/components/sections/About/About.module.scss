@@ -1,0 +1,19 @@
+.about {
+	position: relative;
+}
+
+.description {
+	color: color-mix(in srgb, var(--neutral-background) 90%, transparent);
+}
+
+.backgroundGradient {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	// Bottom-to-top: strongest low behind the photo, fading out before it can
+	// dull the text column's contrast on the right.
+	background: linear-gradient(0deg, var(--primary-light) 0%, transparent 70%);
+	pointer-events: none;
+}
