@@ -52,7 +52,7 @@ const Home = () => {
 			<Disciplines />
 
 			<Maps />
-			<InstagramFeed />
+			{/* <InstagramFeed /> */}
 			<CTABooking />
 			<Footer />
 		</main>
