@@ -10,7 +10,7 @@ Tokens live in `src/designSystem/globals.scss` and follow a strict two-layer rul
 **Layer 1 — palette primitives** (raw brand values, never used in components directly):
 
 ```css
---palette-orange-500: #f48847; /* primary */
+--palette-red-500: #e63861; /* primary */
 --palette-blue-500: #296f96; /* accent */
 --palette-green-500: #339665; /* secondary */
 --palette-sand-500: #f3c98b; /* tertiary */
@@ -20,8 +20,8 @@ Tokens live in `src/designSystem/globals.scss` and follow a strict two-layer rul
 
 ```css
 --color-text: var(--palette-neutral-900);
---color-primary: var(--palette-orange-500);
---color-bg: var(--palette-sand-100);
+--color-primary: var(--palette-red-500);
+--color-bg: var(--palette-neutral-50);
 ```
 
 Dark mode remaps Layer 2 via `[data-theme="dark"]` on `<html>` — Layer 1 never
@@ -95,7 +95,7 @@ atoms/       — no dependencies on other components
 molecules/   — composed of atoms only
 organisms/   — composed of atoms + molecules
 sections/    — page-composition blocks (project tier; e.g. About, Disciplines, Maps,
-               Contact, CTABooking, LocationPage)
+               Contact, CTABooking, LocationPage, InstagramFeed)
 app/[locale] — pages assembled from sections/organisms
 ```
 
@@ -116,7 +116,9 @@ import Button from "@/components/atoms/Button/Button";
 ## Base-UI primitives
 
 Accessible headless primitives from `@base-ui/react` are wrapped in thin adapter
-components (Button, Input, Alert, Select, Checkbox, Dropdown, Autocomplete). State is
+components (Button, Input, Alert, Select, Checkbox, Dropdown, Autocomplete, Modal —
+`atoms/Modal` wraps `Dialog`, taking a `trigger` render element and a `label` for a11y).
+State is
 styled exclusively via `data-[state]` attributes in SCSS — no JS class toggling:
 
 ```scss
@@ -134,8 +136,9 @@ styled exclusively via `data-[state]` attributes in SCSS — no JS class togglin
 ## Icons
 
 Icons come from `lucide-react` only. Do not add `react-icons`, `@mui/icons-material`,
-or any other icon library. Brand/social logos (Instagram, …) are not part of
-lucide-react — they live as inline-SVG components in `atoms/SocialIcons`.
+or any other icon library. Brand/social logos (Instagram, …) and the branded map
+marker (`atoms/MapPin`, used by `LocationsMap`) are not part of lucide-react — they
+live as inline-SVG components (`atoms/SocialIcons`, `atoms/MapPin`).
 
 ## Internal navigation — RouteEnum
 
@@ -156,6 +159,18 @@ zoldo-civetta, cadore, privacy-policy.
 Navigation helpers from `@/i18n/routing` are locale-aware wrappers around Next.js
 primitives: `Link`, `usePathname`, `redirect`, `useRouter`, `getPathname`. Messages
 load from `public/messages/{locale}.json` at request time via `src/i18n/request.ts`.
+
+Multi-paragraph copy is written as one translation string with blank-line separators
+(`"\n\n"`) and rendered via `atoms/Paragraphs`, which splits on that separator — don't
+hand-split translation strings at the call site.
+
+## Locations map
+
+`molecules/LocationsMap` renders an interactive Mapbox map (`react-map-gl/mapbox` +
+`mapbox-gl`) pinning `TEACHING_LOCATIONS` (see `LocationsMap/locations.ts`), each marker
+a `Link` to its location route. Needs `NEXT_PUBLIC_MAPBOX_TOKEN`; missing in dev/build,
+it renders a static fallback (icon + on-screen warning outside production) instead of
+crashing. Pass `focus` to center/zoom on one location; omit to fit every pin.
 
 ## Grid system
 
