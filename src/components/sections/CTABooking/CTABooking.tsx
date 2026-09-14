@@ -24,6 +24,7 @@ export const CTABooking = ({ className }: BaseProps) => {
 			className={classNames(styles.cta, className)}
 			backgroundImage={bandImage}
 			backgroundOverlay={<div className={styles.scrim} />}
+			mapFiller="right"
 		>
 			<Container className={styles.contentWrapper}>
 				<Row xsJustify={Justify.center}>

@@ -60,6 +60,15 @@ export const Hero = ({
 				style={{ "--parallax-offset": `${parallaxOffset}px` } as CSSProperties}
 			/>
 
+			{!compact && (
+				<img
+					src="/images/mapfiller/map-md-track.svg"
+					alt=""
+					aria-hidden="true"
+					className={styles.mapTrack}
+				/>
+			)}
+
 			<div
 				className={classNames(styles.textWrapper, {
 					"text--align-center": !compact,

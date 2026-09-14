@@ -3,6 +3,7 @@ import styles from "./Section.module.scss";
 import { BaseProps } from "@/common/globalInterfaces";
 import { CSSProperties, ReactNode } from "react";
 import Image, { StaticImageData } from "next/image";
+import { MapFiller } from "@/components/atoms/MapFiller";
 
 export interface SectionProps extends BaseProps {
 	backgroundColor?: string;
@@ -15,6 +16,10 @@ export interface SectionProps extends BaseProps {
 	 * box regardless of how tall the content itself is.
 	 */
 	backgroundOverlay?: ReactNode;
+	/** Skewed contour-map artwork bled into the given side gutter, over the background. */
+	mapFiller?: "left" | "right";
+	/** Swap artwork so two nearby sections never show the identical shape. Defaults to "lg". */
+	mapFillerVariant?: "lg" | "sm";
 	/**
 	 * Spacing presets for the section. Defaults to 'default'.
 	 * - 'default': current spacing
@@ -33,6 +38,8 @@ export const Section = ({
 	backgroundColor,
 	backgroundImage,
 	backgroundOverlay,
+	mapFiller,
+	mapFillerVariant,
 	spacing = "default",
 }: SectionProps) => {
 	const cssVar = {
@@ -59,6 +66,7 @@ export const Section = ({
 			{backgroundOverlay && (
 				<div className={styles.backgroundOverlay}>{backgroundOverlay}</div>
 			)}
+			{mapFiller && <MapFiller side={mapFiller} variant={mapFillerVariant} />}
 			<span className={classNames(styles.content)}>{children}</span>
 		</div>
 	);

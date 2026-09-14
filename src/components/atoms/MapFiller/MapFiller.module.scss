@@ -1,0 +1,20 @@
+.mapFiller {
+	position: absolute;
+	top: -12%;
+	height: 130%;
+	width: auto;
+	max-width: none;
+	opacity: 0.15;
+	pointer-events: none;
+	z-index: 0;
+}
+
+.right {
+	right: -12%;
+	transform: rotate(6deg) skewY(-6deg);
+}
+
+.left {
+	left: -12%;
+	transform: rotate(-6deg) skewY(6deg);
+}

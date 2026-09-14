@@ -20,7 +20,7 @@ export const About = () => {
 	return (
 		<div className={classNames(styles.about)}>
 			<div className={classNames(styles.backgroundGradient)} />
-			<Section>
+			<Section mapFiller="right">
 				<Container>
 					<Row mdAlign={Align.center}>
 						<Col xs={12} md={6}>

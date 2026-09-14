@@ -59,7 +59,9 @@ const SeasonSection = ({
 	imageCredits,
 }: SeasonSectionProps) => (
 	<Section
-		backgroundColor={icon === "winter" ? "var(--palette-blue-100)" : "var(--palette-sand-300)"}
+		backgroundColor={icon === "winter" ? "var(--color-bg-sunken)" : "var(--color-bg)"}
+		mapFiller={reverse ? "left" : "right"}
+		mapFillerVariant={reverse ? "sm" : "lg"}
 	>
 		<Container>
 			<Row mdAlign={Align.center} mdReverse={reverse}>
@@ -132,7 +134,7 @@ export const LocationPage = ({
 				breadcrumbItems={[{ label: breadcrumb("home"), href: "/" }, { label: t("title") }]}
 			/>
 
-			<Section spacing="tight">
+			<Section>
 				<Container>
 					<Row mdAlign={Align.center}>
 						<Col xs={12} md={6}>

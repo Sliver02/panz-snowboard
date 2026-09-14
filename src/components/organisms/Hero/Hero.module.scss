@@ -19,7 +19,8 @@
 	position: relative;
 
 	@include mediaQueries.media("md", "min") {
-		border-radius: 0 0 5rem 5rem;
+		// Tilted bottom edge, same shear direction as CardDisplay's clip-path.
+		clip-path: polygon(0 0, 100% 0, 100% calc(100% - clamp(2.5rem, 5vw, 5rem)), 0 100%);
 	}
 
 	.backgroundImage {
@@ -48,6 +49,18 @@
 		&--position-right {
 			object-position: right;
 		}
+	}
+
+	.mapTrack {
+		position: absolute;
+		top: -3%;
+		right: -20%;
+		height: 83%;
+		width: auto;
+		max-width: none;
+		opacity: 0.8;
+		pointer-events: none;
+		z-index: 1;
 	}
 
 	.textWrapper {
