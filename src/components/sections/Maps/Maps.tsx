@@ -15,18 +15,18 @@ export const Maps = () => {
 		<Section id="locations">
 			<Container>
 				<Row mdAlign={Align.center}>
-					<Col xs={12} md={7}>
+					<Col xs={12} md={8}>
 						<div
 							style={{
 								position: "relative",
 								width: "100%",
-								height: "500px",
+								height: "650px",
 							}}
 						>
 							<LocationsMap />
 						</div>
 					</Col>
-					<Col xs={12} md={4} mdOffset={1}>
+					<Col xs={12} md={4} style={{ paddingLeft: "2rem" }}>
 						<FadeIn>
 							<SectionTitle text={t("title")} highlight uppercase />
 							<p className={classNames("text--p-lg")}>{t("description")}</p>

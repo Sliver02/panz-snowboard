@@ -2,12 +2,11 @@
 
 import Map, { Marker, NavigationControl, Popup } from "react-map-gl/mapbox";
 import "mapbox-gl/dist/mapbox-gl.css";
-import Image from "next/image";
 import Link from "next/link";
 import classNames from "classnames";
 import { useState } from "react";
+import { Map as MapIcon } from "lucide-react";
 import { MapPin } from "@/components/atoms/MapPin";
-import fallbackImage from "@public/images/mappa.png";
 import { BaseProps } from "@/common/globalInterfaces";
 import { DEFAULT_MAP_FOCUS, MapFocus, TEACHING_LOCATIONS } from "./locations";
 import styles from "./LocationsMap.module.scss";
@@ -25,20 +24,18 @@ export const LocationsMap = ({ className, focus }: LocationsMapProps) => {
 
 	if (!MAPBOX_TOKEN) {
 		return (
-			<div className={classNames(styles.locationsMap, className)}>
+			<div className={classNames(styles.locationsMap, styles.fallback, className)}>
 				{process.env.NODE_ENV !== "production" && (
 					<div className={styles.tokenWarning}>
 						NEXT_PUBLIC_MAPBOX_TOKEN missing — showing fallback map. Add it to
 						.env.local.
 					</div>
 				)}
-				<Image
-					src={fallbackImage}
-					placeholder="blur"
-					fill
-					style={{ objectFit: "cover" }}
-					sizes="100vw"
-					alt="Mappa delle zone di insegnamento nelle Dolomiti"
+				<MapIcon
+					className={styles.fallbackIcon}
+					size={48}
+					strokeWidth={1.5}
+					aria-hidden="true"
 				/>
 			</div>
 		);
