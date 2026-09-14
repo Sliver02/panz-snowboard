@@ -12,7 +12,7 @@ export interface InfiniteTextProps {
 
 export const InfiniteText = ({
 	items,
-	backgroundColor = "var(--primary-light)",
+	backgroundColor = "var(--color-bg-sunken)",
 }: InfiniteTextProps) => {
 	const cssVar = {
 		["--background-color"]: backgroundColor,

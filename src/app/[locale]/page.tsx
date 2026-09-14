@@ -22,7 +22,7 @@ const Home = () => {
 				negative
 				title={
 					<>
-						<p className={`${HeroStyles.name} text--color-accent`}>
+						<p className={`${HeroStyles.name} text--color-primary`}>
 							Lorenzo Panzera <br />
 						</p>
 

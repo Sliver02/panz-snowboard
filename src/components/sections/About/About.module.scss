@@ -14,6 +14,6 @@
 	width: 100%;
 	// Bottom-to-top: strongest low behind the photo, fading out before it can
 	// dull the text column's contrast on the right.
-	background: linear-gradient(0deg, var(--primary-light) 0%, transparent 70%);
+	background: linear-gradient(0deg, var(--color-bg-sunken) 0%, transparent 70%);
 	pointer-events: none;
 }
