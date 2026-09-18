@@ -7,6 +7,7 @@ import { useScroll } from "@/hooks/useScroll";
 import classNames from "classnames";
 import Image, { StaticImageData } from "next/image";
 import { CSSProperties, ReactNode } from "react";
+import { Sport, SportIcon } from "@/components/atoms/SportIcon";
 import styles from "./Hero.module.scss";
 
 const PARALLAX_FACTOR = 0.05;
@@ -24,6 +25,8 @@ export interface HeroProps extends BaseProps {
 	compact?: boolean;
 	negative?: boolean;
 	breadcrumbItems?: BreadcrumbItem[];
+	/** Marks the title with the sport glyph. */
+	sport?: Sport;
 }
 
 export const Hero = ({
@@ -34,6 +37,7 @@ export const Hero = ({
 	negative = false,
 	backgroundImage,
 	breadcrumbItems,
+	sport,
 }: HeroProps) => {
 	const { scrollY } = useScroll();
 	const parallaxOffset = Math.min(scrollY * PARALLAX_FACTOR, PARALLAX_MAX_OFFSET);
@@ -77,6 +81,14 @@ export const Hero = ({
 				<Container>
 					<Row xsJustify={compact ? Justify.start : Justify.center}>
 						<Col xs={12} lg={10}>
+							{sport && (
+								<SportIcon
+									sport={sport}
+									tone={negative ? "light" : "dark"}
+									size={64}
+									className={styles.sport}
+								/>
+							)}
 							<h1 className={classNames(styles.title)}>{title}</h1>
 							<p className={classNames(styles.subtitle)}>{subtitle}</p>
 						</Col>

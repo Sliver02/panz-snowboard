@@ -1,9 +1,12 @@
 "use client";
 import classNames from "classnames";
 import styles from "./InfiniteText.module.scss";
-import { Mountain } from "lucide-react";
+import { Sport, SportIcon } from "@/components/atoms/SportIcon";
 import { CSSProperties } from "react";
 import Marquee from "react-fast-marquee";
+
+// Separators cycle through the sport glyphs in order.
+const SEPARATORS: Sport[] = ["snowboard", "telemark", "bike", "skateboard"];
 
 export interface InfiniteTextProps {
 	items: string[];
@@ -24,7 +27,11 @@ export const InfiniteText = ({
 				{items.map((item, index) => (
 					<h3 key={index} className={classNames(styles.item)}>
 						{item.toUpperCase()}
-						<Mountain className={classNames(styles.icon)} size={28} strokeWidth={2} />
+						<SportIcon
+							sport={SEPARATORS[index % SEPARATORS.length]}
+							size={44}
+							className={classNames(styles.icon)}
+						/>
 					</h3>
 				))}
 			</Marquee>

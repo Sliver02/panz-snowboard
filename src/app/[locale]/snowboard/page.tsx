@@ -29,6 +29,7 @@ const SnowboardPage = () => {
 			<Hero
 				compact
 				negative
+				sport="snowboard"
 				title={t("title")}
 				subtitle={t("heroSubtitle")}
 				backgroundImage={{

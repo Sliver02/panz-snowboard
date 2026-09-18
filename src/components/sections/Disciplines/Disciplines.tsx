@@ -24,6 +24,7 @@ export const Disciplines = () => {
 					<Col xs={12} md={6} lg={4}>
 						<CardDisplay
 							image={snowboardImage}
+							sport="snowboard"
 							title={t("snowboard.title")}
 							href={RouteEnum.SNOWBOARD}
 						/>
@@ -31,6 +32,7 @@ export const Disciplines = () => {
 					<Col xs={12} md={6} lg={4}>
 						<CardDisplay
 							image={telemarkImage}
+							sport="telemark"
 							title={t("telemark.title")}
 							href={RouteEnum.TELEMARK}
 						/>
@@ -38,6 +40,7 @@ export const Disciplines = () => {
 					<Col xs={12} md={6} lg={4}>
 						<CardDisplay
 							image={mountainBikeImage}
+							sport="bike"
 							title={t("mountainBike.title")}
 							href={RouteEnum.MOUNTAIN_BIKE}
 						/>

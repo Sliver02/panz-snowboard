@@ -28,6 +28,15 @@
 			clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%);
 		}
 
+		// Sits inside the slanted top-left edge (clip-path starts at x = 10%).
+		.sport {
+			position: absolute;
+			top: 1rem;
+			left: calc(10% + 0.75rem);
+			z-index: 1;
+			display: flex;
+		}
+
 		.titleContainer {
 			position: absolute;
 			bottom: 1rem;

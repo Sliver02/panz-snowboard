@@ -43,6 +43,8 @@ export interface LocationPageProps {
 
 interface SeasonSectionProps {
 	title: string;
+	/** Describes the season photos, e.g. "Cortina d'Ampezzo - Winter". */
+	alt: string;
 	icon: "winter" | "summer";
 	content: SeasonContent;
 	paragraphs: string;
@@ -52,6 +54,7 @@ interface SeasonSectionProps {
 
 const SeasonSection = ({
 	title,
+	alt,
 	icon,
 	content,
 	paragraphs,
@@ -67,7 +70,7 @@ const SeasonSection = ({
 			<Row mdAlign={Align.center} mdReverse={reverse}>
 				<Col xs={12} md={7} className={styles.photoCol}>
 					<div className={styles.mainPhoto}>
-						<CardFrame image={content.mainImage} alt="" />
+						<CardFrame image={content.mainImage} alt={alt} />
 						{content.insetImage && (
 							<div
 								className={classNames(styles.insetPhoto, {
@@ -155,6 +158,7 @@ export const LocationPage = ({
 			{winter && (
 				<SeasonSection
 					title={t("winterTitle")}
+					alt={`${t("title")} - ${t("winterTitle")}`}
 					icon="winter"
 					content={winter}
 					paragraphs={`${t("winterP1")}\n\n${t("winterP2")}`}
@@ -164,6 +168,7 @@ export const LocationPage = ({
 			{summer && (
 				<SeasonSection
 					title={t("summerTitle")}
+					alt={`${t("title")} - ${t("summerTitle")}`}
 					icon="summer"
 					content={summer}
 					paragraphs={`${t("summerP1")}\n\n${t("summerP2")}`}

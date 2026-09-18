@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "./CardDisplay.module.scss";
 import { BaseProps } from "@/common/globalInterfaces";
 import { ArrowUpRight } from "lucide-react";
+import { Sport, SportIcon } from "@/components/atoms/SportIcon";
 
 export interface CardDisplayProps extends BaseProps {
 	/** Import the image so Next generates its blur placeholder. */
@@ -11,9 +12,11 @@ export interface CardDisplayProps extends BaseProps {
 	title?: string;
 	/** Turns the whole card into a link to a detail page. */
 	href?: string;
+	/** Marks the card's top-left corner with the sport glyph. */
+	sport?: Sport;
 }
 
-export const CardDisplay = ({ className, title, image, href }: CardDisplayProps) => {
+export const CardDisplay = ({ className, title, image, href, sport }: CardDisplayProps) => {
 	const content = (
 		<div className={classNames(styles.imageContainer)}>
 			<Image
@@ -23,6 +26,11 @@ export const CardDisplay = ({ className, title, image, href }: CardDisplayProps)
 				placeholder="blur"
 				fill
 			/>
+			{sport && (
+				<span className={classNames(styles.sport)}>
+					<SportIcon sport={sport} tone="light" size={64} />
+				</span>
+			)}
 			{title && (
 				<div className={classNames(styles.titleContainer)}>
 					<h4>{title}</h4>
