@@ -68,7 +68,7 @@
 	--color-warning: var(--palette-warning-500);
 
 	// Fonts — wired via next/font in app/[locale]/layout.tsx
-	--font-body: var(--font-brandon), var(--font-fallback), system-ui, -apple-system, sans-serif;
+	--font-body: var(--font-urbanist), system-ui, -apple-system, sans-serif;
 	--font-heading: var(--font-body);
 }
 

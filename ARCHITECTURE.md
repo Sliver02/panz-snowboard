@@ -34,12 +34,12 @@ A `Layer 2b` block preserves the brand's original token names (`--primary-main`,
 primitives, so existing brand components resolve to their exact colors with zero
 visual drift. New code should prefer the `--color-*` semantic names.
 
-Typography tokens: `--font-brandon` (HvDTrial Brandon Grotesque, `next/font/local` from
-`src/fonts/`) with `--font-fallback` (Jost) filling glyphs the trial cut lacks (accents, €,
-`@`, `&`, quotes). Both wired in `app/[locale]/layout.tsx`; components use `--font-body` /
-`--font-heading`. Weights follow the business cards: headings Black Italic (900), hero
-name Bold Italic, hero tagline Light Italic (300), labels Bold, body Regular. The trial
-files are not licensed for production — swap in the licensed cut and drop Jost.
+Typography tokens: `--font-urbanist` (Urbanist, variable 100–900 + italics, via
+`next/font/google` in `app/[locale]/layout.tsx`) — a free stand-in for the brand's Brandon
+Grotesque. Components use `--font-body` / `--font-heading`. Weights follow the business
+cards: headings Black Italic (900), hero name Bold Italic, hero tagline Light Italic (300),
+labels Bold, body Regular. To use the real Brandon Grotesque, license it (HVD Fonts
+self-hosting, or Adobe Fonts), load it with `next/font/local`, and point `--font-body` at it.
 
 ## SCSS modules
 
@@ -74,7 +74,7 @@ Utility mixins:
 
 Global text utility classes (applied as plain class strings, not module refs):
 
-- `.text--*` size/weight/align/color/font utilities (`.text--anton` for the display font)
+- `.text--*` size/weight/align/color utilities
 - `.onlyMobile` / `.onlyDesktop` — responsive show/hide at `md` breakpoint
 
 ### Conventions

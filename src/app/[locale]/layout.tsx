@@ -3,33 +3,15 @@ import classNames from "classnames";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { Jost } from "next/font/google";
-import localFont from "next/font/local";
+import { Urbanist } from "next/font/google";
 import { SmoothScroll } from "@/components/atoms/SmoothScroll";
 
-const brandon = localFont({
-	src: [
-		{ path: "../../fonts/HvDTrial-BrandonGrotesque-LightItalic.otf", weight: "300", style: "italic" },
-		{ path: "../../fonts/HvDTrial-BrandonGrotesque-Regular.otf", weight: "400", style: "normal" },
-		{ path: "../../fonts/HvDTrial-BrandonGrotesque-RegularItalic.otf", weight: "400", style: "italic" },
-		{ path: "../../fonts/HvDTrial-BrandonGrotesque-Medium.otf", weight: "500", style: "normal" },
-		{ path: "../../fonts/HvDTrial-BrandonGrotesque-Bold.otf", weight: "700", style: "normal" },
-		{ path: "../../fonts/HvDTrial-BrandonGrotesque-BoldItalic.otf", weight: "700", style: "italic" },
-		{ path: "../../fonts/HvDTrial-BrandonGrotesque-Black.otf", weight: "900", style: "normal" },
-		{ path: "../../fonts/HvDTrial-BrandonGrotesque-BlackItalic.otf", weight: "900", style: "italic" },
-	],
-	display: "swap",
-	variable: "--font-brandon",
-});
-
-// The HvDTrial cut ships only A–Z, 0–9 and ! , - . ? — no accents, €, @, &, quotes.
-// Jost (closest free geometric) fills those glyph gaps. ponytail: delete once the licensed
-// Brandon Grotesque replaces the trial files.
-const glyphFallback = Jost({
+// Free variable stand-in for Brandon Grotesque (double-story a, similar width, 100–900 + italics).
+const urbanist = Urbanist({
 	subsets: ["latin"],
 	style: ["normal", "italic"],
 	display: "swap",
-	variable: "--font-fallback",
+	variable: "--font-urbanist",
 });
 
 export const metadata: Metadata = {
@@ -189,7 +171,7 @@ export default async function RootLayout({
 		<html
 			lang={locale}
 			data-theme="light"
-			className={classNames(brandon.variable, glyphFallback.variable)}
+			className={classNames(urbanist.variable)}
 		>
 			<head>
 				<link rel="alternate" href="https://lorenzopanzera.com/en/" hrefLang="en" />
