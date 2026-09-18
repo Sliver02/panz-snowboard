@@ -4,7 +4,7 @@ import styles from "./PackageCard.module.scss";
 import { BaseProps } from "@/common/globalInterfaces";
 import { Button } from "@/components/atoms/Button";
 import { StaticImageData } from "next/image";
-import { useTranslations } from "use-intl";
+import { useTranslations } from "next-intl";
 
 export interface PackageCardProps extends BaseProps {
 	/** Import the image so Next generates its blur placeholder. */

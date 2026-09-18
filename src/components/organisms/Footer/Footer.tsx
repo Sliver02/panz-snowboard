@@ -43,6 +43,9 @@ export const Footer = () => {
 									{t("zoldoCivetta.title")}
 								</Link>
 							</li>
+							<li>
+								<Link href={RouteEnum.CADORE}>{t("cadore.title")}</Link>
+							</li>
 						</ul>
 					</Col>
 					<Col xs={12} md={6} lg={2}>

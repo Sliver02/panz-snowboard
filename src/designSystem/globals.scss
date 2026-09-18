@@ -8,22 +8,23 @@
 :root {
 	--palette-neutral-0: #ffffff;
 	--palette-neutral-50: #f4f6ff; // cool near-white surface
+	--palette-neutral-200: #dcdee8; // cool near-white surface
 	--palette-neutral-500: #9a9b9f; // muted text / border
-	--palette-neutral-900: #0f232c; // ink / text
+	--palette-neutral-900: #091e28; // ink / text
 	--palette-neutral-1000: #000000;
 
-	// orange (primary)
-	--palette-orange-100: #f5e3ce; // lighter
-	--palette-orange-200: #e9ceb0; // background (sand surface)
-	--palette-orange-300: #f4a66c; // light
-	--palette-orange-500: #f48847; // main
-	--palette-orange-600: #f26549; // dark
+	// neon red (primary)
+	--palette-red-100: #fce1de; // lighter
+	--palette-red-200: #f4c3be; // background
+	--palette-red-300: #f2968c; // light
+	--palette-red-500: #e64a39; // main — card accent red
+	--palette-red-600: #32363d; // dark — charcoal anchor, hover/scrim derive from it
 
 	// blue (accent)
 	--palette-blue-100: #cbe9f8; // background
 	--palette-blue-300: #5eaacc; // light
 	--palette-blue-500: #296f96; // main
-	--palette-blue-700: #1d546d; // dark
+	--palette-blue-700: #1b3643; // dark
 
 	// green (secondary)
 	--palette-green-400: #49aa83; // light
@@ -43,9 +44,9 @@
 // ─── Layer 2: Semantic tokens ─────────────────────────────────────────────────
 // Components reference only these — never palette values directly.
 :root {
-	--color-bg: var(--palette-orange-200);
+	--color-bg: var(--palette-neutral-50);
 	--color-bg-raised: var(--palette-neutral-0);
-	--color-bg-sunken: var(--palette-orange-100);
+	--color-bg-sunken: var(--palette-neutral-200);
 
 	--color-text: var(--palette-neutral-900);
 	--color-text-secondary: var(--palette-neutral-500);
@@ -53,10 +54,10 @@
 	--color-text-inverse: var(--palette-neutral-50);
 
 	--color-border: var(--palette-neutral-500);
-	--color-border-focus: var(--palette-orange-500);
+	--color-border-focus: var(--palette-red-500);
 
-	--color-primary: var(--palette-orange-500);
-	--color-primary-hover: var(--palette-orange-600);
+	--color-primary: var(--palette-red-500);
+	--color-primary-hover: color-mix(in srgb, var(--palette-red-500), var(--palette-red-600) 35%);
 	--color-primary-text: var(--palette-neutral-900);
 
 	--color-accent: var(--palette-blue-500);
@@ -67,8 +68,8 @@
 	--color-warning: var(--palette-warning-500);
 
 	// Fonts — wired via next/font in app/[locale]/layout.tsx
-	--font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
-	--font-heading: var(--font-anton), system-ui, sans-serif;
+	--font-body: var(--font-brandon), var(--font-fallback), system-ui, -apple-system, sans-serif;
+	--font-heading: var(--font-body);
 }
 
 // ─── Layer 2b: Brand-semantic aliases ─────────────────────────────────────────
@@ -79,14 +80,14 @@
 	--neutral-background: var(--palette-neutral-50);
 	--neutral-light: var(--palette-neutral-50);
 	--neutral-main: var(--palette-neutral-500);
-	--neutral-dark: var(--palette-neutral-900);
+	--neutral-dark: #0a161f; // darker, less saturated than ink — dark surfaces only, --color-text keeps the primitive
 	--neutral-text: var(--palette-neutral-900); // was undefined before rebase
 
-	--primary-background: var(--palette-orange-200);
-	--primary-lighter: var(--palette-orange-100);
-	--primary-light: var(--palette-orange-300);
-	--primary-main: var(--palette-orange-500);
-	--primary-dark: var(--palette-orange-600);
+	--primary-background: var(--palette-red-200);
+	--primary-lighter: var(--palette-red-100);
+	--primary-light: var(--palette-red-300);
+	--primary-main: var(--palette-red-500);
+	--primary-dark: var(--palette-red-600);
 	--primary-text: var(--palette-neutral-900);
 
 	--accent-background: var(--palette-blue-100);
@@ -103,7 +104,7 @@
 	--tertiary-main: var(--palette-sand-500);
 	--tertiary-dark: var(--palette-sand-700);
 
-	--surface-secondary: var(--palette-orange-100); // was undefined before rebase
+	--surface-secondary: var(--color-bg-sunken); // was undefined before rebase
 }
 
 // ─── Dark mode ────────────────────────────────────────────────────────────────

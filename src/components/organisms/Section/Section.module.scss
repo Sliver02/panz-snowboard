@@ -2,29 +2,37 @@
 @use "../../../designSystem/mediaQueries";
 
 .section {
-	height: 100%;
-	min-height: 80vh;
-	padding: 2rem 0;
+	// Fluid rhythm instead of a forced 80vh: short sections no longer float in a
+	// void, tall ones still breathe. Padding scales with the viewport.
+	padding: clamp(3rem, 7vw, 6rem) 0;
 
 	background: var(--background-color);
 	background-position: center;
-	background-attachment: fixed;
-
-	transition: padding 0.3s ease-in;
 
 	position: relative;
+	overflow: hidden;
 	display: flex;
 	align-items: center;
 
 	.content {
 		width: 100%;
 		flex: 1;
+		// Positioned + stacked above .backgroundImage so sections that pass one
+		// still show their content on top of it (a bare non-positioned sibling
+		// paints *under* a positioned one, image included, per stacking order).
+		position: relative;
+		z-index: 1;
 	}
 
 	.backgroundImage {
 		width: 100%;
 		height: 100%;
 		object-fit: cover;
+	}
+
+	.backgroundOverlay {
+		position: absolute;
+		inset: 0;
 	}
 }
 
@@ -34,16 +42,13 @@
 }
 
 .spacing-tight {
-	padding: 0.75rem 0 !important;
-	min-height: 30vh !important;
+	padding: clamp(1rem, 3vw, 2rem) 0 !important;
 }
 
 .spacing-none {
 	padding: 0 !important;
-	min-height: auto !important;
 }
 
 .spacing-large {
-	padding: 4rem 0 !important;
-	min-height: 100vh !important;
+	padding: clamp(4rem, 10vw, 8rem) 0 !important;
 }

@@ -101,7 +101,7 @@ color: var(--color-text);
 background: var(--color-primary);
 
 // wrong
-color: var(--palette-orange-500);
+color: var(--palette-red-500);
 ```
 
 The site ships light-only; the token layer is ready for `data-theme="dark"` when needed.

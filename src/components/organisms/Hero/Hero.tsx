@@ -1,11 +1,16 @@
+"use client";
 import { BaseProps } from "@/common/globalInterfaces";
 import { Breadcrumb, BreadcrumbItem } from "@/components/atoms/Breadcrumb";
 import { Col, Container, Row } from "@/components/atoms/Grid";
 import { Justify } from "@/components/atoms/Grid/interfaces";
+import { useScroll } from "@/hooks/useScroll";
 import classNames from "classnames";
 import Image, { StaticImageData } from "next/image";
+import { CSSProperties, ReactNode } from "react";
 import styles from "./Hero.module.scss";
-import { ReactNode } from "react";
+
+const PARALLAX_FACTOR = 0.05;
+const PARALLAX_MAX_OFFSET = 24;
 
 export interface HeroProps extends BaseProps {
 	title: ReactNode;
@@ -30,6 +35,9 @@ export const Hero = ({
 	backgroundImage,
 	breadcrumbItems,
 }: HeroProps) => {
+	const { scrollY } = useScroll();
+	const parallaxOffset = Math.min(scrollY * PARALLAX_FACTOR, PARALLAX_MAX_OFFSET);
+
 	return (
 		<div
 			className={classNames(className, styles.hero, {
@@ -49,7 +57,17 @@ export const Hero = ({
 				placeholder="blur"
 				priority
 				fill
+				style={{ "--parallax-offset": `${parallaxOffset}px` } as CSSProperties}
 			/>
+
+			{!compact && (
+				<img
+					src="/images/mapfiller/map-md-track.svg"
+					alt=""
+					aria-hidden="true"
+					className={styles.mapTrack}
+				/>
+			)}
 
 			<div
 				className={classNames(styles.textWrapper, {
@@ -60,15 +78,7 @@ export const Hero = ({
 					<Row xsJustify={compact ? Justify.start : Justify.center}>
 						<Col xs={12} lg={10}>
 							<h1 className={classNames(styles.title)}>{title}</h1>
-							<p
-								className={classNames(
-									styles.subtitle,
-									"text--strong",
-									"text--strong"
-								)}
-							>
-								{subtitle}
-							</p>
+							<p className={classNames(styles.subtitle)}>{subtitle}</p>
 						</Col>
 						{breadcrumbItems && breadcrumbItems.length > 0 && (
 							<Col xs={12}>
