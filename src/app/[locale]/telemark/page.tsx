@@ -26,6 +26,7 @@ const TelemarkPage = () => {
 			<Hero
 				compact
 				negative
+				sport="telemark"
 				title={t("title")}
 				subtitle={t("heroSubtitle")}
 				backgroundImage={{

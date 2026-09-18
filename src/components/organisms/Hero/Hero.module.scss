@@ -73,6 +73,10 @@
 		z-index: 1;
 		color: var(--neutral-dark);
 
+		.sport {
+			margin-bottom: 1rem;
+		}
+
 		.title {
 			font-size: clamp(2.5rem, 7vw, 6rem);
 			line-height: 95%;
