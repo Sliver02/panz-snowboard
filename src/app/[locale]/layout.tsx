@@ -3,20 +3,33 @@ import classNames from "classnames";
 import type { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import { Inter, Anton } from "next/font/google";
+import { Jost } from "next/font/google";
+import localFont from "next/font/local";
 import { SmoothScroll } from "@/components/atoms/SmoothScroll";
 
-const inter = Inter({
-	subsets: ["latin"],
-	weight: ["400", "500", "700"],
-	variable: "--font-inter",
+const brandon = localFont({
+	src: [
+		{ path: "../../fonts/HvDTrial-BrandonGrotesque-LightItalic.otf", weight: "300", style: "italic" },
+		{ path: "../../fonts/HvDTrial-BrandonGrotesque-Regular.otf", weight: "400", style: "normal" },
+		{ path: "../../fonts/HvDTrial-BrandonGrotesque-RegularItalic.otf", weight: "400", style: "italic" },
+		{ path: "../../fonts/HvDTrial-BrandonGrotesque-Medium.otf", weight: "500", style: "normal" },
+		{ path: "../../fonts/HvDTrial-BrandonGrotesque-Bold.otf", weight: "700", style: "normal" },
+		{ path: "../../fonts/HvDTrial-BrandonGrotesque-BoldItalic.otf", weight: "700", style: "italic" },
+		{ path: "../../fonts/HvDTrial-BrandonGrotesque-Black.otf", weight: "900", style: "normal" },
+		{ path: "../../fonts/HvDTrial-BrandonGrotesque-BlackItalic.otf", weight: "900", style: "italic" },
+	],
+	display: "swap",
+	variable: "--font-brandon",
 });
 
-const anton = Anton({
+// The HvDTrial cut ships only A–Z, 0–9 and ! , - . ? — no accents, €, @, &, quotes.
+// Jost (closest free geometric) fills those glyph gaps. ponytail: delete once the licensed
+// Brandon Grotesque replaces the trial files.
+const glyphFallback = Jost({
 	subsets: ["latin"],
-	weight: ["400"],
+	style: ["normal", "italic"],
 	display: "swap",
-	variable: "--font-anton",
+	variable: "--font-fallback",
 });
 
 export const metadata: Metadata = {
@@ -176,7 +189,7 @@ export default async function RootLayout({
 		<html
 			lang={locale}
 			data-theme="light"
-			className={classNames(inter.variable, anton.variable)}
+			className={classNames(brandon.variable, glyphFallback.variable)}
 		>
 			<head>
 				<link rel="alternate" href="https://lorenzopanzera.com/en/" hrefLang="en" />

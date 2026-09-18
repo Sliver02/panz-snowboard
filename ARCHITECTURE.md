@@ -10,7 +10,7 @@ Tokens live in `src/designSystem/globals.scss` and follow a strict two-layer rul
 **Layer 1 — palette primitives** (raw brand values, never used in components directly):
 
 ```css
---palette-red-500: #e63861; /* primary */
+--palette-red-500: #e64a39; /* primary */
 --palette-blue-500: #296f96; /* accent */
 --palette-green-500: #339665; /* secondary */
 --palette-sand-500: #f3c98b; /* tertiary */
@@ -34,9 +34,12 @@ A `Layer 2b` block preserves the brand's original token names (`--primary-main`,
 primitives, so existing brand components resolve to their exact colors with zero
 visual drift. New code should prefer the `--color-*` semantic names.
 
-Typography tokens: `--font-inter` (Inter, body) and `--font-anton` (Anton, headings),
-both wired via `next/font/google` in `app/[locale]/layout.tsx` and consumed through
-the CSS variables.
+Typography tokens: `--font-brandon` (HvDTrial Brandon Grotesque, `next/font/local` from
+`src/fonts/`) with `--font-fallback` (Jost) filling glyphs the trial cut lacks (accents, €,
+`@`, `&`, quotes). Both wired in `app/[locale]/layout.tsx`; components use `--font-body` /
+`--font-heading`. Weights follow the business cards: headings Black Italic (900), hero
+name Bold Italic, hero tagline Light Italic (300), labels Bold, body Regular. The trial
+files are not licensed for production — swap in the licensed cut and drop Jost.
 
 ## SCSS modules
 

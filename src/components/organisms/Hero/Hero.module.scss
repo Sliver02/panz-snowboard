@@ -53,9 +53,12 @@
 
 	.mapTrack {
 		position: absolute;
-		top: -3%;
-		right: -20%;
-		height: 83%;
+		// Artwork viewBox is taller than before (extra trail above the contours), so
+		// anchor the contours' bottom edge and size the box so they render at the same
+		// scale/position as the previous map-md-track.
+		bottom: 23%;
+		right: -16%;
+		height: 124%;
 		width: auto;
 		max-width: none;
 		opacity: 0.8;
@@ -76,11 +79,14 @@
 
 			.name {
 				font-size: clamp(1.75rem, 4.5vw, 4rem);
+				font-weight: 700; // card: LORENZO = Bold Italic over PANZERA = Black Italic
 			}
 		}
 
 		.subtitle {
 			font-size: clamp(1.25rem, 3.5vw, 3rem);
+			font-weight: 300; // card tagline: Light Italic
+			font-style: italic;
 			margin-top: 1rem;
 		}
 	}

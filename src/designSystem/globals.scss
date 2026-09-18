@@ -14,11 +14,11 @@
 	--palette-neutral-1000: #000000;
 
 	// neon red (primary)
-	--palette-red-100: #fcdee5; // lighter
-	--palette-red-200: #f4beca; // background
-	--palette-red-300: #f28ca4; // light
-	--palette-red-500: #e63861; // main — card accent red
-	--palette-red-600: #c43052; // dark
+	--palette-red-100: #fce1de; // lighter
+	--palette-red-200: #f4c3be; // background
+	--palette-red-300: #f2968c; // light
+	--palette-red-500: #e64a39; // main — card accent red
+	--palette-red-600: #32363d; // dark — charcoal anchor, hover/scrim derive from it
 
 	// blue (accent)
 	--palette-blue-100: #cbe9f8; // background
@@ -57,7 +57,7 @@
 	--color-border-focus: var(--palette-red-500);
 
 	--color-primary: var(--palette-red-500);
-	--color-primary-hover: color-mix(in srgb, var(--palette-red-600), black 15%);
+	--color-primary-hover: color-mix(in srgb, var(--palette-red-500), var(--palette-red-600) 35%);
 	--color-primary-text: var(--palette-neutral-900);
 
 	--color-accent: var(--palette-blue-500);
@@ -68,8 +68,8 @@
 	--color-warning: var(--palette-warning-500);
 
 	// Fonts — wired via next/font in app/[locale]/layout.tsx
-	--font-body: var(--font-inter), system-ui, -apple-system, sans-serif;
-	--font-heading: var(--font-anton), system-ui, sans-serif;
+	--font-body: var(--font-brandon), var(--font-fallback), system-ui, -apple-system, sans-serif;
+	--font-heading: var(--font-body);
 }
 
 // ─── Layer 2b: Brand-semantic aliases ─────────────────────────────────────────

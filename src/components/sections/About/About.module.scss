@@ -1,5 +1,7 @@
 .about {
 	position: relative;
+	// Lower the contour art so the section's top edge no longer slices its peak.
+	--map-filler-top: 4%;
 }
 
 .description {

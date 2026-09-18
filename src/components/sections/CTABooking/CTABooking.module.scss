@@ -38,11 +38,7 @@
 }
 
 .secondaryButton {
-	color: var(--neutral-light);
-	border-color: var(--neutral-light);
-
-	&:hover {
-		background-color: var(--neutral-light);
-		color: var(--primary-dark);
-	}
+	// Red on the red scrim disappears — remap the button's own tokens to inverse.
+	--color-primary: var(--color-text-inverse);
+	--color-primary-text: var(--color-text);
 }

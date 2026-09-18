@@ -73,7 +73,7 @@ export const Header = ({ className }: HeaderProps) => {
 				<Link className={classNames(styles.navbar__button)} href="." replace>
 					<Image
 						alt="Lorenzo Panzera - Snowboard & mountain bike Instructor"
-						src={"/lorenz_logo.webp"}
+						src={"/images/UI/logo_v3.webp"}
 						priority
 						width={160}
 						height={120}

@@ -78,15 +78,7 @@ export const Hero = ({
 					<Row xsJustify={compact ? Justify.start : Justify.center}>
 						<Col xs={12} lg={10}>
 							<h1 className={classNames(styles.title)}>{title}</h1>
-							<p
-								className={classNames(
-									styles.subtitle,
-									"text--strong",
-									"text--strong"
-								)}
-							>
-								{subtitle}
-							</p>
+							<p className={classNames(styles.subtitle)}>{subtitle}</p>
 						</Col>
 						{breadcrumbItems && breadcrumbItems.length > 0 && (
 							<Col xs={12}>

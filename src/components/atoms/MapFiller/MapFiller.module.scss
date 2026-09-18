@@ -1,6 +1,6 @@
 .mapFiller {
 	position: absolute;
-	top: -12%;
+	top: var(--map-filler-top, -12%);
 	height: 130%;
 	width: auto;
 	max-width: none;
